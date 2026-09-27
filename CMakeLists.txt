@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(PGEApp)
+project(PGE_Johnnys_Has_To_Change)
  
 include(FetchContent)
 
