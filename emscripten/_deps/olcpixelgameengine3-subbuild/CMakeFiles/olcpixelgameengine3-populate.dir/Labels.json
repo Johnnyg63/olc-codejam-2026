@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/CMakeFiles/olcpixelgameengine3-populate"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/CMakeFiles/olcpixelgameengine3-populate.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/CMakeFiles/olcpixelgameengine3-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-build.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-copyfile.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-download.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-install.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-test.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpixelgameengine3-subbuild/olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/olcpixelgameengine3-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"olcpixelgameengine3-populate"
+		],
+		"name" : "olcpixelgameengine3-populate"
+	}
+}

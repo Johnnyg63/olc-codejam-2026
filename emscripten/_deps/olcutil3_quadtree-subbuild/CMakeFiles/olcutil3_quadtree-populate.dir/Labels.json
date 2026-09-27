@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/CMakeFiles/olcutil3_quadtree-populate"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/CMakeFiles/olcutil3_quadtree-populate.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/CMakeFiles/olcutil3_quadtree-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-build.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-copyfile.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-download.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-install.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-test.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"olcutil3_quadtree-populate"
+		],
+		"name" : "olcutil3_quadtree-populate"
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/CMakeFiles/olcpgex3_miniaudio-populate"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/CMakeFiles/olcpgex3_miniaudio-populate.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/CMakeFiles/olcpgex3_miniaudio-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-build.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-copyfile.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-download.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-install.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-test.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/emscripten/_deps/olcpgex3_miniaudio-subbuild/olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/olcpgex3_miniaudio-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"olcpgex3_miniaudio-populate"
+		],
+		"name" : "olcpgex3_miniaudio-populate"
+	}
+}
