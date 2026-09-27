@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		173F726E0FC55ACBE9FF4F6C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5742B04E512941E8B4F499C0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				FB15A36FF7F682381F96A94D /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		347B64DD0B3FBEA2AA251D0B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5F62DA6567F4286AB681ECA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				5948656BB6AD4A92532C2FEC /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				A89B6B8DDAA74AE8B009952C /* PBXTargetDependency */,
+				63ABB4E46D8C46DB988B73B1 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		AA56550EDBB2EB2E8F97DDE3 /* olcutil3_animate2d-populate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 36D0C5873EDA4588A1DA0BEC /* Build configuration list for PBXAggregateTarget "olcutil3_animate2d-populate" */;
+			buildPhases = (
+				A76C2628A984065FDB7CA8FD /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-mkdir */,
+				C81B19D4AC7A9DA9D8ED3748 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-download */,
+				94A365B19966BE60758E8C91 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-update */,
+				BBBDF78DBED4AEF35DC15459 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch */,
+				50E3288CEB287E76793D974E /* Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Animate2D.h */,
+				66B89583DB601FF7F859136B /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-configure */,
+				11A58E2BBDE4A4983D3CE3FA /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-build */,
+				C8073ACFE574B69AD00A5F81 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-install */,
+				CEAFAAD1E3E65D932B016F6A /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-test */,
+				FA39116BFC0FFE3344523B80 /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-complete */,
+				760C3884D4B17770E53C12B1 /* Generate CMakeFiles/olcutil3_animate2d-populate */,
+			);
+			dependencies = (
+				A2A3D474F19B4AB785029F0D /* PBXTargetDependency */,
+			);
+			name = "olcutil3_animate2d-populate";
+			productName = "olcutil3_animate2d-populate";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+		657BBDD326EF400B8D54F98A /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3297D7826D5F4CEAA2FB3E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58A451536244B08AEE04542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA56550EDBB2EB2E8F97DDE3;
+			remoteInfo = "olcutil3_animate2d-populate";
+		};
+		BA0A7621BB1640EF90C1FB31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58A451536244B08AEE04542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 173F726E0FC55ACBE9FF4F6C;
+			remoteInfo = ZERO_CHECK;
+		};
+		FF24EBF8145A4765BC9F7200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58A451536244B08AEE04542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 173F726E0FC55ACBE9FF4F6C;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67AAA0AB1B134690A113210B /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A74429FE584444FBA37A3768 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2D84294C7F9A480BB045D62C /* olcutil3_animate2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				C7848DA7C22F47619A87557D /* CMake Rules */,
+				67AAA0AB1B134690A113210B /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeLists.txt */,
+			);
+			name = "olcutil3_animate2d-populate";
+			sourceTree = "<group>";
+		};
+		3EFB51A9DA85481F82F0FE7B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				3F536D3CF2A34B478ABA1D64 /* CMake Rules */,
+				A74429FE584444FBA37A3768 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3F536D3CF2A34B478ABA1D64 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		445541FB1F5A4A719CBB6B05 /* olcutil3_animate2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				2D84294C7F9A480BB045D62C /* olcutil3_animate2d-populate */,
+			);
+			name = "olcutil3_animate2d-populate";
+			sourceTree = "<group>";
+		};
+		75FAB9CEE5BA47528F7317D6 = {
+			isa = PBXGroup;
+			children = (
+				D1CFE19CBB0140FA873B47E1 /* ExternalProjectTargets */,
+				3EFB51A9DA85481F82F0FE7B /* ALL_BUILD */,
+				89618FC51C56486D89614523 /* Products */,
+				800B9B959E1143BD93B1A900 /* Frameworks */,
+				9062C4BE03D54F76B6931A5F /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		800B9B959E1143BD93B1A900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89618FC51C56486D89614523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9062C4BE03D54F76B6931A5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C7848DA7C22F47619A87557D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D1CFE19CBB0140FA873B47E1 /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				445541FB1F5A4A719CBB6B05 /* olcutil3_animate2d-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C58A451536244B08AEE04542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = A28E338FD3F74352A2820BE3 /* Build configuration list for PBXProject "olcutil3_animate2d-populate" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				657BBDD326EF400B8D54F98A /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 75FAB9CEE5BA47528F7317D6;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				347B64DD0B3FBEA2AA251D0B /* ALL_BUILD */,
+				AA56550EDBB2EB2E8F97DDE3 /* olcutil3_animate2d-populate */,
+				173F726E0FC55ACBE9FF4F6C /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A58E2BBDE4A4983D3CE3FA /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-configure"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-build";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-build"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-build
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		50E3288CEB287E76793D974E /* Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Animate2D.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch"			);
+			name = "Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Animate2D.h";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Animate2D.h","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-copyfile"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  /opt/homebrew/bin/cmake -E copy_if_different /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcUTIL3_Animate2D.h /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-copyfile
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		5948656BB6AD4A92532C2FEC /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		66B89583DB601FF7F859136B /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/tmp/olcutil3_animate2d-populate-cfgcmd.txt"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-configure";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-configure"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-configure
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		760C3884D4B17770E53C12B1 /* Generate CMakeFiles/olcutil3_animate2d-populate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-complete"			);
+			name = "Generate CMakeFiles/olcutil3_animate2d-populate";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/olcutil3_animate2d-populate"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		825611F8B2DED15D340E89BB = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		94A365B19966BE60758E8C91 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/olcutil3_animate2d-populate-update-info.txt"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-update";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-update"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-update
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A76C2628A984065FDB7CA8FD /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-mkdir */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-mkdir";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-mkdir"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  /opt/homebrew/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/tmp/olcutil3_animate2d-populate-mkdirs.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-mkdir
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		BBBDF78DBED4AEF35DC15459 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-update","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/olcutil3_animate2d-populate-patch-info.txt"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-patch
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C8073ACFE574B69AD00A5F81 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-install */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-build"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-install";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-install"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-install
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C81B19D4AC7A9DA9D8ED3748 /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-download */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/download-olcutil3_animate2d-populate.cmake","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/olcutil3_animate2d-populate-urlinfo.txt"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-download";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-download"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/download-olcutil3_animate2d-populate.cmake
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/verify-olcutil3_animate2d-populate.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-download
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		CEAFAAD1E3E65D932B016F6A /* Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-install"			);
+			name = "Generate olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-test";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-test"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-test
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		FA39116BFC0FFE3344523B80 /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-complete */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-build","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-configure","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-install","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-test","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-update"			);
+			name = "Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-complete";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_animate2d-populate-complete"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  /opt/homebrew/bin/cmake -E make_directory /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-complete
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/olcutil3_animate2d-populate-prefix/src/olcutil3_animate2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_animate2d-populate-done
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		FB15A36FF7F682381F96A94D /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63ABB4E46D8C46DB988B73B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA56550EDBB2EB2E8F97DDE3 /* olcutil3_animate2d-populate */;
+			targetProxy = 3297D7826D5F4CEAA2FB3E03 /* PBXContainerItemProxy */;
+		};
+		A2A3D474F19B4AB785029F0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 173F726E0FC55ACBE9FF4F6C /* ZERO_CHECK */;
+			targetProxy = FF24EBF8145A4765BC9F7200 /* PBXContainerItemProxy */;
+		};
+		A89B6B8DDAA74AE8B009952C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 173F726E0FC55ACBE9FF4F6C /* ZERO_CHECK */;
+			targetProxy = BA0A7621BB1640EF90C1FB31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EBE0473955749C2A4D8C6E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		162F8837091447B9B489D0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "olcutil3_animate2d-populate";
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2015364A0AFD416FA51208A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_animate2d-subbuild/build";
+			};
+			name = Debug;
+		};
+		C12F3E22FA474D1A8DB199CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36D0C5873EDA4588A1DA0BEC /* Build configuration list for PBXAggregateTarget "olcutil3_animate2d-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				162F8837091447B9B489D0AE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5742B04E512941E8B4F499C0 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12F3E22FA474D1A8DB199CA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A28E338FD3F74352A2820BE3 /* Build configuration list for PBXProject "olcutil3_animate2d-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2015364A0AFD416FA51208A1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A5F62DA6567F4286AB681ECA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EBE0473955749C2A4D8C6E6 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C58A451536244B08AEE04542 /* Project object */;
+}

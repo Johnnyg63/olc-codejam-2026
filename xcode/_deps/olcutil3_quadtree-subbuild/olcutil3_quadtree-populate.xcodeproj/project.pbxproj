@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1D0576B34B550E887D4C8B8A /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB5A6499D8774EAF9FDCB9BC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				184690B284023774C7181A6B /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				CCD21242829748688CD4D6C8 /* PBXTargetDependency */,
+				D1699ED5D64643B182019BBE /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		8DEE9E0B7682641AA1AD8F5A /* olcutil3_quadtree-populate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4B9A0ABC315B41D8A360CBE0 /* Build configuration list for PBXAggregateTarget "olcutil3_quadtree-populate" */;
+			buildPhases = (
+				4530D2D5B673AEF68D1D9021 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir */,
+				0DA69E91482609639662D495 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download */,
+				8B308B8E4D176B1CEF9DEF01 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-update */,
+				300BC07032396860844B2761 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch */,
+				6C454A8C00EF24E20DDA8E2A /* Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_QuadTree.h */,
+				235E974481329501A2CD45D9 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-configure */,
+				BE8656267236BEC2B0CE6366 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-build */,
+				7EBF074BF77B83DC1185CA93 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-install */,
+				B0D339B847C07C23C21AF6B9 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-test */,
+				8E45102C2E04E3EA7978BAED /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-complete */,
+				5CAD9361E3D3B625D1F5AFDA /* Generate CMakeFiles/olcutil3_quadtree-populate */,
+			);
+			dependencies = (
+				E3ABA8E955034C389ABCDBCF /* PBXTargetDependency */,
+			);
+			name = "olcutil3_quadtree-populate";
+			productName = "olcutil3_quadtree-populate";
+		};
+		92510060FC8ED0D8CB389545 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 02C7F02FC16944F3B087259D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E6CDAD01BE66EC54F3A7BD96 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+		2F98968CFD0246DEB32F5AB4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		BCEAB45CCB004A8E824D0A46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6288DCB4286D403AA1211250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92510060FC8ED0D8CB389545;
+			remoteInfo = ZERO_CHECK;
+		};
+		CD96DF9B8FC442AD919E3B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6288DCB4286D403AA1211250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92510060FC8ED0D8CB389545;
+			remoteInfo = ZERO_CHECK;
+		};
+		FB906B596CDD426191F6B423 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6288DCB4286D403AA1211250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DEE9E0B7682641AA1AD8F5A;
+			remoteInfo = "olcutil3_quadtree-populate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80D89B3C228445C2A413F60E /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DB017C7B3B294B78B54CDFAA /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D4889950431401BB64947A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		16F398E06136482481D5485F /* olcutil3_quadtree-populate */ = {
+			isa = PBXGroup;
+			children = (
+				1EBBC21191904DEB85587705 /* olcutil3_quadtree-populate */,
+			);
+			name = "olcutil3_quadtree-populate";
+			sourceTree = "<group>";
+		};
+		180A139E223545988F2C79E9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1EBBC21191904DEB85587705 /* olcutil3_quadtree-populate */ = {
+			isa = PBXGroup;
+			children = (
+				180A139E223545988F2C79E9 /* CMake Rules */,
+				80D89B3C228445C2A413F60E /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */,
+			);
+			name = "olcutil3_quadtree-populate";
+			sourceTree = "<group>";
+		};
+		295717604BC14C63886DED50 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				3A52C78A9F754836A7F43099 /* CMake Rules */,
+				DB017C7B3B294B78B54CDFAA /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3A52C78A9F754836A7F43099 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4AC6C5946EA748BF87D204ED /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				16F398E06136482481D5485F /* olcutil3_quadtree-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+		BEB7CBFB91D74E719C46BA72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5A802FDAF5A4BC1AC2B7920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB1C762114DA4860BC6A2905 = {
+			isa = PBXGroup;
+			children = (
+				4AC6C5946EA748BF87D204ED /* ExternalProjectTargets */,
+				295717604BC14C63886DED50 /* ALL_BUILD */,
+				BEB7CBFB91D74E719C46BA72 /* Products */,
+				F5A802FDAF5A4BC1AC2B7920 /* Frameworks */,
+				0D4889950431401BB64947A5 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		6288DCB4286D403AA1211250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 3A322A2789D2467D888C98B9 /* Build configuration list for PBXProject "olcutil3_quadtree-populate" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2F98968CFD0246DEB32F5AB4 /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FB1C762114DA4860BC6A2905;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				1D0576B34B550E887D4C8B8A /* ALL_BUILD */,
+				8DEE9E0B7682641AA1AD8F5A /* olcutil3_quadtree-populate */,
+				92510060FC8ED0D8CB389545 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DA69E91482609639662D495 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/download-olcutil3_quadtree-populate.cmake","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-urlinfo.txt"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/download-olcutil3_quadtree-populate.cmake
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/verify-olcutil3_quadtree-populate.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-download
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		184690B284023774C7181A6B /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		235E974481329501A2CD45D9 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/tmp/olcutil3_quadtree-populate-cfgcmd.txt"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-configure";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-configure"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-configure
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		300BC07032396860844B2761 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-update","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-patch-info.txt"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-patch
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4530D2D5B673AEF68D1D9021 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  /opt/homebrew/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/tmp/olcutil3_quadtree-populate-mkdirs.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-mkdir
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		5CAD9361E3D3B625D1F5AFDA /* Generate CMakeFiles/olcutil3_quadtree-populate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-complete"			);
+			name = "Generate CMakeFiles/olcutil3_quadtree-populate";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/olcutil3_quadtree-populate"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6C454A8C00EF24E20DDA8E2A /* Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_QuadTree.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch"			);
+			name = "Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_QuadTree.h";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_QuadTree.h","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-copyfile"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  /opt/homebrew/bin/cmake -E copy_if_different /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcUTIL3_QuadTree.h /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-copyfile
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		7EBF074BF77B83DC1185CA93 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-install */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-build"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-install";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-install"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-install
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		8B308B8E4D176B1CEF9DEF01 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/olcutil3_quadtree-populate-update-info.txt"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-update";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-update"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-update
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		8E45102C2E04E3EA7978BAED /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-complete */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-build","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-configure","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-install","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-test","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-update"			);
+			name = "Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-complete";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-complete"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  /opt/homebrew/bin/cmake -E make_directory /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-complete
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-done
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B0D339B847C07C23C21AF6B9 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-install"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-test";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-test"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-test
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		BE8656267236BEC2B0CE6366 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-configure"			);
+			name = "Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-build";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-build"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_quadtree-populate-build
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		E41EE78184181426F91EC3E9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E6CDAD01BE66EC54F3A7BD96 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCD21242829748688CD4D6C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92510060FC8ED0D8CB389545 /* ZERO_CHECK */;
+			targetProxy = CD96DF9B8FC442AD919E3B0C /* PBXContainerItemProxy */;
+		};
+		D1699ED5D64643B182019BBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DEE9E0B7682641AA1AD8F5A /* olcutil3_quadtree-populate */;
+			targetProxy = FB906B596CDD426191F6B423 /* PBXContainerItemProxy */;
+		};
+		E3ABA8E955034C389ABCDBCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92510060FC8ED0D8CB389545 /* ZERO_CHECK */;
+			targetProxy = BCEAB45CCB004A8E824D0A46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F41AB30ACA44A3C84BD1FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		81B7FFC865134ABD8D3825F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "olcutil3_quadtree-populate";
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EEC988C350C047F6B217218C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		FA608F9D31294C0FA41358C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02C7F02FC16944F3B087259D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41AB30ACA44A3C84BD1FCD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3A322A2789D2467D888C98B9 /* Build configuration list for PBXProject "olcutil3_quadtree-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA608F9D31294C0FA41358C2 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B9A0ABC315B41D8A360CBE0 /* Build configuration list for PBXAggregateTarget "olcutil3_quadtree-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81B7FFC865134ABD8D3825F7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB5A6499D8774EAF9FDCB9BC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEC988C350C047F6B217218C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6288DCB4286D403AA1211250 /* Project object */;
+}

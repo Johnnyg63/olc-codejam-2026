@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1ED8CB4D7858B0DC8B5AB064 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9906761732714A21A93EA74C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				63B811ED0E4B635FDFA6471C /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				F5969110FF7D4F1CB6EB000A /* PBXTargetDependency */,
+				ED31A8247EF740BEA19B4B14 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		6B9FC7A9798E899547F628D6 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 81F5D171B7784EEB84399E58 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				BB6FFA2FB175503CEB7A5967 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AA22DF0AEBC323D98B558D43 /* olcutil3_camera2d-populate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5AF6A523872849FAB4490F7F /* Build configuration list for PBXAggregateTarget "olcutil3_camera2d-populate" */;
+			buildPhases = (
+				5EB16A027D6CB647820FBC9F /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir */,
+				CB8AC6296021B9E4631CB35E /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download */,
+				4602B3F4C239206ABA044C6E /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-update */,
+				B3C763320F8F9C8ABF12390B /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch */,
+				286B2259C38F078A1464007C /* Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Camera2D.h */,
+				84CC8F0746009207EC552206 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-configure */,
+				B95FA28C9F89A5BA580BC490 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-build */,
+				1C88BB89019D2A9B1084F642 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-install */,
+				9D3C834DE16B8E7536024FB7 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-test */,
+				AA9F4F509B502D3221BDBAFD /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-complete */,
+				E8DBF7D974C4C4740675FBA6 /* Generate CMakeFiles/olcutil3_camera2d-populate */,
+			);
+			dependencies = (
+				AF33C9650F7A402E97C36CE5 /* PBXTargetDependency */,
+			);
+			name = "olcutil3_camera2d-populate";
+			productName = "olcutil3_camera2d-populate";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+		2B1F9077023146BB9836B153 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		541BF103D14742828D3D0E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD72F5FBA4C4C419E74E00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B9FC7A9798E899547F628D6;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B37C20F5D03462DAF8B3AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD72F5FBA4C4C419E74E00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA22DF0AEBC323D98B558D43;
+			remoteInfo = "olcutil3_camera2d-populate";
+		};
+		B91338F05D674091BDD6D795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AD72F5FBA4C4C419E74E00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B9FC7A9798E899547F628D6;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		418781EE49A843E1816331D3 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4E01A9B72FD94170A4BA5D18 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0138124D1B894D3D93F6E85C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E241051FBE84F7085A602F0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B07B721D372B431B8C5B7F39 /* CMake Rules */,
+				418781EE49A843E1816331D3 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		2AC9F8446E014069BD82FF22 = {
+			isa = PBXGroup;
+			children = (
+				5B356707A4AB470B9BF91FBA /* ExternalProjectTargets */,
+				0E241051FBE84F7085A602F0 /* ALL_BUILD */,
+				0138124D1B894D3D93F6E85C /* Products */,
+				C09A6E47A6E74FDEAF85E16A /* Frameworks */,
+				5EAFF022FE364DB8A71A48FF /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		5742E6E94DA84C78BC9D6609 /* olcutil3_camera2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				F5408C337E124D1684027BEC /* olcutil3_camera2d-populate */,
+			);
+			name = "olcutil3_camera2d-populate";
+			sourceTree = "<group>";
+		};
+		5B356707A4AB470B9BF91FBA /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				5742E6E94DA84C78BC9D6609 /* olcutil3_camera2d-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+		5EAFF022FE364DB8A71A48FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A12BF66A476B49B2AAA45225 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B07B721D372B431B8C5B7F39 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C09A6E47A6E74FDEAF85E16A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5408C337E124D1684027BEC /* olcutil3_camera2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				A12BF66A476B49B2AAA45225 /* CMake Rules */,
+				4E01A9B72FD94170A4BA5D18 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */,
+			);
+			name = "olcutil3_camera2d-populate";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4AD72F5FBA4C4C419E74E00A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 1080F6C924714FFAB45B13E3 /* Build configuration list for PBXProject "olcutil3_camera2d-populate" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2B1F9077023146BB9836B153 /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 2AC9F8446E014069BD82FF22;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				1ED8CB4D7858B0DC8B5AB064 /* ALL_BUILD */,
+				AA22DF0AEBC323D98B558D43 /* olcutil3_camera2d-populate */,
+				6B9FC7A9798E899547F628D6 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C88BB89019D2A9B1084F642 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-install */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-build"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-install";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-install"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-install
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		286B2259C38F078A1464007C /* Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Camera2D.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch"			);
+			name = "Generate /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Camera2D.h";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities/olcUTIL3_Camera2D.h","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-copyfile"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  /opt/homebrew/bin/cmake -E copy_if_different /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcUTIL3_Camera2D.h /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/utilities
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-copyfile
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4602B3F4C239206ABA044C6E /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/olcutil3_camera2d-populate-update-info.txt"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-update";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-update"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-update
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		5EB16A027D6CB647820FBC9F /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  /opt/homebrew/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/tmp/olcutil3_camera2d-populate-mkdirs.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-mkdir
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		63B811ED0E4B635FDFA6471C /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		84CC8F0746009207EC552206 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/tmp/olcutil3_camera2d-populate-cfgcmd.txt"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-configure";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-configure"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-configure
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		8F511EBE5FF93D22CAEC228A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9D3C834DE16B8E7536024FB7 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-install"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-test";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-test"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-test
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		AA9F4F509B502D3221BDBAFD /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-complete */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-build","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-configure","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-install","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-test","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-update"			);
+			name = "Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-complete";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-complete"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  /opt/homebrew/bin/cmake -E make_directory /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-complete
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-done
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		B3C763320F8F9C8ABF12390B /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-update","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/olcutil3_camera2d-populate-patch-info.txt"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-patch"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-patch
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		B95FA28C9F89A5BA580BC490 /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-configure"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-build";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-build"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-build
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		BB6FFA2FB175503CEB7A5967 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		CB8AC6296021B9E4631CB35E /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/download-olcutil3_camera2d-populate.cmake","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/olcutil3_camera2d-populate-urlinfo.txt"			);
+			name = "Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/download-olcutil3_camera2d-populate.cmake
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/verify-olcutil3_camera2d-populate.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/olcutil3_camera2d-populate-download
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		E8DBF7D974C4C4740675FBA6 /* Generate CMakeFiles/olcutil3_camera2d-populate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-complete"			);
+			name = "Generate CMakeFiles/olcutil3_camera2d-populate";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeFiles/olcutil3_camera2d-populate"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF33C9650F7A402E97C36CE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B9FC7A9798E899547F628D6 /* ZERO_CHECK */;
+			targetProxy = B91338F05D674091BDD6D795 /* PBXContainerItemProxy */;
+		};
+		ED31A8247EF740BEA19B4B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B9FC7A9798E899547F628D6 /* ZERO_CHECK */;
+			targetProxy = 541BF103D14742828D3D0E32 /* PBXContainerItemProxy */;
+		};
+		F5969110FF7D4F1CB6EB000A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA22DF0AEBC323D98B558D43 /* olcutil3_camera2d-populate */;
+			targetProxy = 8B37C20F5D03462DAF8B3AC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B4D544E235D4884BDE155CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		48DCEB7ACBAC40A3826BFD8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		77AB3295F46445BB849C0095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "olcutil3_camera2d-populate";
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CB42399224DF43B1B0821827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1080F6C924714FFAB45B13E3 /* Build configuration list for PBXProject "olcutil3_camera2d-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB42399224DF43B1B0821827 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5AF6A523872849FAB4490F7F /* Build configuration list for PBXAggregateTarget "olcutil3_camera2d-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AB3295F46445BB849C0095 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81F5D171B7784EEB84399E58 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B4D544E235D4884BDE155CA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9906761732714A21A93EA74C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48DCEB7ACBAC40A3826BFD8E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AD72F5FBA4C4C419E74E00A /* Project object */;
+}

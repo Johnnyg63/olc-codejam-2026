@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeFiles/olcutil3_geometry2d-populate"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeFiles/olcutil3_geometry2d-populate.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeFiles/CMakeFiles/olcutil3_geometry2d-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-build.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-copyfile.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-download.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-install.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-test.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/CMakeFiles/olcutil3_geometry2d-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"olcutil3_geometry2d-populate"
+		],
+		"name" : "olcutil3_geometry2d-populate"
+	}
+}

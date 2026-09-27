@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/CMakeFiles/olcutil3_gamemode-populate"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/CMakeFiles/olcutil3_gamemode-populate.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/CMakeFiles/CMakeFiles/olcutil3_gamemode-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-build.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-copyfile.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-download.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-install.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-test.rule"
+		},
+		{
+			"file" : "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_gamemode-subbuild/olcutil3_gamemode-populate-prefix/src/olcutil3_gamemode-populate-stamp/CMakeFiles/olcutil3_gamemode-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"olcutil3_gamemode-populate"
+		],
+		"name" : "olcutil3_gamemode-populate"
+	}
+}

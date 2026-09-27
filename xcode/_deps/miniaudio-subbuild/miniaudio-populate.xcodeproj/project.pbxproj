@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C258DE857C064620F1A1D2E /* miniaudio-populate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 58D82237BE4143AFA28A3D6D /* Build configuration list for PBXAggregateTarget "miniaudio-populate" */;
+			buildPhases = (
+				B15C9DEE029F2283C9572D5F /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-mkdir */,
+				C1711DE956277019F17F81AE /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-download */,
+				44C49053FFDDE99AD8A3C41E /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-update */,
+				ABBB2541A5FBAD64FBE14DDB /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch */,
+				33D491F1D9DC8A15BC45E037 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-copyfile */,
+				5BF06E75F6CEE3D0F6C43819 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-configure */,
+				3C22B647577A1F39AB182DE9 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-build */,
+				6E137B7B21ED3C3217088869 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-install */,
+				779C2CE5424B68739B1B979B /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-test */,
+				464FD9303B32269EC238612F /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-complete */,
+				7FF50FA4C48B96734D48D2D2 /* Generate CMakeFiles/miniaudio-populate */,
+			);
+			dependencies = (
+				7177A2C5F1A44F3B966D3BB7 /* PBXTargetDependency */,
+			);
+			name = "miniaudio-populate";
+			productName = "miniaudio-populate";
+		};
+		4A9463523A59720951D5665C /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F356F0231FDB47F7B159F4DE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D6E061FB20494CD9F5CE5329 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6A638D90E32FA063922EC026 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D33F95FA73724450A6DDE21B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				104017BCC1FFE6548D47AFE4 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				9B4CD40B1DF54CB9B2EFB43B /* PBXTargetDependency */,
+				74E6B7FF9FEC4BE3916445D7 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+		4BB2D75658304430B55EF832 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		35E62719A5B74EFEA6F1BF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3893AA7B5BB14C3B8D5E2C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9463523A59720951D5665C;
+			remoteInfo = ZERO_CHECK;
+		};
+		374D6B150A3D43679061E2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3893AA7B5BB14C3B8D5E2C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A9463523A59720951D5665C;
+			remoteInfo = ZERO_CHECK;
+		};
+		4A03FF0C08F74912ADA60A12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3893AA7B5BB14C3B8D5E2C30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C258DE857C064620F1A1D2E;
+			remoteInfo = "miniaudio-populate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9ECE48BFA8BB4A949D69209E /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FD52E57BE8F94DCFB9B11AA0 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0A5481A9AC444DF7B8472C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		448C0C607DB14CEE8BDAD952 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6AB21FA645864DD3A599FCB8 /* miniaudio-populate */ = {
+			isa = PBXGroup;
+			children = (
+				D7BD11163E87467EA9F2EDE9 /* CMake Rules */,
+				FD52E57BE8F94DCFB9B11AA0 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeLists.txt */,
+			);
+			name = "miniaudio-populate";
+			sourceTree = "<group>";
+		};
+		6DD61897C4FC414F8DC6E671 = {
+			isa = PBXGroup;
+			children = (
+				A6576C2FE54947F093C33997 /* ExternalProjectTargets */,
+				87292F5E194C4749B7488EED /* ALL_BUILD */,
+				89D61B4867C944CB8F6BB936 /* Products */,
+				0A5481A9AC444DF7B8472C8C /* Frameworks */,
+				448C0C607DB14CEE8BDAD952 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		87292F5E194C4749B7488EED /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				FCD9F642D89F41AF82CD4040 /* CMake Rules */,
+				9ECE48BFA8BB4A949D69209E /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		89D61B4867C944CB8F6BB936 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6576C2FE54947F093C33997 /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				BF7FE76E2D114EB89CEFB9A6 /* miniaudio-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+		BF7FE76E2D114EB89CEFB9A6 /* miniaudio-populate */ = {
+			isa = PBXGroup;
+			children = (
+				6AB21FA645864DD3A599FCB8 /* miniaudio-populate */,
+			);
+			name = "miniaudio-populate";
+			sourceTree = "<group>";
+		};
+		D7BD11163E87467EA9F2EDE9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		FCD9F642D89F41AF82CD4040 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		3893AA7B5BB14C3B8D5E2C30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 2EFAC866A2F2492186EB6116 /* Build configuration list for PBXProject "miniaudio-populate" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4BB2D75658304430B55EF832 /* Debug */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 6DD61897C4FC414F8DC6E671;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				6A638D90E32FA063922EC026 /* ALL_BUILD */,
+				0C258DE857C064620F1A1D2E /* miniaudio-populate */,
+				4A9463523A59720951D5665C /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		104017BCC1FFE6548D47AFE4 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		33D491F1D9DC8A15BC45E037 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-copyfile */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-copyfile";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions/miniaudio/miniaudio.h"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  /opt/homebrew/bin/cmake -E copy_if_different /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio.h /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions/miniaudio
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-copyfile
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3C22B647577A1F39AB182DE9 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-configure"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-build";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-build"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-build
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		44C49053FFDDE99AD8A3C41E /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-update */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update-info.txt"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-update";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-update"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-update
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		464FD9303B32269EC238612F /* Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-complete */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-build","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-configure","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-download","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-install","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-test","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-update"			);
+			name = "Generate CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-complete";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-complete"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  /opt/homebrew/bin/cmake -E make_directory /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-complete
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-done
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		5BF06E75F6CEE3D0F6C43819 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-copyfile","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/tmp/miniaudio-populate-cfgcmd.txt"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-configure";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-configure"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-configure
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6E137B7B21ED3C3217088869 /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-install */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-build"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-install";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-install"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-install
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		779C2CE5424B68739B1B979B /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-test */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-install"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-test";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-test"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-build
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-test
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		7FF50FA4C48B96734D48D2D2 /* Generate CMakeFiles/miniaudio-populate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-complete"			);
+			name = "Generate CMakeFiles/miniaudio-populate";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		ABBB2541A5FBAD64FBE14DDB /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-update","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch-info.txt"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-patch"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  /opt/homebrew/bin/cmake -E echo_append
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-patch
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		B15C9DEE029F2283C9572D5F /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-mkdir */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-mkdir";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-mkdir"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  /opt/homebrew/bin/cmake -Dcfgdir=/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/tmp/miniaudio-populate-mkdirs.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-mkdir
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C1711DE956277019F17F81AE /* Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-download */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-mkdir","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/download-miniaudio-populate.cmake","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-urlinfo.txt"			);
+			name = "Generate miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-download";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/miniaudio-populate-download"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/download-miniaudio-populate.cmake
+  /opt/homebrew/bin/cmake -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/verify-miniaudio-populate.cmake
+  /opt/homebrew/bin/cmake -E touch /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/miniaudio-populate-download
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		D6E061FB20494CD9F5CE5329 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DAFE5670834FCF1A81DD5152 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7177A2C5F1A44F3B966D3BB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9463523A59720951D5665C /* ZERO_CHECK */;
+			targetProxy = 35E62719A5B74EFEA6F1BF1F /* PBXContainerItemProxy */;
+		};
+		74E6B7FF9FEC4BE3916445D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A9463523A59720951D5665C /* ZERO_CHECK */;
+			targetProxy = 374D6B150A3D43679061E2D1 /* PBXContainerItemProxy */;
+		};
+		9B4CD40B1DF54CB9B2EFB43B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C258DE857C064620F1A1D2E /* miniaudio-populate */;
+			targetProxy = 4A03FF0C08F74912ADA60A12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000A56D39C8A4AFF9C7F87FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/miniaudio-subbuild/build";
+			};
+			name = Debug;
+		};
+		33111BD8FC8F40028B7806CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "miniaudio-populate";
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		DFAE53807E0741BF801E7E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EA83CC89EFDE4EB9B3CD4AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EFAC866A2F2492186EB6116 /* Build configuration list for PBXProject "miniaudio-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000A56D39C8A4AFF9C7F87FD /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58D82237BE4143AFA28A3D6D /* Build configuration list for PBXAggregateTarget "miniaudio-populate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33111BD8FC8F40028B7806CA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D33F95FA73724450A6DDE21B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAE53807E0741BF801E7E42 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F356F0231FDB47F7B159F4DE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA83CC89EFDE4EB9B3CD4AE7 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3893AA7B5BB14C3B8D5E2C30 /* Project object */;
+}
