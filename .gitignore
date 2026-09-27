@@ -1,19 +1,89 @@
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
+# Prerequisites
+*.d
 
-# CLion
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#cmake-build-*
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# macOS specific files
+.DS_Store
+.DS_Store?
+._*
+
+# IDE and Editor files
+.vscode/
+.vs_code/
+
+# Xcode
+xcuserdata/
+
+# Executables
+*.exe
+*.out
+*.app
+/.vs
+/dev/msvc/.vs
+/dev/msvc/x64
+/dev/tests/build
+/dev/msvc/olcPGE3/x64
+/dev/msvc/olcPGE3_BuildSH/x64
+build/
+
+# Android
+/dev/android
+.idea/
+*.iml
+/local.properties
+/.gradle
+
+# wayland artifacts
+examples/olcPGE3_AntiAliasing
+examples/olcPGE3_BatchesOfFills
+examples/olcPGE3_BatchesOfLines
+examples/olcPGE3_CirclesEllipses
+examples/olcPGE3_ImageQuads
+examples/olcPGE3_ImageRect
+examples/olcPGE3_ImageRegion
+examples/olcPGE3_ImageTiling
+examples/olcPGE3_Keyboard
+examples/olcPGE3_Lines
+examples/olcPGE3_Pixels
+examples/olcPGE3_PixelShaders
+examples/olcPGE3_Polygons
+examples/olcPGE3_Rectangles
+examples/olcPGE3_Shockwave
+examples/olcPGE3_TextBasics
+examples/olcPGE3_TextFontMap
+examples/xdg-decoration.c
+examples/xdg-decoration.h
+examples/xdg-decoration.o
+examples/xdg-shell.c
+examples/xdg-shell.h
+examples/xdg-shell.o
+
+# stb image headerss
+stb_image_write.h
+stb_image.h
+/dev/msvc/olcPGE3_wxWidgets/olcPGE3_wxWidgets/x64/Debug
+/dev/msvc/olcPGE3_wxWidgets/x64/Debug
