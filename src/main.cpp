@@ -15,12 +15,34 @@
 #define OLC_PGEX3_MINIAUDIO
 #include "olcPGEX3_Miniaudio.h"
 
+#include "levelmanager.h"
 
 // This class overrides the olc::PixelGameEngine base class
 // by implementing the OnUserCreate() and OnUserUpdate()
 // functions
 class JohnnyChange : public olc::PixelGameEngine
 {
+
+private:
+	LevelManager levelManager;
+	// Copyright notice
+	std::string strCopyrightNotice_MusicLFiles;
+	olc::Image imgCopyright_Emscripten;
+	olc::Image imgCopyright_OLC;
+	olc::Image imgCopyRight_Kenny;
+	
+	// sounds
+	olc::ext::Miniaudio::Sound song1;
+	olc::ext::Miniaudio::Sound sample;
+
+    // For demonstration controls, with sensible default values
+    float pan    = 0.0f;
+    float pitch  = 1.0f;
+    float volume = 1.0f;
+    float distance = 0.0f;
+    bool backgroundPlay = false;
+    ma_uint64 cursorMillis = 0ull;
+    float     cursorFloat  = 0.0f;
 
 public:
 	// Extensions 
@@ -41,6 +63,7 @@ public:
 	bool OnUserCreate() override
 	{
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
+		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
         
 		return true;
@@ -51,42 +74,24 @@ public:
 	// Called every frame, so update things here
 	bool OnUserUpdate(float fElapsedTime) override
 	{
-		
-		if (!ClearScreen(fElapsedTime, olc::Colour::BLUE)) {throw std::runtime_error("Failed to clear screen");};
-
-		// Handle audio playback and controls
+		// Handle screen clearing, change backgrounds etc later
+		if (!ClearScreen(fElapsedTime, olc::Colour::BLACK)) {throw std::runtime_error("Failed to clear screen");};
+		// Handle audio playback and controls 
 		if (!HandleSound(fElapsedTime)) {throw std::runtime_error("Failed to handle sound");};
-
+		
+		// Draw the level
+		if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
+				
+		// Handle copyright notices (Keep this last to ensure it overlays everything else)
 		if (!HandleCopyRightNotices(fElapsedTime)) {throw std::runtime_error("Failed to handle copyright notices");};
 
+		// Handle exit
 		return HandleExit(fElapsedTime);
 
 	}
 
 
 private:
-
-	// Copyright notice
-	std::string strCopyrightNotice_MusicLFiles;
-	olc::Image imgCopyright_Emscripten;
-	olc::Image imgCopyright_OLC;
-	olc::Image imgCopyRight_Kenny;
-	
-
-	// sounds
-	olc::ext::Miniaudio::Sound song1;
-	olc::ext::Miniaudio::Sound sample;
-
-    // For demonstration controls, with sensible default values
-    float pan    = 0.0f;
-    float pitch  = 1.0f;
-    float volume = 1.0f;
-    float distance = 0.0f;
-    bool backgroundPlay = false;
-    ma_uint64 cursorMillis = 0ull;
-    float     cursorFloat  = 0.0f;
-
-
 	// Clears the screen with the specified color (default is black)
 	bool ClearScreen(float fElapsedTime, olc::Pixel col = olc::Colour::BLACK)
 	{
@@ -165,6 +170,24 @@ private:
 	}
 
 	/*
+	Load the level data and initialize the level manager
+	*/
+	bool LoadLevel()
+	{
+		bool res = true;
+		levelManager.Initialize(this);
+		return res;
+	}
+
+	bool HandleLevel(float fElapsedTime)
+	{
+		bool res = true;
+		levelManager.Update(fElapsedTime);
+		levelManager.Draw();
+		return res;
+	}
+
+	/*
 	Handle Copyright Notices
 	*/
 	bool HandleCopyRightNotices(float fElapsedTime)
@@ -175,14 +198,14 @@ private:
 		float fCopyrightNoticeY = 320.0f;
 
 		// this is just a simple on-screen credit for the music used. too be removed
-		draw.String(
-			{fCopyrightNoticeX, fCopyrightNoticeY},
-            strCopyrightNotice_MusicLFiles,
-	        olc::Colour::WHITE
-		);
+		// draw.String(
+		// 	{fCopyrightNoticeX, fCopyrightNoticeY},
+        //     strCopyrightNotice_MusicLFiles,
+	    //     olc::Colour::WHITE
+		// );
 
-		fCopyrightNoticeY = GetScreen().Size().y - imgCopyright_Emscripten.Size().y;
-		draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}); 
+		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_Emscripten.Size().y * 0.5f);
+		draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.5f,0.5f}); 
 
 		return res;
 		
