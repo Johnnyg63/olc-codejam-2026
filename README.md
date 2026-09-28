@@ -68,6 +68,12 @@ Architecture: x86_64 (x86_64)
 Optimization flags: -march=haswell -mavx2 -mfma
 ```
 
+Output on older App;e Intel Duel Core i5 / i7 before 2016:
+```
+Architecture: x86_64 (x86_64)
+Optimization flags: -msse4.2
+```
+
 ---
 
 ## 📖 Make Command Reference
@@ -298,32 +304,61 @@ The build system **automatically detects** your CPU architecture and applies opt
 ### Architecture Detection
 
 ```makefile
+ Architecture detection
 UNAME_M := $(shell uname -m)
 ifeq ($(UNAME_M),arm64)
-    ARCH := ARM64
-    ARCH_FLAGS := -mcpu=apple-m1 -ffp-contract=fast
+	ARCH := ARM64
+	ARCH_FLAGS := -mcpu=apple-m1 -ffp-contract=fast
 else
-    ARCH := x86_64
-    ARCH_FLAGS := -march=haswell -mavx2 -mfma
+	ARCH := x86_64
+	# Detect Intel CPU generation on macOS
+	ifeq ($(shell uname -s),Darwin)
+		CPU_MODEL := $(shell sysctl -n machdep.cpu.model 2>/dev/null)
+		CPU_BRAND := $(shell sysctl -n machdep.cpu.brand_string 2>/dev/null)
+		# Intel CPU models: Sandy Bridge=42, Ivy Bridge=58, Haswell=60, Broadwell=61, etc.
+		# Pre-Haswell: <=58 (Sandy Bridge, Ivy Bridge)
+		ifeq ($(shell [ "$(CPU_MODEL)" -le 58 ] 2>/dev/null && echo 1 || echo 0),1)
+			ARCH_FLAGS := -msse4.2
+			CPU_GEN := Pre-Haswell (SSE4.2)
+		else
+			ARCH_FLAGS := -march=haswell -mavx2 -mfma
+			CPU_GEN := Haswell+ (AVX2)
+		endif
+	else
+		# Linux fallback: use cpuinfo to detect
+		ifeq ($(shell uname -s),Linux)
+			ifeq ($(shell grep -q "avx2" /proc/cpuinfo && echo 1 || echo 0),1)
+				ARCH_FLAGS := -march=haswell -mavx2 -mfma
+				CPU_GEN := Haswell+ (AVX2)
+			else
+				ARCH_FLAGS := -msse4.2
+				CPU_GEN := Pre-Haswell (SSE4.2)
+			endif
+		else
+			# Default fallback for other systems
+			ARCH_FLAGS := -march=haswell -mavx2 -mfma
+			CPU_GEN := Haswell+ (AVX2 - Default)
+		endif
+	endif
 endif
 ```
 
 **Supported Architectures:**
 - **ARM64** - Apple Silicon (M1, M2, M3, M4, etc.)
-- **x86_64** - Intel Core (i5, i7, i9) and AMD Ryzen
+- **x86_64** - Intel Core (i5, i7, i9) and AMD Ryzen using AVX256
+- **x86_64** Apple 2013 - 2015 Intel Duel Core (i5, i7) using SSE4.2 (Why??? cause I have some old macs I still like to play with)
 
 ### ARM64 (Apple Silicon) Optimizations
 
-**Devices:** MacBook Air/Pro M1/M2/M3/M4, Mac mini M1/M4, Mac Studio, Mac Pro M2
+**Devices:** MacBook Air/Pro M1/M2/M3/M4, Mac mini M1/M4, Mac Studio, Mac Pro M2, Mac Pro M5
 
 **Compiler Flags:**
 ```
 -O3                    Maximum optimization
--mcpu=apple-m1         M1/M2/M3/M4 specific tuning
+-mcpu=apple-m1         M1/M2/M3/M4/M5 Pro/M6 specific tuning
 -ffp-contract=fast     Fused multiply-add (crucial for graphics/physics)
--flto                  Link-time optimization
+-flto-full             Link-time optimization
 -funroll-loops         Loop unrolling
--fvectorize            Auto SIMD vectorization
 ```
 
 **Benefits:**
@@ -343,9 +378,8 @@ endif
 -march=haswell         CPU baseline (Haswell 2013+, supports AVX2)
 -mavx2                 256-bit SIMD operations (processes 8 floats/instruction)
 -mfma                  Fused multiply-add instructions
--flto                  Link-time optimization
+-flto=full             Link-time optimization
 -funroll-loops         Loop unrolling
--fvectorize            Auto SIMD vectorization
 ```
 
 **Benefits:**
@@ -355,20 +389,6 @@ endif
 - ✓ Decades of x86_64 optimization maturity
 - ✓ Expected performance: 3-5x faster than debug builds
 
-### Performance Impact
-
-**Compiler Optimization Impact Breakdown:**
-- `-O3` vs `-O2`: ~30% faster
-- `-flto` (link-time optimization): +10-15% faster
-- `-funroll-loops` (loop unrolling): +5-10% faster
-- `-mavx2`/`-mcpu=apple-m1`: +20-30% faster
-- **Total: 3-5x faster than unoptimized debug builds**
-
-**Binary Size Comparison:**
-| Build Type | Size | Ratio |
-|-----------|------|-------|
-| Release (optimized) | 716 KB | 1.0x |
-| Debug (with symbols) | 3.3 MB | 4.6x |
 
 ### Verifying Applied Flags
 
@@ -471,7 +491,7 @@ chmod +x cpp/build/release/PGE_Johnnys_Has_To_Change
 | **Performance** | Excellent | Good | Excellent |
 | **Deployment** | Native install | Web link | App bundle |
 | **Development** | Any IDE | Any IDE | Xcode IDE |
-| **Graphics Backend** | Native | WebGL | Metal/OpenGL |
+| **Graphics Backend** | OpenGL | WebGL | Metal/OpenGL |
 | **File Access** | Full filesystem | Sandboxed | Full filesystem |
 | **Build Time** | Fast (2-3s) | Moderate (5-10s) | Fast (2-3s) |
 
