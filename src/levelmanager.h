@@ -22,6 +22,7 @@ struct Platform {
 };
 
 class LevelManager : public olc::PixelGameEngine {
+    
 public:
     PhaseState currentPhase = PhaseState::BLUE_ACTIVE;
     float phaseTimer = 0.0f;
@@ -44,11 +45,11 @@ public:
         platforms.push_back({ { { 500.0f, 160.0f }, { 120.0f, 20.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
         
         // Hazard platform (can only pass through safely when it matches phase)
-        platforms.push_back({ { { 320.0f, 330.0f }, { 120.0f, 20.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
+        // platforms.push_back({ { { 320.0f, 330.0f }, { 120.0f, 20.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
     }
 
-    void Update(float deltaTime) {
-        phaseTimer += deltaTime;
+    void Update(float fElapsedTime) {
+        phaseTimer += fElapsedTime;
         if (phaseTimer >= PHASE_DURATION) {
             phaseTimer = 0.0f;
             // Alternate the state
@@ -90,6 +91,7 @@ public:
         ptrPGE->GetDraw().FilledRoundedRect({10.0f,10.0f}, {progressWidth, 10.0f}, 5.0f, barColor);
     }
 
+private:
     void DrawRectangle(const Platform& platform, const olc::Pixel col, const bool isFillRec = true) {
         if(isFillRec)
         {

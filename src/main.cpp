@@ -16,6 +16,7 @@
 #include "olcPGEX3_Miniaudio.h"
 
 #include "levelmanager.h"
+#include "player.h"
 
 // This class overrides the olc::PixelGameEngine base class
 // by implementing the OnUserCreate() and OnUserUpdate()
@@ -25,6 +26,7 @@ class JohnnyChange : public olc::PixelGameEngine
 
 private:
 	LevelManager levelManager;
+	Player player;
 	// Copyright notice
 	std::string strCopyrightNotice_MusicLFiles;
 	olc::Image imgCopyright_Emscripten;
@@ -64,6 +66,7 @@ public:
 	{
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
+		if (!LoadPlayer()) 			{throw std::runtime_error("Failed to load player");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
         
 		return true;
@@ -76,11 +79,15 @@ public:
 	{
 		// Handle screen clearing, change backgrounds etc later
 		if (!ClearScreen(fElapsedTime, olc::Colour::BLACK)) {throw std::runtime_error("Failed to clear screen");};
+
 		// Handle audio playback and controls 
 		if (!HandleSound(fElapsedTime)) {throw std::runtime_error("Failed to handle sound");};
 		
 		// Draw the level
 		if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
+
+		// Draw the player
+		if(!HandlePlayer(fElapsedTime)) {throw std::runtime_error("Failed to handle player");};
 				
 		// Handle copyright notices (Keep this last to ensure it overlays everything else)
 		if (!HandleCopyRightNotices(fElapsedTime)) {throw std::runtime_error("Failed to handle copyright notices");};
@@ -140,7 +147,7 @@ private:
 		}
 
 		// toggle `song1` playback/pause
- 		if(keyboard.GetKey(olc::Key::SPACE).bPressed)
+ 		if(keyboard.GetKey(olc::Key::B).bPressed)
  			song1.Toggle();
 
  		// play `sample`
@@ -188,6 +195,24 @@ private:
 	}
 
 	/*
+	Load the level data and initialize the level manager
+	*/
+	bool LoadPlayer()
+	{
+		bool res = true;
+		player.Initialize(this);
+		return res;
+	}
+
+	bool HandlePlayer(float fElapsedTime)
+	{
+		bool res = true;
+		player.Update(fElapsedTime, levelManager);
+		player.Draw(levelManager.currentPhase);
+		return res;
+	}
+
+	/*
 	Handle Copyright Notices
 	*/
 	bool HandleCopyRightNotices(float fElapsedTime)
@@ -197,15 +222,8 @@ private:
 		float fCopyrightNoticeX = 10.0f;
 		float fCopyrightNoticeY = 320.0f;
 
-		// this is just a simple on-screen credit for the music used. too be removed
-		// draw.String(
-		// 	{fCopyrightNoticeX, fCopyrightNoticeY},
-        //     strCopyrightNotice_MusicLFiles,
-	    //     olc::Colour::WHITE
-		// );
-
-		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_Emscripten.Size().y * 0.5f);
-		draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.5f,0.5f}); 
+		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_Emscripten.Size().y * 0.25f);
+		draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 
 		return res;
 		
@@ -234,11 +252,11 @@ int main()
 	JohnnyChange demo;
 
 	PGEConfig config;
-	config.bVSync = true;
+	config.bVSync = false;
 	config.vPixelSize = { 1,1 };
 	config.vScreenSize = { 800,450 };
 	config.bFullScreen = false;
-
+	
 	if (demo.Construct(config))
 	{
 		// Start the application
