@@ -9,20 +9,20 @@
 /* Begin PBXAggregateTarget section */
 		1ED8CB4D7858B0DC8B5AB064 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 51DA11E4419946A086F5829F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = C418D75D030E4DDA8B45BBBB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				63B811ED0E4B635FDFA6471C /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				D0702680B01C4653AA219EC1 /* PBXTargetDependency */,
-				3CEA487DAD964D63A2FB6A9E /* PBXTargetDependency */,
+				6CB97D4A3B694B40BB1DC724 /* PBXTargetDependency */,
+				C4150C8176474F418676048A /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		6B9FC7A9798E899547F628D6 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9DF4DE283C5F45A69FD999CF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = DB68EC1AABB84CFCA5D371D2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				BB6FFA2FB175503CEB7A5967 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -33,7 +33,7 @@
 		};
 		AA22DF0AEBC323D98B558D43 /* olcutil3_camera2d-populate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = CCEBA7970AB24A6EBC95781C /* Build configuration list for PBXAggregateTarget "olcutil3_camera2d-populate" */;
+			buildConfigurationList = 524BDE55F3814C6AADAC04C8 /* Build configuration list for PBXAggregateTarget "olcutil3_camera2d-populate" */;
 			buildPhases = (
 				5EB16A027D6CB647820FBC9F /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-mkdir */,
 				CB8AC6296021B9E4631CB35E /* Generate olcutil3_camera2d-populate-prefix/src/olcutil3_camera2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_camera2d-populate-download */,
@@ -48,7 +48,7 @@
 				E8DBF7D974C4C4740675FBA6 /* Generate CMakeFiles/olcutil3_camera2d-populate */,
 			);
 			dependencies = (
-				DC3D710B88804F1D95EE4439 /* PBXTargetDependency */,
+				6DCF3F63C069429EAD341EC4 /* PBXTargetDependency */,
 			);
 			name = "olcutil3_camera2d-populate";
 			productName = "olcutil3_camera2d-populate";
@@ -56,7 +56,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		94DF9132FD0A42F99754A259 /* Debug */ = {
+		E457F91EC2CB457B91114814 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -66,23 +66,23 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		203FD7D68CF7458E97ED2074 /* PBXContainerItemProxy */ = {
+		404EE9B0B89841A7A2C59068 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8C54A22BFFED4C71B8B05F02 /* Project object */;
+			containerPortal = 6D215D22E3CC4E19B9667DC3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6B9FC7A9798E899547F628D6;
 			remoteInfo = ZERO_CHECK;
 		};
-		8C3C1576F47B497398BB2B64 /* PBXContainerItemProxy */ = {
+		594CC80D568F4B50B155C44C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8C54A22BFFED4C71B8B05F02 /* Project object */;
+			containerPortal = 6D215D22E3CC4E19B9667DC3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6B9FC7A9798E899547F628D6;
 			remoteInfo = ZERO_CHECK;
 		};
-		AFA4F2D3ACE042298DB3E1B0 /* PBXContainerItemProxy */ = {
+		68430653802C48B89202AFFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8C54A22BFFED4C71B8B05F02 /* Project object */;
+			containerPortal = 6D215D22E3CC4E19B9667DC3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AA22DF0AEBC323D98B558D43;
 			remoteInfo = "olcutil3_camera2d-populate";
@@ -90,109 +90,109 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3CF4778834D142A3B9514B35 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		66798ABCD0DE4C3382AF5C5E /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D38CE0D93E984739807D2459 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F7AA66BBFA954C659B577919 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		1781A1290AC846C8B7A9BDFA /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				87B1F9D0F7BE4D3AA9D1D79E /* CMake Rules */,
-				3CF4778834D142A3B9514B35 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		2A82F6F5E2D84A9AB415DD1B /* Frameworks */ = {
+		0197F94ED8A8473FB9B6B60F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3E2DC93CA59D408494BC21F0 /* olcutil3_camera2d-populate */ = {
-			isa = PBXGroup;
-			children = (
-				8804544E052F4555BDE74475 /* olcutil3_camera2d-populate */,
-			);
-			name = "olcutil3_camera2d-populate";
-			sourceTree = "<group>";
-		};
-		44662E046DD249C5AFE75787 /* ExternalProjectTargets */ = {
-			isa = PBXGroup;
-			children = (
-				3E2DC93CA59D408494BC21F0 /* olcutil3_camera2d-populate */,
-			);
-			name = ExternalProjectTargets;
-			sourceTree = "<group>";
-		};
-		7D4A8A5E37BB4F59B9C4C4D1 = {
-			isa = PBXGroup;
-			children = (
-				44662E046DD249C5AFE75787 /* ExternalProjectTargets */,
-				1781A1290AC846C8B7A9BDFA /* ALL_BUILD */,
-				7EDBFD8AD1C14504B3290EEB /* Products */,
-				2A82F6F5E2D84A9AB415DD1B /* Frameworks */,
-				8B627E7926E5475D8FE875D2 /* Resources */,
-			);
-			sourceTree = "<group>";
-		};
-		7EDBFD8AD1C14504B3290EEB /* Products */ = {
+		22C18543DA424ECCAA26BCC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87B1F9D0F7BE4D3AA9D1D79E /* CMake Rules */ = {
+		384A026AA6554131894CE6C0 /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				3EB30F3A2EF3494BACA94074 /* olcutil3_camera2d-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+		3EB30F3A2EF3494BACA94074 /* olcutil3_camera2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				5C07843BBD724BC796EA6AEF /* olcutil3_camera2d-populate */,
+			);
+			name = "olcutil3_camera2d-populate";
+			sourceTree = "<group>";
+		};
+		5C07843BBD724BC796EA6AEF /* olcutil3_camera2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				6E55422EA8F94977900701DC /* CMake Rules */,
+				F7AA66BBFA954C659B577919 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */,
+			);
+			name = "olcutil3_camera2d-populate";
+			sourceTree = "<group>";
+		};
+		5FBC81C2D02F468F87D4B514 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				6DE2130A612D49BEB4B3FA3D /* CMake Rules */,
+				D38CE0D93E984739807D2459 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		6DE2130A612D49BEB4B3FA3D /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		8804544E052F4555BDE74475 /* olcutil3_camera2d-populate */ = {
+		6E55422EA8F94977900701DC /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				95713F0088BC4799BC6858D2 /* CMake Rules */,
-				66798ABCD0DE4C3382AF5C5E /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_camera2d-subbuild/CMakeLists.txt */,
 			);
-			name = "olcutil3_camera2d-populate";
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		8B627E7926E5475D8FE875D2 /* Resources */ = {
+		9803D9DF01B04EADA1B7C4D6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		95713F0088BC4799BC6858D2 /* CMake Rules */ = {
+		BEA9D5CC374E4412A96B4BE1 = {
 			isa = PBXGroup;
 			children = (
+				384A026AA6554131894CE6C0 /* ExternalProjectTargets */,
+				5FBC81C2D02F468F87D4B514 /* ALL_BUILD */,
+				22C18543DA424ECCAA26BCC2 /* Products */,
+				0197F94ED8A8473FB9B6B60F /* Frameworks */,
+				9803D9DF01B04EADA1B7C4D6 /* Resources */,
 			);
-			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		8C54A22BFFED4C71B8B05F02 /* Project object */ = {
+		6D215D22E3CC4E19B9667DC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = 45D4EFE6514947C8BAE806B2 /* Build configuration list for PBXProject "olcutil3_camera2d-populate" */;
+			buildConfigurationList = 1E138E3CE2634B8BBD39417E /* Build configuration list for PBXProject "olcutil3_camera2d-populate" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				94DF9132FD0A42F99754A259 /* Debug */,
+				E457F91EC2CB457B91114814 /* Debug */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 7D4A8A5E37BB4F59B9C4C4D1;
+			mainGroup = BEA9D5CC374E4412A96B4BE1;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -526,47 +526,25 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3CEA487DAD964D63A2FB6A9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6B9FC7A9798E899547F628D6 /* ZERO_CHECK */;
-			targetProxy = 8C3C1576F47B497398BB2B64 /* PBXContainerItemProxy */;
-		};
-		D0702680B01C4653AA219EC1 /* PBXTargetDependency */ = {
+		6CB97D4A3B694B40BB1DC724 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AA22DF0AEBC323D98B558D43 /* olcutil3_camera2d-populate */;
-			targetProxy = AFA4F2D3ACE042298DB3E1B0 /* PBXContainerItemProxy */;
+			targetProxy = 68430653802C48B89202AFFD /* PBXContainerItemProxy */;
 		};
-		DC3D710B88804F1D95EE4439 /* PBXTargetDependency */ = {
+		6DCF3F63C069429EAD341EC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6B9FC7A9798E899547F628D6 /* ZERO_CHECK */;
-			targetProxy = 203FD7D68CF7458E97ED2074 /* PBXContainerItemProxy */;
+			targetProxy = 594CC80D568F4B50B155C44C /* PBXContainerItemProxy */;
+		};
+		C4150C8176474F418676048A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B9FC7A9798E899547F628D6 /* ZERO_CHECK */;
+			targetProxy = 404EE9B0B89841A7A2C59068 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1E62FAD57CB240709B67311C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		4926FD7931564FEABFB7CD0D /* Debug */ = {
+		3B3F4FA3BAFB49F89E14033F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -588,7 +566,29 @@ fi
 			};
 			name = Debug;
 		};
-		9195247B70F0457881E8C858 /* Debug */ = {
+		5A7602F863ED4793B65BA826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		78B8DD582D834190BA1F4C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
@@ -597,7 +597,7 @@ fi
 			};
 			name = Debug;
 		};
-		CB44E727C87145DBBF8C6FB5 /* Debug */ = {
+		A1F2B7AD80F54E8399499CEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -622,39 +622,39 @@ fi
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45D4EFE6514947C8BAE806B2 /* Build configuration list for PBXProject "olcutil3_camera2d-populate" */ = {
+		1E138E3CE2634B8BBD39417E /* Build configuration list for PBXProject "olcutil3_camera2d-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9195247B70F0457881E8C858 /* Debug */,
+				78B8DD582D834190BA1F4C97 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		51DA11E4419946A086F5829F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		524BDE55F3814C6AADAC04C8 /* Build configuration list for PBXAggregateTarget "olcutil3_camera2d-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4926FD7931564FEABFB7CD0D /* Debug */,
+				A1F2B7AD80F54E8399499CEF /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9DF4DE283C5F45A69FD999CF /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		C418D75D030E4DDA8B45BBBB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E62FAD57CB240709B67311C /* Debug */,
+				3B3F4FA3BAFB49F89E14033F /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CCEBA7970AB24A6EBC95781C /* Build configuration list for PBXAggregateTarget "olcutil3_camera2d-populate" */ = {
+		DB68EC1AABB84CFCA5D371D2 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB44E727C87145DBBF8C6FB5 /* Debug */,
+				5A7602F863ED4793B65BA826 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8C54A22BFFED4C71B8B05F02 /* Project object */;
+	rootObject = 6D215D22E3CC4E19B9667DC3 /* Project object */;
 }

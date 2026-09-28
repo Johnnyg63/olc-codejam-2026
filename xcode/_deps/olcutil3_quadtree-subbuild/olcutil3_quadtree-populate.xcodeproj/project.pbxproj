@@ -9,20 +9,20 @@
 /* Begin PBXAggregateTarget section */
 		1D0576B34B550E887D4C8B8A /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E0F1E3171CFC4AD88335FBD3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 638AE9B0316B4EBEA67D65EF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				184690B284023774C7181A6B /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				66F098D2A87C4FECB364320D /* PBXTargetDependency */,
-				B139C654B9804E41A162DBA5 /* PBXTargetDependency */,
+				F1DA8852847644599C806B6B /* PBXTargetDependency */,
+				77C11BA0E08140249B0E13BA /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		8DEE9E0B7682641AA1AD8F5A /* olcutil3_quadtree-populate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4C23694945B948EB8D567968 /* Build configuration list for PBXAggregateTarget "olcutil3_quadtree-populate" */;
+			buildConfigurationList = C9B362BE223C46CCB1631FE6 /* Build configuration list for PBXAggregateTarget "olcutil3_quadtree-populate" */;
 			buildPhases = (
 				4530D2D5B673AEF68D1D9021 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-mkdir */,
 				0DA69E91482609639662D495 /* Generate olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_quadtree-populate-download */,
@@ -37,14 +37,14 @@
 				5CAD9361E3D3B625D1F5AFDA /* Generate CMakeFiles/olcutil3_quadtree-populate */,
 			);
 			dependencies = (
-				475848BF8407427F82EB8A54 /* PBXTargetDependency */,
+				5C112AEC091D44248A476611 /* PBXTargetDependency */,
 			);
 			name = "olcutil3_quadtree-populate";
 			productName = "olcutil3_quadtree-populate";
 		};
 		92510060FC8ED0D8CB389545 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = BE3B84EE6B044C38A7811099 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 5C158D4D9559447383EF3E73 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				E6CDAD01BE66EC54F3A7BD96 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -56,7 +56,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		5031FDA6AEC44458A4DC3202 /* Debug */ = {
+		98CEA23E917C47AA80B48267 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -66,23 +66,23 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		36538BA4CEBB479BA96EC7F5 /* PBXContainerItemProxy */ = {
+		625B43578DE9486191E2C1A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3A9246428B945A3B8B21000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92510060FC8ED0D8CB389545;
-			remoteInfo = ZERO_CHECK;
-		};
-		D15F7B901381477D9E0F2103 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A3A9246428B945A3B8B21000 /* Project object */;
+			containerPortal = C208759EEE6D4797B95E998A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DEE9E0B7682641AA1AD8F5A;
 			remoteInfo = "olcutil3_quadtree-populate";
 		};
-		DE82F104AED44E21820B950F /* PBXContainerItemProxy */ = {
+		AFFEBF079BFD4993A617D2CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3A9246428B945A3B8B21000 /* Project object */;
+			containerPortal = C208759EEE6D4797B95E998A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92510060FC8ED0D8CB389545;
+			remoteInfo = ZERO_CHECK;
+		};
+		CE86ECB25BE249EE97E73881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C208759EEE6D4797B95E998A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 92510060FC8ED0D8CB389545;
 			remoteInfo = ZERO_CHECK;
@@ -90,85 +90,85 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5DB0A99697B84FC28B24490A /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		E45D3677178B4BE4AD2A141F /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DA8A8ADAE4A14FACAA0D88A2 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E1950AA5709D48E8BA87E886 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		15A47FC433AC4994B26B8A83 /* Frameworks */ = {
+		29633500A3204B7FA5A9671E /* olcutil3_quadtree-populate */ = {
 			isa = PBXGroup;
 			children = (
+				924A7F78B6D849D9B7B9B714 /* olcutil3_quadtree-populate */,
 			);
-			name = Frameworks;
+			name = "olcutil3_quadtree-populate";
 			sourceTree = "<group>";
 		};
-		4023B66F3F164167BC4BFBD9 /* ExternalProjectTargets */ = {
-			isa = PBXGroup;
-			children = (
-				66CA0C989A68428BB0E2F082 /* olcutil3_quadtree-populate */,
-			);
-			name = ExternalProjectTargets;
-			sourceTree = "<group>";
-		};
-		5AAC4B6998E34EFB93BC6BF5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		5DBC2BA6BACF48589567C3DD /* CMake Rules */ = {
+		412EC4C6BC7F452F8E812123 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		66CA0C989A68428BB0E2F082 /* olcutil3_quadtree-populate */ = {
+		41E9501517A74919BD915332 = {
 			isa = PBXGroup;
 			children = (
-				934C2ADACC5646D5B502B96E /* olcutil3_quadtree-populate */,
+				973AC40C111C4467BA7E1B3A /* ExternalProjectTargets */,
+				C6090E56F490414CB18EBBFD /* ALL_BUILD */,
+				B670F304229B494BAF68DD6B /* Products */,
+				5B0A7C7111AA4F188C0B95D7 /* Frameworks */,
+				91ABFB5DE63349B9B3A88293 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		5B0A7C7111AA4F188C0B95D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91ABFB5DE63349B9B3A88293 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		924A7F78B6D849D9B7B9B714 /* olcutil3_quadtree-populate */ = {
+			isa = PBXGroup;
+			children = (
+				412EC4C6BC7F452F8E812123 /* CMake Rules */,
+				DA8A8ADAE4A14FACAA0D88A2 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */,
 			);
 			name = "olcutil3_quadtree-populate";
 			sourceTree = "<group>";
 		};
-		934C2ADACC5646D5B502B96E /* olcutil3_quadtree-populate */ = {
+		973AC40C111C4467BA7E1B3A /* ExternalProjectTargets */ = {
 			isa = PBXGroup;
 			children = (
-				5DBC2BA6BACF48589567C3DD /* CMake Rules */,
-				E45D3677178B4BE4AD2A141F /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */,
+				29633500A3204B7FA5A9671E /* olcutil3_quadtree-populate */,
 			);
-			name = "olcutil3_quadtree-populate";
+			name = ExternalProjectTargets;
 			sourceTree = "<group>";
 		};
-		A46E720F95F943D092F87ABC = {
-			isa = PBXGroup;
-			children = (
-				4023B66F3F164167BC4BFBD9 /* ExternalProjectTargets */,
-				B2E03500F6B645A98AC1DDAF /* ALL_BUILD */,
-				C8058E5A447E4D78AE761414 /* Products */,
-				15A47FC433AC4994B26B8A83 /* Frameworks */,
-				5AAC4B6998E34EFB93BC6BF5 /* Resources */,
-			);
-			sourceTree = "<group>";
-		};
-		B2E03500F6B645A98AC1DDAF /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				FF7364C0A2234E808203A41E /* CMake Rules */,
-				5DB0A99697B84FC28B24490A /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		C8058E5A447E4D78AE761414 /* Products */ = {
+		B670F304229B494BAF68DD6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF7364C0A2234E808203A41E /* CMake Rules */ = {
+		C6090E56F490414CB18EBBFD /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DD9A942EA3D44D329579B1B4 /* CMake Rules */,
+				E1950AA5709D48E8BA87E886 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		DD9A942EA3D44D329579B1B4 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -178,21 +178,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		A3A9246428B945A3B8B21000 /* Project object */ = {
+		C208759EEE6D4797B95E998A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = 35848FF68B714D4095E5CE23 /* Build configuration list for PBXProject "olcutil3_quadtree-populate" */;
+			buildConfigurationList = 02BC566085014B3EBA23C22B /* Build configuration list for PBXProject "olcutil3_quadtree-populate" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				5031FDA6AEC44458A4DC3202 /* Debug */,
+				98CEA23E917C47AA80B48267 /* Debug */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = A46E720F95F943D092F87ABC;
+			mainGroup = 41E9501517A74919BD915332;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -526,47 +526,34 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		475848BF8407427F82EB8A54 /* PBXTargetDependency */ = {
+		5C112AEC091D44248A476611 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 92510060FC8ED0D8CB389545 /* ZERO_CHECK */;
-			targetProxy = 36538BA4CEBB479BA96EC7F5 /* PBXContainerItemProxy */;
+			targetProxy = CE86ECB25BE249EE97E73881 /* PBXContainerItemProxy */;
 		};
-		66F098D2A87C4FECB364320D /* PBXTargetDependency */ = {
+		77C11BA0E08140249B0E13BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92510060FC8ED0D8CB389545 /* ZERO_CHECK */;
+			targetProxy = AFFEBF079BFD4993A617D2CC /* PBXContainerItemProxy */;
+		};
+		F1DA8852847644599C806B6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8DEE9E0B7682641AA1AD8F5A /* olcutil3_quadtree-populate */;
-			targetProxy = D15F7B901381477D9E0F2103 /* PBXContainerItemProxy */;
-		};
-		B139C654B9804E41A162DBA5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92510060FC8ED0D8CB389545 /* ZERO_CHECK */;
-			targetProxy = DE82F104AED44E21820B950F /* PBXContainerItemProxy */;
+			targetProxy = 625B43578DE9486191E2C1A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		002D3007521A40F6AF7D30F1 /* Debug */ = {
+		46F91289BADC4D1781144D5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/build";
 			};
 			name = Debug;
 		};
-		405A878CD28D4BAC84E52341 /* Debug */ = {
+		6FAFF08C20334B76B0827680 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -588,16 +575,29 @@ fi
 			};
 			name = Debug;
 		};
-		8F8E8B0D14954BAFBB358030 /* Debug */ = {
+		CD9EC0BA8C7748EF8F2A189D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				SDKROOT = "";
-				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_quadtree-subbuild/build";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
-		C6A8E07D61B841ECB647B17A /* Debug */ = {
+		F713DE8ECA264F11AA9A94C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -622,39 +622,39 @@ fi
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35848FF68B714D4095E5CE23 /* Build configuration list for PBXProject "olcutil3_quadtree-populate" */ = {
+		02BC566085014B3EBA23C22B /* Build configuration list for PBXProject "olcutil3_quadtree-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F8E8B0D14954BAFBB358030 /* Debug */,
+				46F91289BADC4D1781144D5B /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4C23694945B948EB8D567968 /* Build configuration list for PBXAggregateTarget "olcutil3_quadtree-populate" */ = {
+		5C158D4D9559447383EF3E73 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6A8E07D61B841ECB647B17A /* Debug */,
+				6FAFF08C20334B76B0827680 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		BE3B84EE6B044C38A7811099 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		638AE9B0316B4EBEA67D65EF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				405A878CD28D4BAC84E52341 /* Debug */,
+				CD9EC0BA8C7748EF8F2A189D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E0F1E3171CFC4AD88335FBD3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		C9B362BE223C46CCB1631FE6 /* Build configuration list for PBXAggregateTarget "olcutil3_quadtree-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				002D3007521A40F6AF7D30F1 /* Debug */,
+				F713DE8ECA264F11AA9A94C9 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A3A9246428B945A3B8B21000 /* Project object */;
+	rootObject = C208759EEE6D4797B95E998A /* Project object */;
 }

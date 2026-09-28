@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		87F9C667506796E2247C9CA9 /* olcutil3_geometry2d-populate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 19E094B7F9464206862DD874 /* Build configuration list for PBXAggregateTarget "olcutil3_geometry2d-populate" */;
+			buildConfigurationList = 4CEE39A22E4745BD8414E805 /* Build configuration list for PBXAggregateTarget "olcutil3_geometry2d-populate" */;
 			buildPhases = (
 				47949693866700EF6A65D8DA /* Generate olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_geometry2d-populate-mkdir */,
 				13C8F8E9BC3A2F0756E4EC35 /* Generate olcutil3_geometry2d-populate-prefix/src/olcutil3_geometry2d-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcutil3_geometry2d-populate-download */,
@@ -24,27 +24,27 @@
 				4E0797E27A69A0830F3C5F3F /* Generate CMakeFiles/olcutil3_geometry2d-populate */,
 			);
 			dependencies = (
-				AF00638D91E14A2BA8F3AF44 /* PBXTargetDependency */,
+				71EC9E9B07234D89B666B58C /* PBXTargetDependency */,
 			);
 			name = "olcutil3_geometry2d-populate";
 			productName = "olcutil3_geometry2d-populate";
 		};
 		9766A21551989496BC6EE3F2 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 22BCD69786474330B8B49AB8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 7EB8DA5AE9CE4D4A835A0C2E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				459E0746A35C3D910DC7EAA4 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				732843B287B549019CF901EC /* PBXTargetDependency */,
-				88AE6ECBE7AA4FFFADEBFC90 /* PBXTargetDependency */,
+				5AB5349014054505827D0595 /* PBXTargetDependency */,
+				BDA02A9636F74291A6B907BF /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		A1939B285BB5622D2ABE8914 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E981F4D65BC341D8B23AEE7D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 64EB27F5345A49249E8011B1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				A70EF860E372198A06AB62D8 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -56,7 +56,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		08DE0EF7C5824D0BB36D9052 /* Debug */ = {
+		683E08F2F16842D7918E298C /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -66,23 +66,23 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		066BE9207F9F4BE999FD6730 /* PBXContainerItemProxy */ = {
+		0EBD8B68D72640A7A54969AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7EDD7BAFBD1F49B3BBECB98C /* Project object */;
+			containerPortal = 4A856822767B41F9B80EAFCC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 87F9C667506796E2247C9CA9;
 			remoteInfo = "olcutil3_geometry2d-populate";
 		};
-		41C8AE21CDE8462D9610CBB1 /* PBXContainerItemProxy */ = {
+		2976E4A76CA7414B882CC088 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7EDD7BAFBD1F49B3BBECB98C /* Project object */;
+			containerPortal = 4A856822767B41F9B80EAFCC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A1939B285BB5622D2ABE8914;
 			remoteInfo = ZERO_CHECK;
 		};
-		DDCC9A9404E8471DB0B62BFD /* PBXContainerItemProxy */ = {
+		A61440F5F24244C5A9D52317 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7EDD7BAFBD1F49B3BBECB98C /* Project object */;
+			containerPortal = 4A856822767B41F9B80EAFCC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A1939B285BB5622D2ABE8914;
 			remoteInfo = ZERO_CHECK;
@@ -90,109 +90,109 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42BB7B28927749AA9263748F /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		8B65DDC49F804F07B9D0CB5C /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6D11A18036124E498A79B7D2 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FBCA3D650677490EB2266DDB /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		09179D25A6EF4687984F6E93 /* Products */ = {
+		242D5D3D0BB94ACDA37C060F /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Products;
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		1723112A30854A5C9596612A /* olcutil3_geometry2d-populate */ = {
+		25D3E2E01A12435B896FDC96 /* olcutil3_geometry2d-populate */ = {
 			isa = PBXGroup;
 			children = (
-				DDBEDB0840C6428DAD8FD130 /* CMake Rules */,
-				42BB7B28927749AA9263748F /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */,
-			);
-			name = "olcutil3_geometry2d-populate";
-			sourceTree = "<group>";
-		};
-		1B6173D002204AE196FE0F6E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		56CDAF3E5C9140D7ABDD6D82 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				DCE960F5267444C7B8841ACA /* CMake Rules */,
-				8B65DDC49F804F07B9D0CB5C /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		91EAB9C104B144D7BAAE4056 /* olcutil3_geometry2d-populate */ = {
-			isa = PBXGroup;
-			children = (
-				1723112A30854A5C9596612A /* olcutil3_geometry2d-populate */,
+				58D0C684F2F847B3A687F13B /* CMake Rules */,
+				6D11A18036124E498A79B7D2 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */,
 			);
 			name = "olcutil3_geometry2d-populate";
 			sourceTree = "<group>";
 		};
-		A58D0C99DC4E465C8FB2D21F /* Resources */ = {
+		369142ACB60444A9AA45ED6E /* olcutil3_geometry2d-populate */ = {
+			isa = PBXGroup;
+			children = (
+				25D3E2E01A12435B896FDC96 /* olcutil3_geometry2d-populate */,
+			);
+			name = "olcutil3_geometry2d-populate";
+			sourceTree = "<group>";
+		};
+		3D5271196A84473FB2D81856 /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				369142ACB60444A9AA45ED6E /* olcutil3_geometry2d-populate */,
+			);
+			name = ExternalProjectTargets;
+			sourceTree = "<group>";
+		};
+		58D0C684F2F847B3A687F13B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		68C4D0A931F548B1BC659FA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		DCE960F5267444C7B8841ACA /* CMake Rules */ = {
+		A5256A853795488DB2CD38A6 = {
 			isa = PBXGroup;
 			children = (
+				3D5271196A84473FB2D81856 /* ExternalProjectTargets */,
+				B68E7ABE9ADE429FB49F1030 /* ALL_BUILD */,
+				AE9E9541644D480CA9B586E1 /* Products */,
+				E269EFA1281847E8890B97BF /* Frameworks */,
+				68C4D0A931F548B1BC659FA6 /* Resources */,
 			);
-			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		DDBEDB0840C6428DAD8FD130 /* CMake Rules */ = {
+		AE9E9541644D480CA9B586E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "CMake Rules";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		E2FE2428278D43768EAE12A9 /* ExternalProjectTargets */ = {
+		B68E7ABE9ADE429FB49F1030 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				91EAB9C104B144D7BAAE4056 /* olcutil3_geometry2d-populate */,
+				242D5D3D0BB94ACDA37C060F /* CMake Rules */,
+				FBCA3D650677490EB2266DDB /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/CMakeLists.txt */,
 			);
-			name = ExternalProjectTargets;
+			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		E89A68F1989F4B9EB61BCB45 = {
+		E269EFA1281847E8890B97BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E2FE2428278D43768EAE12A9 /* ExternalProjectTargets */,
-				56CDAF3E5C9140D7ABDD6D82 /* ALL_BUILD */,
-				09179D25A6EF4687984F6E93 /* Products */,
-				1B6173D002204AE196FE0F6E /* Frameworks */,
-				A58D0C99DC4E465C8FB2D21F /* Resources */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		7EDD7BAFBD1F49B3BBECB98C /* Project object */ = {
+		4A856822767B41F9B80EAFCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = 2CA1D6A4EB014AAF9838B9DC /* Build configuration list for PBXProject "olcutil3_geometry2d-populate" */;
+			buildConfigurationList = 91CBBCCEE0FA46CBB783A6B2 /* Build configuration list for PBXProject "olcutil3_geometry2d-populate" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				08DE0EF7C5824D0BB36D9052 /* Debug */,
+				683E08F2F16842D7918E298C /* Debug */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = E89A68F1989F4B9EB61BCB45;
+			mainGroup = A5256A853795488DB2CD38A6;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -526,47 +526,25 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		732843B287B549019CF901EC /* PBXTargetDependency */ = {
+		5AB5349014054505827D0595 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 87F9C667506796E2247C9CA9 /* olcutil3_geometry2d-populate */;
-			targetProxy = 066BE9207F9F4BE999FD6730 /* PBXContainerItemProxy */;
+			targetProxy = 0EBD8B68D72640A7A54969AB /* PBXContainerItemProxy */;
 		};
-		88AE6ECBE7AA4FFFADEBFC90 /* PBXTargetDependency */ = {
+		71EC9E9B07234D89B666B58C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1939B285BB5622D2ABE8914 /* ZERO_CHECK */;
-			targetProxy = 41C8AE21CDE8462D9610CBB1 /* PBXContainerItemProxy */;
+			targetProxy = A61440F5F24244C5A9D52317 /* PBXContainerItemProxy */;
 		};
-		AF00638D91E14A2BA8F3AF44 /* PBXTargetDependency */ = {
+		BDA02A9636F74291A6B907BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1939B285BB5622D2ABE8914 /* ZERO_CHECK */;
-			targetProxy = DDCC9A9404E8471DB0B62BFD /* PBXContainerItemProxy */;
+			targetProxy = 2976E4A76CA7414B882CC088 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		26BF8EDF1A724E2685EF8D4F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		7A682A0B83C54C8D9EED2809 /* Debug */ = {
+		2CA2B9C75BB646B3A1B1DE91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -588,7 +566,38 @@ exit 0";
 			};
 			name = Debug;
 		};
-		8C3955D4D0074C4BB0E1A3F9 /* Debug */ = {
+		4BAEAEFA33CF4FE79EBB6CA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/build";
+			};
+			name = Debug;
+		};
+		912C10FE7A0145ADB0FDD065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		97029252C4FC4696B376C6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -610,51 +619,42 @@ exit 0";
 			};
 			name = Debug;
 		};
-		E8205EC35C654AFC986A58BD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = "";
-				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcutil3_geometry2d-subbuild/build";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19E094B7F9464206862DD874 /* Build configuration list for PBXAggregateTarget "olcutil3_geometry2d-populate" */ = {
+		4CEE39A22E4745BD8414E805 /* Build configuration list for PBXAggregateTarget "olcutil3_geometry2d-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C3955D4D0074C4BB0E1A3F9 /* Debug */,
+				97029252C4FC4696B376C6A1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		22BCD69786474330B8B49AB8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		64EB27F5345A49249E8011B1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26BF8EDF1A724E2685EF8D4F /* Debug */,
+				2CA2B9C75BB646B3A1B1DE91 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2CA1D6A4EB014AAF9838B9DC /* Build configuration list for PBXProject "olcutil3_geometry2d-populate" */ = {
+		7EB8DA5AE9CE4D4A835A0C2E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8205EC35C654AFC986A58BD /* Debug */,
+				912C10FE7A0145ADB0FDD065 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E981F4D65BC341D8B23AEE7D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		91CBBCCEE0FA46CBB783A6B2 /* Build configuration list for PBXProject "olcutil3_geometry2d-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7A682A0B83C54C8D9EED2809 /* Debug */,
+				4BAEAEFA33CF4FE79EBB6CA7 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7EDD7BAFBD1F49B3BBECB98C /* Project object */;
+	rootObject = 4A856822767B41F9B80EAFCC /* Project object */;
 }

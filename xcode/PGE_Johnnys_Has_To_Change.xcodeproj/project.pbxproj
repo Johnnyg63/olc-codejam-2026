@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		53382BDF25D51667496C42DC /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3784DE3BA3ED431EB2DC621B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F0F054826A523113C6320E72 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				EAE45D39CE894E90AD8A123B /* PBXTargetDependency */,
+				C12D12EB86DA45EAA9FD9AFF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		8879AD67E567AB4769382E9F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F81DA11A3DA64D16AC04D5C3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C85586029EDB2EF152F4E875 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0F1C0A38BCCF4CCF9192056D /* /Users/mickymacm4/Documents/olc-codejam-2026/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EBE1729081854CDEA82FFC2B /* /Users/mickymacm4/Documents/olc-codejam-2026/CMakeLists.txt */; };
+		77FCE2B1E0544C60A3DAE8CF /* /Users/mickymacm4/Documents/olc-codejam-2026/src/temp.cpp */ = {isa = PBXBuildFile; fileRef = 52A33A25121A49458480DAD0 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/temp.cpp */; };
+		7AE17141710E4657A57DA5F1 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 769916C15CB740DCA972D183 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		09561951AE1E4462A31A1D7F /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		A9A6A8E4C6CF427BBBDC84C2 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		AFBE798FAC3341338731910E /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		DEA9F104C269486EA8042C7C /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		CD79BF4F8DD645A79C6535DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B523BC2059C4AA69E4EBFEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8879AD67E567AB4769382E9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		D254F19C60484FA2AAF1D8B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B523BC2059C4AA69E4EBFEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8879AD67E567AB4769382E9F;
+			remoteInfo = ZERO_CHECK;
+		};
+		DAAC8B44CEC04D8B810C58F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B523BC2059C4AA69E4EBFEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C0FB05092CA32492771CEA;
+			remoteInfo = PGE_Johnnys_Has_To_Change;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07FE6D37A71249FE90304051 /* PGE_Johnnys_Has_To_Change */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = PGE_Johnnys_Has_To_Change; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A33A25121A49458480DAD0 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/temp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = temp.cpp; path = src/temp.cpp; sourceTree = SOURCE_ROOT; };
+		646AC55B9D4B49918013EF4C /* /Users/mickymacm4/Documents/olc-codejam-2026/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		769916C15CB740DCA972D183 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		EBE1729081854CDEA82FFC2B /* /Users/mickymacm4/Documents/olc-codejam-2026/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C751BE570FB4DEA9F5F2304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006DEAECF71A481BA3EF74A1 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				19F13F8FDCF04FD592DD460A /* CMake Rules */,
+				646AC55B9D4B49918013EF4C /* /Users/mickymacm4/Documents/olc-codejam-2026/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		19F13F8FDCF04FD592DD460A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		35F2A3317230424DA201A908 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		383B11DA1DC44EDBB11ED64D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07FE6D37A71249FE90304051 /* PGE_Johnnys_Has_To_Change */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EE3145C999741F38E2B7743 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		744F23F50C064FD99826E1EE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				769916C15CB740DCA972D183 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/main.cpp */,
+				52A33A25121A49458480DAD0 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/temp.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		82C5222E00F64933B3695969 = {
+			isa = PBXGroup;
+			children = (
+				FD3DC0DC04FD4BEC8925DD50 /* PGE_Johnnys_Has_To_Change */,
+				006DEAECF71A481BA3EF74A1 /* ALL_BUILD */,
+				383B11DA1DC44EDBB11ED64D /* Products */,
+				35F2A3317230424DA201A908 /* Frameworks */,
+				3EE3145C999741F38E2B7743 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3DC0DC04FD4BEC8925DD50 /* PGE_Johnnys_Has_To_Change */ = {
+			isa = PBXGroup;
+			children = (
+				744F23F50C064FD99826E1EE /* Source Files */,
+				EBE1729081854CDEA82FFC2B /* /Users/mickymacm4/Documents/olc-codejam-2026/CMakeLists.txt */,
+			);
+			name = PGE_Johnnys_Has_To_Change;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82C0FB05092CA32492771CEA /* PGE_Johnnys_Has_To_Change */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 014B6534469542E2B8258863 /* Build configuration list for PBXNativeTarget "PGE_Johnnys_Has_To_Change" */;
+			buildPhases = (
+				8DF0814E6DC4455F88A8F155 /* Sources */,
+				9C751BE570FB4DEA9F5F2304 /* Frameworks */,
+				E203617BC96B8DD8086005A4 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CBE736ECFD4538ABED537A /* PBXTargetDependency */,
+			);
+			name = PGE_Johnnys_Has_To_Change;
+			productName = PGE_Johnnys_Has_To_Change;
+			productReference = 07FE6D37A71249FE90304051 /* PGE_Johnnys_Has_To_Change */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B523BC2059C4AA69E4EBFEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 2744AF9FF0F74A5C906CC767 /* Build configuration list for PBXProject "PGE_Johnnys_Has_To_Change" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				AFBE798FAC3341338731910E /* Debug */,
+				A9A6A8E4C6CF427BBBDC84C2 /* Release */,
+				09561951AE1E4462A31A1D7F /* MinSizeRel */,
+				DEA9F104C269486EA8042C7C /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 82C5222E00F64933B3695969;
+			projectDirPath = "/Users/mickymacm4/Documents/olc-codejam-2026";
+			projectRoot = "";
+			targets = (
+				53382BDF25D51667496C42DC /* ALL_BUILD */,
+				82C0FB05092CA32492771CEA /* PGE_Johnnys_Has_To_Change */,
+				8879AD67E567AB4769382E9F /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C85586029EDB2EF152F4E875 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  make -f /Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		E203617BC96B8DD8086005A4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  /opt/homebrew/bin/cmake -E copy_directory /Users/mickymacm4/Documents/olc-codejam-2026/assets /Users/mickymacm4/Documents/olc-codejam-2026/xcode/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/assets
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  /opt/homebrew/bin/cmake -E copy_directory /Users/mickymacm4/Documents/olc-codejam-2026/assets /Users/mickymacm4/Documents/olc-codejam-2026/xcode/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/assets
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  /opt/homebrew/bin/cmake -E copy_directory /Users/mickymacm4/Documents/olc-codejam-2026/assets /Users/mickymacm4/Documents/olc-codejam-2026/xcode/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/assets
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  /opt/homebrew/bin/cmake -E copy_directory /Users/mickymacm4/Documents/olc-codejam-2026/assets /Users/mickymacm4/Documents/olc-codejam-2026/xcode/$CONFIGURATION$EFFECTIVE_PLATFORM_NAME/assets
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		F0F054826A523113C6320E72 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mickymacm4/Documents/olc-codejam-2026/xcode
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DF0814E6DC4455F88A8F155 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE17141710E4657A57DA5F1 /* /Users/mickymacm4/Documents/olc-codejam-2026/src/main.cpp */,
+				77FCE2B1E0544C60A3DAE8CF /* /Users/mickymacm4/Documents/olc-codejam-2026/src/temp.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00CBE736ECFD4538ABED537A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8879AD67E567AB4769382E9F /* ZERO_CHECK */;
+			targetProxy = CD79BF4F8DD645A79C6535DE /* PBXContainerItemProxy */;
+		};
+		C12D12EB86DA45EAA9FD9AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C0FB05092CA32492771CEA /* PGE_Johnnys_Has_To_Change */;
+			targetProxy = DAAC8B44CEC04D8B810C58F8 /* PBXContainerItemProxy */;
+		};
+		EAE45D39CE894E90AD8A123B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8879AD67E567AB4769382E9F /* ZERO_CHECK */;
+			targetProxy = D254F19C60484FA2AAF1D8B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EC13D4C68514F0AB09FC131 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		2CE6EA27A2D0452FAF0BF05B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2D4632DF9578404F8FDC61F1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		53C651B9CAC7426CB6FBEB51 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6D0C645FEF58431B81D617D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions/miniaudio","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework Metal","-framework MetalKit","-framework AppKit","-framework QuartzCore","-framework OpenGL","-framework Foundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PGE_Johnnys_Has_To_Change;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build/PGE_Johnnys_Has_To_Change.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7D6DA010E64D42BBA2C0334A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions/miniaudio","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework Metal","-framework MetalKit","-framework AppKit","-framework QuartzCore","-framework OpenGL","-framework Foundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PGE_Johnnys_Has_To_Change;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build/PGE_Johnnys_Has_To_Change.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		84C460EF97C44DFD9827D76F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions/miniaudio","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework Metal","-framework MetalKit","-framework AppKit","-framework QuartzCore","-framework OpenGL","-framework Foundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PGE_Johnnys_Has_To_Change;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build/PGE_Johnnys_Has_To_Change.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A24192F1A6C64A60A4CF812C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A9A69C78E58F452E990B30BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AF7EB277A2CF446A941929E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B2A65216633E402498DE5485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B85B8A8801F340FA9998EF09 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src/extensions/miniaudio","/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-src","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++20' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework Metal","-framework MetalKit","-framework AppKit","-framework QuartzCore","-framework OpenGL","-framework Foundation","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PGE_Johnnys_Has_To_Change;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build/PGE_Johnnys_Has_To_Change.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BCE1C660A4F04D1282CA2444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build";
+			};
+			name = Debug;
+		};
+		D03093B66FD749C2B33FFB8E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		DCF5C4B162E14B53AADB1AD6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F80F0E25D2474E06B0E91521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		014B6534469542E2B8258863 /* Build configuration list for PBXNativeTarget "PGE_Johnnys_Has_To_Change" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D6DA010E64D42BBA2C0334A /* Debug */,
+				6D0C645FEF58431B81D617D4 /* Release */,
+				84C460EF97C44DFD9827D76F /* MinSizeRel */,
+				B85B8A8801F340FA9998EF09 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2744AF9FF0F74A5C906CC767 /* Build configuration list for PBXProject "PGE_Johnnys_Has_To_Change" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE1C660A4F04D1282CA2444 /* Debug */,
+				F80F0E25D2474E06B0E91521 /* Release */,
+				D03093B66FD749C2B33FFB8E /* MinSizeRel */,
+				0EC13D4C68514F0AB09FC131 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3784DE3BA3ED431EB2DC621B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7EB277A2CF446A941929E7 /* Debug */,
+				B2A65216633E402498DE5485 /* Release */,
+				A24192F1A6C64A60A4CF812C /* MinSizeRel */,
+				53C651B9CAC7426CB6FBEB51 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F81DA11A3DA64D16AC04D5C3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A69C78E58F452E990B30BF /* Debug */,
+				2CE6EA27A2D0452FAF0BF05B /* Release */,
+				DCF5C4B162E14B53AADB1AD6 /* MinSizeRel */,
+				2D4632DF9578404F8FDC61F1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B523BC2059C4AA69E4EBFEC /* Project object */;
+}

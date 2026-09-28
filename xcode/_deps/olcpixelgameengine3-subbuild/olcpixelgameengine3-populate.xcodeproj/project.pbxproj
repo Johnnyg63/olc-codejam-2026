@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		100772294B923039A4B9DC54 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4020A0AED8684029B64F6B7C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = B7DC770E84CD4EF79634782D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				40BB7CD6AF6DB0BAED2A5AC6 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,20 +20,20 @@
 		};
 		5F0BF8AF822B43726A6DF567 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4BAC819C6D124DA79CEEA1B0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 11F4D4739D234CD79C01EF39 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				5DC1F342FBE8E8DCD1F63E5E /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				D27735335A134BDAA48609F2 /* PBXTargetDependency */,
-				93E9A1B31B7D496588A41705 /* PBXTargetDependency */,
+				A30FC967098F459EA27B0298 /* PBXTargetDependency */,
+				E238B6671DD940E7AB9642D5 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		AF76BF1D424D4D82D6E7A097 /* olcpixelgameengine3-populate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 6DF8057378164BBD92343D3E /* Build configuration list for PBXAggregateTarget "olcpixelgameengine3-populate" */;
+			buildConfigurationList = AE6570712C4C4B709C586B56 /* Build configuration list for PBXAggregateTarget "olcpixelgameengine3-populate" */;
 			buildPhases = (
 				E4ABE7DE6C5B276ABA4F5B03 /* Generate olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcpixelgameengine3-populate-mkdir */,
 				3EC39F4DE9E8325815FE0EEE /* Generate olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcpixelgameengine3-populate-download */,
@@ -48,7 +48,7 @@
 				3298CD209DF45499396ED43D /* Generate CMakeFiles/olcpixelgameengine3-populate */,
 			);
 			dependencies = (
-				CFD9EE57EA0246E5987AAF17 /* PBXTargetDependency */,
+				E5D45B69E68542DF9906633B /* PBXTargetDependency */,
 			);
 			name = "olcpixelgameengine3-populate";
 			productName = "olcpixelgameengine3-populate";
@@ -56,7 +56,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		40E9E8A03B1A4E8083D91406 /* Debug */ = {
+		858920650B0B4C10AC82CABD /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -66,133 +66,133 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		6536F54EE4FC4E3199EEA91F /* PBXContainerItemProxy */ = {
+		1E5345FFC1884531BCC9A224 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2242D244C74C4E4FB5AD3C7C /* Project object */;
+			containerPortal = 226850058EA24DBCAF9A7265 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 100772294B923039A4B9DC54;
 			remoteInfo = ZERO_CHECK;
 		};
-		862B205E90A247E4A321B17D /* PBXContainerItemProxy */ = {
+		8042C2E00DB849298F3CF3AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2242D244C74C4E4FB5AD3C7C /* Project object */;
+			containerPortal = 226850058EA24DBCAF9A7265 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100772294B923039A4B9DC54;
+			remoteInfo = ZERO_CHECK;
+		};
+		85D58E9559144E4C87FC7A31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 226850058EA24DBCAF9A7265 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AF76BF1D424D4D82D6E7A097;
 			remoteInfo = "olcpixelgameengine3-populate";
 		};
-		BBB12F56BF034CC0ACF17A62 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2242D244C74C4E4FB5AD3C7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 100772294B923039A4B9DC54;
-			remoteInfo = ZERO_CHECK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		677C8509845C416DB80F07FB /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D80739BA8E1E4025840D3671 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0163F417C4C4449B9C12D622 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		251D27BA3B8543CBBCC6C656 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		18D36763BB6146B39275AD4B /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		1BFFB303918A49978AD7CF5A /* Frameworks */ = {
+		3466FD5E48A241A68AC5B38D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		541A156DF17E48C383B67C42 /* Products */ = {
+		42022DE54FD349CBB9B53BC1 /* ExternalProjectTargets */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9C0DB9D933E84068A2F85222 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		B3FAEAD9588344DC9A496F29 /* ExternalProjectTargets */ = {
-			isa = PBXGroup;
-			children = (
-				FE635AABE9AE49DE89FC5A70 /* olcpixelgameengine3-populate */,
+				9727898668994D35BCEFF222 /* olcpixelgameengine3-populate */,
 			);
 			name = ExternalProjectTargets;
 			sourceTree = "<group>";
 		};
-		D5796D40B2AC45F99481C46D = {
+		499AA892B66340A7AE557589 /* ALL_BUILD */ = {
 			isa = PBXGroup;
 			children = (
-				B3FAEAD9588344DC9A496F29 /* ExternalProjectTargets */,
-				F138642EE8804FDC97ED2EC4 /* ALL_BUILD */,
-				541A156DF17E48C383B67C42 /* Products */,
-				1BFFB303918A49978AD7CF5A /* Frameworks */,
-				F290B6E4F41C41EFA0C88483 /* Resources */,
-			);
-			sourceTree = "<group>";
-		};
-		F0F689468B5B40169AC14B7E /* olcpixelgameengine3-populate */ = {
-			isa = PBXGroup;
-			children = (
-				18D36763BB6146B39275AD4B /* CMake Rules */,
-				D80739BA8E1E4025840D3671 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */,
-			);
-			name = "olcpixelgameengine3-populate";
-			sourceTree = "<group>";
-		};
-		F138642EE8804FDC97ED2EC4 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				9C0DB9D933E84068A2F85222 /* CMake Rules */,
-				677C8509845C416DB80F07FB /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */,
+				732A27B274EA4AB98311EC03 /* CMake Rules */,
+				251D27BA3B8543CBBCC6C656 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		F290B6E4F41C41EFA0C88483 /* Resources */ = {
+		4AF6033C72B14046BD6B2DCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		FE635AABE9AE49DE89FC5A70 /* olcpixelgameengine3-populate */ = {
+		4E488482E4724024817F9566 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0F689468B5B40169AC14B7E /* olcpixelgameengine3-populate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		732A27B274EA4AB98311EC03 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8394A8CA389944EF8F5A1C48 /* olcpixelgameengine3-populate */ = {
+			isa = PBXGroup;
+			children = (
+				D45BA38F353B4E89900CE4DD /* CMake Rules */,
+				0163F417C4C4449B9C12D622 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/CMakeLists.txt */,
 			);
 			name = "olcpixelgameengine3-populate";
+			sourceTree = "<group>";
+		};
+		9727898668994D35BCEFF222 /* olcpixelgameengine3-populate */ = {
+			isa = PBXGroup;
+			children = (
+				8394A8CA389944EF8F5A1C48 /* olcpixelgameengine3-populate */,
+			);
+			name = "olcpixelgameengine3-populate";
+			sourceTree = "<group>";
+		};
+		C79F2527FC02496FBFC36BC0 = {
+			isa = PBXGroup;
+			children = (
+				42022DE54FD349CBB9B53BC1 /* ExternalProjectTargets */,
+				499AA892B66340A7AE557589 /* ALL_BUILD */,
+				4E488482E4724024817F9566 /* Products */,
+				3466FD5E48A241A68AC5B38D /* Frameworks */,
+				4AF6033C72B14046BD6B2DCA /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		D45BA38F353B4E89900CE4DD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		2242D244C74C4E4FB5AD3C7C /* Project object */ = {
+		226850058EA24DBCAF9A7265 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = 4CEA8F46393642CFB1ACAB47 /* Build configuration list for PBXProject "olcpixelgameengine3-populate" */;
+			buildConfigurationList = 83B283D9C27249A5A9441786 /* Build configuration list for PBXProject "olcpixelgameengine3-populate" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				40E9E8A03B1A4E8083D91406 /* Debug */,
+				858920650B0B4C10AC82CABD /* Debug */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = D5796D40B2AC45F99481C46D;
+			mainGroup = C79F2527FC02496FBFC36BC0;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -526,78 +526,25 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93E9A1B31B7D496588A41705 /* PBXTargetDependency */ = {
+		A30FC967098F459EA27B0298 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 100772294B923039A4B9DC54 /* ZERO_CHECK */;
-			targetProxy = 6536F54EE4FC4E3199EEA91F /* PBXContainerItemProxy */;
+			targetProxy = 1E5345FFC1884531BCC9A224 /* PBXContainerItemProxy */;
 		};
-		CFD9EE57EA0246E5987AAF17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 100772294B923039A4B9DC54 /* ZERO_CHECK */;
-			targetProxy = BBB12F56BF034CC0ACF17A62 /* PBXContainerItemProxy */;
-		};
-		D27735335A134BDAA48609F2 /* PBXTargetDependency */ = {
+		E238B6671DD940E7AB9642D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AF76BF1D424D4D82D6E7A097 /* olcpixelgameengine3-populate */;
-			targetProxy = 862B205E90A247E4A321B17D /* PBXContainerItemProxy */;
+			targetProxy = 85D58E9559144E4C87FC7A31 /* PBXContainerItemProxy */;
+		};
+		E5D45B69E68542DF9906633B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100772294B923039A4B9DC54 /* ZERO_CHECK */;
+			targetProxy = 8042C2E00DB849298F3CF3AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4B0B730D6EC542948855316F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "olcpixelgameengine3-populate";
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		7D2568EDB25A47D8B1D9CA01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = "";
-				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/build";
-			};
-			name = Debug;
-		};
-		8E8007CA93E64E5E9C871E42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		92210A85E2FF4A06B0325652 /* Debug */ = {
+		0EAC794523194D90A2F325EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -619,42 +566,95 @@ fi
 			};
 			name = Debug;
 		};
+		5DF224CC881C4B55931BBE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "olcpixelgameengine3-populate";
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5F5A5A444CF74778B77C7A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9BE10A61DFC54C0BB3B22097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpixelgameengine3-subbuild/build";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4020A0AED8684029B64F6B7C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		11F4D4739D234CD79C01EF39 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				92210A85E2FF4A06B0325652 /* Debug */,
+				5F5A5A444CF74778B77C7A8D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4BAC819C6D124DA79CEEA1B0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		83B283D9C27249A5A9441786 /* Build configuration list for PBXProject "olcpixelgameengine3-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E8007CA93E64E5E9C871E42 /* Debug */,
+				9BE10A61DFC54C0BB3B22097 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4CEA8F46393642CFB1ACAB47 /* Build configuration list for PBXProject "olcpixelgameengine3-populate" */ = {
+		AE6570712C4C4B709C586B56 /* Build configuration list for PBXAggregateTarget "olcpixelgameengine3-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D2568EDB25A47D8B1D9CA01 /* Debug */,
+				5DF224CC881C4B55931BBE8D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		6DF8057378164BBD92343D3E /* Build configuration list for PBXAggregateTarget "olcpixelgameengine3-populate" */ = {
+		B7DC770E84CD4EF79634782D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B0B730D6EC542948855316F /* Debug */,
+				0EAC794523194D90A2F325EE /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2242D244C74C4E4FB5AD3C7C /* Project object */;
+	rootObject = 226850058EA24DBCAF9A7265 /* Project object */;
 }
