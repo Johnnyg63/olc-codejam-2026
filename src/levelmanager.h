@@ -37,7 +37,8 @@ public:
         platforms.clear(); // Clear any existing platforms before initializing new ones
         // temp code to get us up and running quickly
 
-        platforms.push_back({ { { 0.0f, 400.0f }, { 800.0f, 50.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
+        platforms.push_back({ { { 0.0f, (float)ptrPGE->GetScreen().Size().y - 30.0f }, { (float)ptrPGE->GetScreen().Size().x, 30.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
+        platforms.push_back({ { { 0.0f, (float)ptrPGE->GetScreen().Size().y - 30.0f }, { (float)ptrPGE->GetScreen().Size().x, 30.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
         
         // Alternating level layout platforms
         platforms.push_back({ { { 150.0f, 300.0f }, { 120.0f, 20.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
@@ -45,7 +46,7 @@ public:
         platforms.push_back({ { { 500.0f, 160.0f }, { 120.0f, 20.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
         
         // Hazard platform (can only pass through safely when it matches phase)
-        // platforms.push_back({ { { 320.0f, 330.0f }, { 120.0f, 20.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
+        platforms.push_back({ { { 320.0f, 330.0f }, { 120.0f, 20.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
     }
 
     void Update(float fElapsedTime) {

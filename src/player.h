@@ -52,12 +52,11 @@ public:
 
         // Keep player within screen bounds (optional)
         if (position.x < 0) position.x = 0;
-        if (position.x + WIDTH > ptrPGE->GetScreen().Size().x) position.x = ptrPGE->GetScreen().Size().x - WIDTH;
+        if (position.x + WIDTH > ptrPGE->GetScreen().Size().x - 5.0f) position.x = ptrPGE->GetScreen().Size().x - WIDTH - 5.0f;
         if (position.y < JUMP_FORCE) position.y = JUMP_FORCE;
         if (position.y + HEIGHT > ptrPGE->GetScreen().Size().y) 
         {
-            position.y = ptrPGE->GetScreen().Size().y - HEIGHT;
-            velocity.y = 0; // Stop downward velocity when hitting the ground
+            position.y = ptrPGE->GetScreen().Size().y - HEIGHT - 5.0f;
             isGrounded = true; // Player is on the ground
         }
     }
