@@ -10,10 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.1.0/CMakeSystem.cmake"
   "CMakeLists.txt"
   "olcutil3_quadtree-populate-prefix/tmp/olcutil3_quadtree-populate-mkdirs.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/homebrew/share/cmake/Modules/ExternalProject.cmake"
@@ -37,7 +35,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/4.1.0/CMakeSystem.cmake"
   "olcutil3_quadtree-populate-prefix/tmp/olcutil3_quadtree-populate-mkdirs.cmake"
   "olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/download-olcutil3_quadtree-populate.cmake"
   "olcutil3_quadtree-populate-prefix/src/olcutil3_quadtree-populate-stamp/verify-olcutil3_quadtree-populate.cmake"

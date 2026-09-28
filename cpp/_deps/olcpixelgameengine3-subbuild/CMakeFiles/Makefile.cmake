@@ -10,10 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.1.0/CMakeSystem.cmake"
   "CMakeLists.txt"
   "olcpixelgameengine3-populate-prefix/tmp/olcpixelgameengine3-populate-mkdirs.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/homebrew/share/cmake/Modules/ExternalProject.cmake"
@@ -37,7 +35,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/4.1.0/CMakeSystem.cmake"
   "olcpixelgameengine3-populate-prefix/tmp/olcpixelgameengine3-populate-mkdirs.cmake"
   "olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/download-olcpixelgameengine3-populate.cmake"
   "olcpixelgameengine3-populate-prefix/src/olcpixelgameengine3-populate-stamp/verify-olcpixelgameengine3-populate.cmake"

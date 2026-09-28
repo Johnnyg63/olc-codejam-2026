@@ -1,3 +1,0 @@
-/Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeFiles/PGE_Johnnys_Has_To_Change.dir
-/Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeFiles/ALL_BUILD.dir
-/Users/mickymacm4/Documents/olc-codejam-2026/xcode/CMakeFiles/ZERO_CHECK.dir

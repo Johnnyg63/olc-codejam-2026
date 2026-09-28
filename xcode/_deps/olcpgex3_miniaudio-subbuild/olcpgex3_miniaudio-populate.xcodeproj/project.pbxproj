@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		17C122444086E0E3520A6ED4 /* olcpgex3_miniaudio-populate */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 46CE10C7FC9B49C481239676 /* Build configuration list for PBXAggregateTarget "olcpgex3_miniaudio-populate" */;
+			buildConfigurationList = 6776D68AC552465DB85C958A /* Build configuration list for PBXAggregateTarget "olcpgex3_miniaudio-populate" */;
 			buildPhases = (
 				7A8AE4D8613FE579FAABF710 /* Generate olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcpgex3_miniaudio-populate-mkdir */,
 				EF8765540EAA5D76560F73F2 /* Generate olcpgex3_miniaudio-populate-prefix/src/olcpgex3_miniaudio-populate-stamp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/olcpgex3_miniaudio-populate-download */,
@@ -24,27 +24,27 @@
 				589655806A395113FFD12E1D /* Generate CMakeFiles/olcpgex3_miniaudio-populate */,
 			);
 			dependencies = (
-				5E23A985817F4AE8A21C2A14 /* PBXTargetDependency */,
+				DC8C39B604954E0184404DBC /* PBXTargetDependency */,
 			);
 			name = "olcpgex3_miniaudio-populate";
 			productName = "olcpgex3_miniaudio-populate";
 		};
 		876A4EF763A3002C0AF38844 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 8AE39CFFC0D74870A93E45C3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 871C0C288FB8413985A3E1D1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				9A1025CC4E3CCFA2080B77A8 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				87B2F8CC9B924E5C97A3619A /* PBXTargetDependency */,
-				0358797032E24EBCB568593C /* PBXTargetDependency */,
+				A137363CE1AF4D2F813D8C12 /* PBXTargetDependency */,
+				0AC845F86A484616A968A932 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		B8979713B64C163467C5CA6C /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = B571587C8C1B46358B542E1C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = B684E67BE1A243B3A8A50248 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				7A437B128B83D87A8E4A494B /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -56,7 +56,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		88CEB540ECFE4EE7A4CF16BD /* Debug */ = {
+		F258AA28711447328A0E4605 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -66,23 +66,23 @@
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		3E9B61FB873C455896B904B4 /* PBXContainerItemProxy */ = {
+		3C72F29A1FD54185AFD33509 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5BF70ED2F85A4C60A79AF803 /* Project object */;
+			containerPortal = 842CD3E39206477D913EEC72 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 17C122444086E0E3520A6ED4;
 			remoteInfo = "olcpgex3_miniaudio-populate";
 		};
-		99E79B8402C54F15BD01B772 /* PBXContainerItemProxy */ = {
+		7C402B6C416D401EA3DDF995 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5BF70ED2F85A4C60A79AF803 /* Project object */;
+			containerPortal = 842CD3E39206477D913EEC72 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B8979713B64C163467C5CA6C;
 			remoteInfo = ZERO_CHECK;
 		};
-		E6C3560892E447DD9FD2BAA1 /* PBXContainerItemProxy */ = {
+		C8AABA642F0E4847A7147AF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5BF70ED2F85A4C60A79AF803 /* Project object */;
+			containerPortal = 842CD3E39206477D913EEC72 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B8979713B64C163467C5CA6C;
 			remoteInfo = ZERO_CHECK;
@@ -90,109 +90,109 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		57BE970CD921423A88ABF5B9 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		5D4D897349004E9CB19D8DF8 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2AFA4CF0C09B4A28B984C3D5 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2F2553C4D3554D42B28594BD /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		08042D51BCB74AB9A1D63C35 /* Resources */ = {
+		24FC28F4F95847CEB359F753 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Resources;
+			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		26CB48487E76468B876872AA /* ALL_BUILD */ = {
+		4DA01159FC804F8B822338CD /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
-				802CB95BF1064360BB6C46C1 /* CMake Rules */,
-				57BE970CD921423A88ABF5B9 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		58D163EF19DB4AF08CA21D73 = {
+			isa = PBXGroup;
+			children = (
+				8D107C50577C42B4A3D6A362 /* ExternalProjectTargets */,
+				5FCED3C5BC5B4CBDA63D141D /* ALL_BUILD */,
+				73177E8A9BA247FEA22B432D /* Products */,
+				796281B7C8D84E8DA5112042 /* Frameworks */,
+				7562389CFC4D412090306A56 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		5FCED3C5BC5B4CBDA63D141D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4DA01159FC804F8B822338CD /* CMake Rules */,
+				2AFA4CF0C09B4A28B984C3D5 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */,
 			);
 			name = ALL_BUILD;
 			sourceTree = "<group>";
 		};
-		4B50C58C201F41B7985A326E /* olcpgex3_miniaudio-populate */ = {
-			isa = PBXGroup;
-			children = (
-				51A8FB7F68BC412BBAF6D8C3 /* olcpgex3_miniaudio-populate */,
-			);
-			name = "olcpgex3_miniaudio-populate";
-			sourceTree = "<group>";
-		};
-		51A8FB7F68BC412BBAF6D8C3 /* olcpgex3_miniaudio-populate */ = {
-			isa = PBXGroup;
-			children = (
-				91B42C06DDFA46CCA0815623 /* CMake Rules */,
-				5D4D897349004E9CB19D8DF8 /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */,
-			);
-			name = "olcpgex3_miniaudio-populate";
-			sourceTree = "<group>";
-		};
-		60CDF2E9D06A4E0E97421241 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7CFB74750DC84AABB69AF260 /* Products */ = {
+		73177E8A9BA247FEA22B432D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		802CB95BF1064360BB6C46C1 /* CMake Rules */ = {
+		7562389CFC4D412090306A56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "CMake Rules";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		8BCD3415808F4B71871D462B /* ExternalProjectTargets */ = {
+		796281B7C8D84E8DA5112042 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B50C58C201F41B7985A326E /* olcpgex3_miniaudio-populate */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D107C50577C42B4A3D6A362 /* ExternalProjectTargets */ = {
+			isa = PBXGroup;
+			children = (
+				D4CA0B75FEA944B6A58DFD29 /* olcpgex3_miniaudio-populate */,
 			);
 			name = ExternalProjectTargets;
 			sourceTree = "<group>";
 		};
-		91B42C06DDFA46CCA0815623 /* CMake Rules */ = {
+		D4CA0B75FEA944B6A58DFD29 /* olcpgex3_miniaudio-populate */ = {
 			isa = PBXGroup;
 			children = (
+				E71BCA599C51481EAC5A9FA9 /* olcpgex3_miniaudio-populate */,
 			);
-			name = "CMake Rules";
+			name = "olcpgex3_miniaudio-populate";
 			sourceTree = "<group>";
 		};
-		993412904487484E8C9CCB0A = {
+		E71BCA599C51481EAC5A9FA9 /* olcpgex3_miniaudio-populate */ = {
 			isa = PBXGroup;
 			children = (
-				8BCD3415808F4B71871D462B /* ExternalProjectTargets */,
-				26CB48487E76468B876872AA /* ALL_BUILD */,
-				7CFB74750DC84AABB69AF260 /* Products */,
-				60CDF2E9D06A4E0E97421241 /* Frameworks */,
-				08042D51BCB74AB9A1D63C35 /* Resources */,
+				24FC28F4F95847CEB359F753 /* CMake Rules */,
+				2F2553C4D3554D42B28594BD /* /Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/CMakeLists.txt */,
 			);
+			name = "olcpgex3_miniaudio-populate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		5BF70ED2F85A4C60A79AF803 /* Project object */ = {
+		842CD3E39206477D913EEC72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = 705F9F1794DA4D06B0BBD48C /* Build configuration list for PBXProject "olcpgex3_miniaudio-populate" */;
+			buildConfigurationList = 475176BB42EE4F8A9BB2ACA4 /* Build configuration list for PBXProject "olcpgex3_miniaudio-populate" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				88CEB540ECFE4EE7A4CF16BD /* Debug */,
+				F258AA28711447328A0E4605 /* Debug */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 993412904487484E8C9CCB0A;
+			mainGroup = 58D163EF19DB4AF08CA21D73;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -526,25 +526,34 @@ fi
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0358797032E24EBCB568593C /* PBXTargetDependency */ = {
+		0AC845F86A484616A968A932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8979713B64C163467C5CA6C /* ZERO_CHECK */;
+			targetProxy = 7C402B6C416D401EA3DDF995 /* PBXContainerItemProxy */;
+		};
+		A137363CE1AF4D2F813D8C12 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 17C122444086E0E3520A6ED4 /* olcpgex3_miniaudio-populate */;
-			targetProxy = 3E9B61FB873C455896B904B4 /* PBXContainerItemProxy */;
+			targetProxy = 3C72F29A1FD54185AFD33509 /* PBXContainerItemProxy */;
 		};
-		5E23A985817F4AE8A21C2A14 /* PBXTargetDependency */ = {
+		DC8C39B604954E0184404DBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B8979713B64C163467C5CA6C /* ZERO_CHECK */;
-			targetProxy = 99E79B8402C54F15BD01B772 /* PBXContainerItemProxy */;
-		};
-		87B2F8CC9B924E5C97A3619A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8979713B64C163467C5CA6C /* ZERO_CHECK */;
-			targetProxy = E6C3560892E447DD9FD2BAA1 /* PBXContainerItemProxy */;
+			targetProxy = C8AABA642F0E4847A7147AF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A53A72E8A8D40B083EE97BB /* Debug */ = {
+		5FDD7E462CB94FFC99AED560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/build";
+			};
+			name = Debug;
+		};
+		76F7CED17351490A9DFFF80A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -566,38 +575,7 @@ fi
 			};
 			name = Debug;
 		};
-		87E5FB2E2C56425D8109074A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = "";
-				SYMROOT = "/Users/mickymacm4/Documents/olc-codejam-2026/xcode/_deps/olcpgex3_miniaudio-subbuild/build";
-			};
-			name = Debug;
-		};
-		93D1835B40674840AC8AF31B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		C562531EC62B473CBEFA2C3F /* Debug */ = {
+		ACF1D1AD699E434996BB592A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -619,42 +597,64 @@ fi
 			};
 			name = Debug;
 		};
+		C8E8D5455FEE4A6C8D0D840F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46CE10C7FC9B49C481239676 /* Build configuration list for PBXAggregateTarget "olcpgex3_miniaudio-populate" */ = {
+		475176BB42EE4F8A9BB2ACA4 /* Build configuration list for PBXProject "olcpgex3_miniaudio-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A53A72E8A8D40B083EE97BB /* Debug */,
+				5FDD7E462CB94FFC99AED560 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		705F9F1794DA4D06B0BBD48C /* Build configuration list for PBXProject "olcpgex3_miniaudio-populate" */ = {
+		6776D68AC552465DB85C958A /* Build configuration list for PBXAggregateTarget "olcpgex3_miniaudio-populate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87E5FB2E2C56425D8109074A /* Debug */,
+				76F7CED17351490A9DFFF80A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		8AE39CFFC0D74870A93E45C3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		871C0C288FB8413985A3E1D1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C562531EC62B473CBEFA2C3F /* Debug */,
+				ACF1D1AD699E434996BB592A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B571587C8C1B46358B542E1C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		B684E67BE1A243B3A8A50248 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93D1835B40674840AC8AF31B /* Debug */,
+				C8E8D5455FEE4A6C8D0D840F /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5BF70ED2F85A4C60A79AF803 /* Project object */;
+	rootObject = 842CD3E39206477D913EEC72 /* Project object */;
 }

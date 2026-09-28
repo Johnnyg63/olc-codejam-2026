@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/mickymacm4/Documents/olc-codejam-2026/cpp/_deps/olcpixelgameengine3-src/extensions/miniaudio -I/Users/mickymacm4/Documents/olc-codejam-2026/cpp/_deps/olcpixelgameengine3-src
 
-CXX_FLAGSarm64 = -std=c++20 -arch arm64
+CXX_FLAGSarm64 = -O3 -march=native -flto -funroll-loops -O3 -DNDEBUG -std=c++20 -arch arm64
 
-CXX_FLAGS = -std=c++20 -arch arm64
+CXX_FLAGS = -O3 -march=native -flto -funroll-loops -O3 -DNDEBUG -std=c++20 -arch arm64
 
