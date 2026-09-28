@@ -10,6 +10,44 @@ PROJECT_NAME := PGE_Johnnys_Has_To_Change
 ASSETS_SRC := assets
 ROOT_DIR := $(shell pwd)
 
+# Architecture detection
+UNAME_M := $(shell uname -m)
+ifeq ($(UNAME_M),arm64)
+	ARCH := ARM64
+	ARCH_FLAGS := -mcpu=apple-m1 -ffp-contract=fast
+else
+	ARCH := x86_64
+	# Detect Intel CPU generation on macOS
+	ifeq ($(shell uname -s),Darwin)
+		CPU_MODEL := $(shell sysctl -n machdep.cpu.model 2>/dev/null)
+		CPU_BRAND := $(shell sysctl -n machdep.cpu.brand_string 2>/dev/null)
+		# Intel CPU models: Sandy Bridge=42, Ivy Bridge=58, Haswell=60, Broadwell=61, etc.
+		# Pre-Haswell: <=58 (Sandy Bridge, Ivy Bridge)
+		ifeq ($(shell [ "$(CPU_MODEL)" -le 58 ] 2>/dev/null && echo 1 || echo 0),1)
+			ARCH_FLAGS := -msse4.2
+			CPU_GEN := Pre-Haswell (SSE4.2)
+		else
+			ARCH_FLAGS := -march=haswell -mavx2 -mfma
+			CPU_GEN := Haswell+ (AVX2)
+		endif
+	else
+		# Linux fallback: use cpuinfo to detect
+		ifeq ($(shell uname -s),Linux)
+			ifeq ($(shell grep -q "avx2" /proc/cpuinfo && echo 1 || echo 0),1)
+				ARCH_FLAGS := -march=haswell -mavx2 -mfma
+				CPU_GEN := Haswell+ (AVX2)
+			else
+				ARCH_FLAGS := -msse4.2
+				CPU_GEN := Pre-Haswell (SSE4.2)
+			endif
+		else
+			# Default fallback for other systems
+			ARCH_FLAGS := -march=haswell -mavx2 -mfma
+			CPU_GEN := Haswell+ (AVX2 - Default)
+		endif
+	endif
+endif
+
 # Build directories
 CPP_DIR := cpp
 EMSCRIPTEN_DIR := emscripten
@@ -24,6 +62,9 @@ NC := \033[0m # No Color
 
 help:
 	@echo "$(BLUE)=== Makefile for $(PROJECT_NAME) ===$(NC)"
+	@echo "$(YELLOW)Architecture: $(ARCH) ($(UNAME_M))$(NC)"
+	@echo "$(YELLOW)CPU Generation: $(CPU_GEN)$(NC)"
+	@echo "$(YELLOW)Optimization flags: $(ARCH_FLAGS)$(NC)"
 	@echo ""
 	@echo "$(GREEN)Build targets:$(NC)"
 	@echo "  make build             - Build all targets (cpp, emscripten, xcode)"
@@ -100,7 +141,7 @@ run-debug-cpp: debug-cpp
 prepare-cpp-release:
 	@mkdir -p $(CPP_DIR)/build/release
 	@cp -r $(ASSETS_SRC)/* $(CPP_DIR)/build/release/ 2>/dev/null || true
-	@cd $(CPP_DIR)/build/release && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-O3 -march=native -flto -funroll-loops" ../../..
+	@cd $(CPP_DIR)/build/release && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-O3 $(ARCH_FLAGS) -flto=full -funroll-loops -fstrict-aliasing" ../../..
 
 prepare-cpp-debug:
 	@mkdir -p $(CPP_DIR)/build/debug
@@ -151,36 +192,35 @@ prepare-emscripten-debug:
 			../../..
 
 # ==================== XCODE TARGETS ====================
-build-xcode: prepare-xcode
+build-xcode: prepare-xcode-release
 	@echo "$(YELLOW)Building Xcode (Release)...$(NC)"
-	@cd $(XCODE_DIR) && cmake --build . --config Release
+	@cd $(XCODE_DIR)/build/release && cmake --build . --config Release
 	@echo "$(GREEN)✓ Xcode Release build complete$(NC)"
 
 clean-xcode:
 	@echo "$(YELLOW)Cleaning Xcode build...$(NC)"
-	@cd $(XCODE_DIR) && rm -rf CMakeFiles CMakeCache.txt cmake_install.cmake Makefile
-	@cd $(XCODE_DIR) && rm -rf $(PROJECT_NAME).app $(PROJECT_NAME).xcodeproj
+	@rm -rf $(XCODE_DIR)/build
 	@echo "$(GREEN)✓ Xcode cleanup complete$(NC)"
 
 debug-xcode: prepare-xcode-debug
 	@echo "$(YELLOW)Building Xcode (Debug)...$(NC)"
-	@cd $(XCODE_DIR) && cmake --build . --config Debug
+	@cd $(XCODE_DIR)/build/debug && cmake --build . --config Debug
 	@echo "$(GREEN)✓ Xcode Debug build complete$(NC)"
 
 run-xcode: build-xcode
 	@echo "$(YELLOW)Running Xcode (Release)...$(NC)"
-	@open $(XCODE_DIR)/$(PROJECT_NAME).app
+	@cd $(ROOT_DIR) && ./$(XCODE_DIR)/build/release/$(PROJECT_NAME)
 
 run-debug-xcode: debug-xcode
 	@echo "$(YELLOW)Running Xcode (Debug)...$(NC)"
-	@open $(XCODE_DIR)/$(PROJECT_NAME).app
+	@cd $(ROOT_DIR) && ./$(XCODE_DIR)/build/debug/$(PROJECT_NAME)
 
-prepare-xcode:
-	@mkdir -p $(XCODE_DIR)
-	@cp -r $(ASSETS_SRC)/* $(XCODE_DIR)/ 2>/dev/null || true
-	@cd $(XCODE_DIR) && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-O3 -march=native -flto -funroll-loops" ..
+prepare-xcode-release:
+	@mkdir -p $(XCODE_DIR)/build/release
+	@cp -r $(ASSETS_SRC)/* $(XCODE_DIR)/build/release/ 2>/dev/null || true
+	@cd $(XCODE_DIR)/build/release && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-O3 $(ARCH_FLAGS) -flto=full -funroll-loops -fstrict-aliasing" ../../..
 
 prepare-xcode-debug:
-	@mkdir -p $(XCODE_DIR)
-	@cp -r $(ASSETS_SRC)/* $(XCODE_DIR)/ 2>/dev/null || true
-	@cd $(XCODE_DIR) && cmake -DCMAKE_BUILD_TYPE=Debug ..
+	@mkdir -p $(XCODE_DIR)/build/debug
+	@cp -r $(ASSETS_SRC)/* $(XCODE_DIR)/build/debug/ 2>/dev/null || true
+	@cd $(XCODE_DIR)/build/debug && cmake -DCMAKE_BUILD_TYPE=Debug ../../..

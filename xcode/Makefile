@@ -56,7 +56,7 @@ RED := \033[0;31m
 NC := \033[0m # No Color
 
 help:
-	@echo "$(BLUE)=== C++ Build Targets ===$(NC)"
+	@echo "$(BLUE)=== Xcode Build Targets ===$(NC)"
 	@echo "$(YELLOW)Architecture: $(ARCH) ($(UNAME_M))$(NC)"
 	@echo "$(YELLOW)CPU Generation: $(CPU_GEN)$(NC)"
 	@echo "$(YELLOW)Optimization flags: $(ARCH_FLAGS)$(NC)"
@@ -76,27 +76,27 @@ help:
 all: build
 
 build: prepare-release
-	@echo "$(YELLOW)Building C++ Release ($(ARCH) | O3 + SIMD + Unrolling)...$(NC)"
+	@echo "$(YELLOW)Building Xcode Release ($(ARCH) | O3 + SIMD + Unrolling)...$(NC)"
 	@cd $(RELEASE_DIR) && cmake --build . --config Release
-	@echo "$(GREEN)✓ C++ Release build complete$(NC)"
+	@echo "$(GREEN)✓ Xcode Release build complete$(NC)"
 
 clean:
-	@echo "$(YELLOW)Cleaning C++ builds...$(NC)"
+	@echo "$(YELLOW)Cleaning Xcode builds...$(NC)"
 	@rm -rf $(BUILD_DIR)
-	@echo "$(GREEN)✓ C++ cleanup complete$(NC)"
+	@echo "$(GREEN)✓ Xcode cleanup complete$(NC)"
 
 debug: prepare-debug
-	@echo "$(YELLOW)Building C++ Debug...$(NC)"
+	@echo "$(YELLOW)Building Xcode Debug...$(NC)"
 	@cd $(DEBUG_DIR) && cmake --build . --config Debug
-	@echo "$(GREEN)✓ C++ Debug build complete$(NC)"
+	@echo "$(GREEN)✓ Xcode Debug build complete$(NC)"
 
 run: build
-	@echo "$(YELLOW)Running C++ Release build (optimized)...$(NC)"
-	@cd $(ROOT_DIR) && ./cpp/$(RELEASE_DIR)/$(PROJECT_NAME)
+	@echo "$(YELLOW)Running Xcode Release build (optimized)...$(NC)"
+	@cd $(ROOT_DIR) && ./xcode/$(RELEASE_DIR)/$(PROJECT_NAME)
 
 run-debug: debug
-	@echo "$(YELLOW)Running C++ Debug build...$(NC)"
-	@cd $(ROOT_DIR) && ./cpp/$(DEBUG_DIR)/$(PROJECT_NAME)
+	@echo "$(YELLOW)Running Xcode Debug build...$(NC)"
+	@cd $(ROOT_DIR) && ./xcode/$(DEBUG_DIR)/$(PROJECT_NAME)
 
 prepare-release:
 	@mkdir -p $(RELEASE_DIR)
