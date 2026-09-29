@@ -118,7 +118,7 @@ private:
 	{
 		bool res = true;
 		// load `assets/song1.mp3` into `song1`
-		res = audio.CreateSoundFromFile(song1, "assets/song1.mp3");
+		res = audio.CreateSoundFromFile(song1, "assets/ItalianMom.mp3");
 		
         ma_sound_set_position(song1.GetMASound(), 0.0f, 0.0f, 0.0f);
 
@@ -159,24 +159,6 @@ private:
 	}
 
 	/*
-	Load Copyright Notice text and images
-	*/
-	bool LoadCopyRightNotice()
-	{
-		bool res = true;
-		// Emscripten copyright notice
-		res = CreateImageFromFile(imgCopyright_Emscripten, "assets/emscripten_logo.png");
-		if(!res) printf("Failed to load assets/emscripten_logo.png\n");
-		res = true; //TODO: Remove temp here keep things moving
-		// MusicLFiles copyright notice
-		strCopyrightNotice_MusicLFiles = "Music: Joy Ride [Full version] by MusicLFiles\n \
-											Free download: https://filmmusic.io/song/11627-joy-ride-full-version\n \
-												Licensed under CC BY 4.0: https://filmmusic.io/standard-license\n";
-
-		return res;
-	}
-
-	/*
 	Load the level data and initialize the level manager
 	*/
 	bool LoadLevel()
@@ -211,6 +193,21 @@ private:
 		player.Draw(levelManager.currentPhase);
 		return res;
 	}
+
+	/*
+	Load Copyright Notice text and images
+	*/
+	bool LoadCopyRightNotice()
+	{
+		bool res = true;
+		// Emscripten copyright notice
+		res = CreateImageFromFile(imgCopyright_Emscripten, "assets/emscripten_logo.png");
+		if(!res) printf("Failed to load assets/emscripten_logo.png\n");
+		res = true; //TODO: Remove temp here keep things moving
+		
+		return res;
+	}
+
 
 	/*
 	Handle Copyright Notices
