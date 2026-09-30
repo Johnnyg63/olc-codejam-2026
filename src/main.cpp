@@ -26,10 +26,11 @@
 class JohnnyChange : public olc::PixelGameEngine
 {
 
-private:
+public:
 	LevelManager levelManager;
 	Player player;
 	SoundManager soundManager;
+	
 	// Copyright notice
 	std::string strCopyrightNotice_MusicLFiles;
 	olc::Image imgCopyright_Emscripten;
@@ -126,6 +127,7 @@ private:
         vecLoadSounds.push_back({"Jump3", "assets/sounds/fx/jump1.mp3", false, false});
         vecLoadSounds.push_back({"Jump4", "assets/sounds/fx/jump1.mp3", false, false});
 		vecLoadSounds.push_back({"Jump5", "assets/sounds/fx/jump1.mp3", false, false});
+		vecLoadSounds.push_back({"footstep_concrete_001", "assets/sounds/fx/footstep_concrete_001.mp3", false, false});
 		res = soundManager.LoadSounds(vecLoadSounds);
 
 		vecLoadSounds.clear(); // Clear the temporary container after loading sounds
@@ -142,15 +144,8 @@ private:
 		// TODO :Move to new location
 		soundManager.Update(fElapsedTime);
 		res = soundManager.HandleSound(fElapsedTime);
-        
-        if(keyboard.GetKey(olc::Key::SPACE).bPressed && player.isGrounded) {
-            
-            auto id = soundManager.GetSoundIDByName("Jump1");
-            if(id != UINT32_MAX)
-                soundManager.PlaySoundAffect(id);
-        }
-        
-		return res;
+
+		return res;	
 	}
 
 	/*
@@ -177,7 +172,7 @@ private:
 	bool LoadPlayer()
 	{
 		bool res = true;
-		player.Initialize(this);
+		player.Initialize(this, soundManager);
 		return res;
 	}
 

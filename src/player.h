@@ -1,12 +1,14 @@
 #pragma once
 #include "olcPixelGameEngine3.h"
 #include "levelmanager.h"
+#include "soundmanager.h"
 
 class Player {
 public:
     bool isGrounded = false;
 
 private:
+    SoundManager* ptrSound = nullptr;
 
     olc::PixelGameEngine* ptrPGE = nullptr;
     olc::vf2d position = { 50, 300 };
@@ -16,13 +18,22 @@ private:
     const float JUMP_FORCE = -500.0f;
     const float WIDTH = 24.0f;
     const float HEIGHT = 36.0f;
+
+    // Sound IDs for player actions
+    uint32_t nJumpSoundID = UINT32_MAX;
+    uint32_t nLandSoundID = UINT32_MAX;
+    uint32_t nBongSoundID = UINT32_MAX;
+    bool wasGroundedLastFrame = false;
     
 
 public:
-    void Initialize(olc::PixelGameEngine* engine) {
+    void Initialize(olc::PixelGameEngine* engine, SoundManager& sound) {
         // Store the pointer to the PixelGameEngine instance for later use
         ptrPGE = engine;
-
+        ptrSound = &sound;
+        nJumpSoundID = ptrSound->GetSoundIDByName("jump_001");
+        nBongSoundID = ptrSound->GetSoundIDByName("bong_001");
+        nLandSoundID = ptrSound->GetSoundIDByName("footstep_concrete_001");
      }
 
     void Update(float fElapsedTime, const LevelManager& level) {
@@ -36,6 +47,7 @@ public:
         if ((ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bPressed || ptrPGE->GetKeyboard().GetKey(olc::Key::W).bPressed) && isGrounded) {
             velocity.y = JUMP_FORCE;
             isGrounded = false;
+            PlayPlayerSound(nJumpSoundID);
         }
 
         // Apply Gravity
@@ -58,6 +70,7 @@ public:
         {
             position.y = ptrPGE->GetScreen().Size().y - HEIGHT - 5.0f;
             isGrounded = true; // Player is on the ground
+            // PlayPlayerSound(nLandSoundID);
         }
     }
 
@@ -88,7 +101,7 @@ private:
 
     void ResolveCollisions(const LevelManager& level, bool checkingX) {
         Rectangle playerBox = { {position.x, position.y}, {WIDTH, HEIGHT} };
-
+        bool bPlayerSound = false;
         for (const auto& platform : level.platforms) {
             // CRITICAL MECHANICAL HOOK: Skip if platform is phase-shifted out
             if (platform.matchingState != level.currentPhase) {
@@ -98,27 +111,44 @@ private:
             if (CheckCollisionRecs(playerBox, platform.bounds)) {
                 if (checkingX) {
                     // Moving right, hit left edge of block
-                    if (velocity.x > 0) position.x = platform.bounds.position.x - WIDTH;
+                    if (velocity.x > 0){
+                        position.x = platform.bounds.position.x - WIDTH;
+                        bPlayerSound = true;
+                    }
+
                     // Moving left, hit right edge of block
-                    if (velocity.x < 0) position.x = platform.bounds.position.x + platform.bounds.size.x;
+                    if (velocity.x < 0) 
+                    { 
+                        position.x = platform.bounds.position.x + platform.bounds.size.x; 
+                        bPlayerSound = true;
+                    }
                     velocity.x = 0;
                 } else {
                     // Falling down, hit top edge of block
                     if (velocity.y > 0) {
                         position.y = platform.bounds.position.y - HEIGHT;
                         velocity.y = 0;
+                        if(!wasGroundedLastFrame)
+                            PlayPlayerSound(nLandSoundID);
                         isGrounded = true;
                     }
                     // Jumping up, hit bottom edge of block
                     if (velocity.y < 0) {
                         position.y = platform.bounds.position.y + platform.bounds.size.y;
                         velocity.y = 0;
+                        bPlayerSound = true;
                     }
                 }
                 // Refresh player box position for subsequent platform checks
                 playerBox = { {position.x, position.y}, {WIDTH, HEIGHT} };
             }
         }
+
+        if (bPlayerSound) {
+            PlayPlayerSound(nBongSoundID);
+        }
+
+        wasGroundedLastFrame = isGrounded;
     }
 
     bool CheckCollisionRecs(Rectangle rec1, Rectangle rec2)
@@ -132,6 +162,11 @@ private:
         }
 
         return collision;
+    }
+
+    void PlayPlayerSound(uint32_t soundID) {
+        if(soundID != UINT32_MAX && ptrSound != nullptr) 
+            ptrSound->PlaySoundAffect(soundID);
     }
 
 };
