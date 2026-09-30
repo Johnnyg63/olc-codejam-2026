@@ -115,10 +115,21 @@ private:
 	*/
 	bool LoadSounds()
 	{
-		bool res = true;
+		bool res = 0;
 		soundManager.Initialize(this, &extMiniAudio);
-		res = soundManager.LoadSounds();
-		return res;
+		// Temp code to load sounds without specifying files, to be updated later
+		std::vector<loadSound> vecLoadSounds; // Temporary container for sounds to load
+        vecLoadSounds.push_back({"Cheerful_Annoyance", "assets/sounds/background/Cheerful_Annoyance.mp3", true, true});
+        vecLoadSounds.push_back({"bong_001", "assets/sounds/fx/bong_001.mp3", false, false});
+        vecLoadSounds.push_back({"Jump1", "assets/sounds/fx/jump1.mp3", false, false});
+        vecLoadSounds.push_back({"Jump2", "assets/sounds/fx/jump1.mp3", false, false});
+        vecLoadSounds.push_back({"Jump3", "assets/sounds/fx/jump1.mp3", false, false});
+        vecLoadSounds.push_back({"Jump4", "assets/sounds/fx/jump1.mp3", false, false});
+		vecLoadSounds.push_back({"Jump5", "assets/sounds/fx/jump1.mp3", false, false});
+		res = soundManager.LoadSounds(vecLoadSounds);
+
+		vecLoadSounds.clear(); // Clear the temporary container after loading sounds
+		return res > 0; // Return true if at least one sound was successfully loaded
 	}
 
 	/*
@@ -128,11 +139,17 @@ private:
 	{
 		bool res = true;
 		SoundProperties soundProperties;
-		soundManager.Update(fElapsedTime, soundProperties);
+		// TODO :Move to new location
+		soundManager.Update(fElapsedTime, soundProperties, soundProperties, soundProperties);
 		res = soundManager.HandleSound(fElapsedTime);
+        
         if(keyboard.GetKey(olc::Key::SPACE).bPressed && player.isGrounded) {
-            soundManager.PlaySoundAffect(); // Play sound when player is grounded
+            
+            auto id = soundManager.GetSoundIDByName("Jump1");
+            if(id != UINT32_MAX)
+                soundManager.PlaySoundAffect(id);
         }
+        
 		return res;
 	}
 
