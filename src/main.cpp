@@ -140,7 +140,7 @@ private:
 		bool res = true;
 		SoundProperties soundProperties;
 		// TODO :Move to new location
-		soundManager.Update(fElapsedTime, soundProperties, soundProperties, soundProperties);
+		soundManager.Update(fElapsedTime);
 		res = soundManager.HandleSound(fElapsedTime);
         
         if(keyboard.GetKey(olc::Key::SPACE).bPressed && player.isGrounded) {
