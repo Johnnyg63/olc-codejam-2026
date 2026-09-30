@@ -15,8 +15,10 @@
 #define OLC_PGEX3_MINIAUDIO
 #include "olcPGEX3_Miniaudio.h"
 
+#include "soundmanager.h"
 #include "levelmanager.h"
 #include "player.h"
+
 
 // This class overrides the olc::PixelGameEngine base class
 // by implementing the OnUserCreate() and OnUserUpdate()
@@ -27,15 +29,13 @@ class JohnnyChange : public olc::PixelGameEngine
 private:
 	LevelManager levelManager;
 	Player player;
+	SoundManager soundManager;
 	// Copyright notice
 	std::string strCopyrightNotice_MusicLFiles;
 	olc::Image imgCopyright_Emscripten;
 	olc::Image imgCopyright_OLC;
 	olc::Image imgCopyRight_Kenny;
-	
-	// sounds
-	olc::ext::Miniaudio::Sound song1;
-	olc::ext::Miniaudio::Sound sample;
+
 
     // For demonstration controls, with sensible default values
     float pan    = 0.0f;
@@ -48,15 +48,14 @@ private:
 
 public:
 	// Extensions 
-	// put this here to have access to audio!
-	olc::ext::Miniaudio::AudioEngine audio;
+	olc::ext::Miniaudio::AudioEngine extMiniAudio;
 
 
 public:
 	JohnnyChange()
 	{
 		sAppName = "Example - Johnny Has To Change";
-    	if(!InstallSystemExtension(&audio))
+		if(!InstallSystemExtension(&extMiniAudio))
 			throw std::runtime_error("Failed to install olcPGEX3_Miniaudio");
 	}
 
@@ -117,14 +116,8 @@ private:
 	bool LoadSounds()
 	{
 		bool res = true;
-		// load `assets/song1.mp3` into `song1`
-		res = audio.CreateSoundFromFile(song1, "assets/ItalianMom.mp3");
-		
-        ma_sound_set_position(song1.GetMASound(), 0.0f, 0.0f, 0.0f);
-
-		// load `assets/SampleA.wav` into `sample`
-		res = audio.CreateSoundFromFile(sample, "assets/SampleA.wav");
-
+		soundManager.Initialize(this, &extMiniAudio);
+		res = soundManager.LoadSounds();
 		return res;
 	}
 
@@ -133,29 +126,11 @@ private:
 	*/
 	bool HandleSound(float fElapsedTime)
 	{
-		olc_IgnoreUnused(fElapsedTime);
-
 		bool res = true;
-		// toggle background playback
-		if(keyboard.GetKey(olc::Key::K1).bPressed)
-		{
-			backgroundPlay = !backgroundPlay;
-			if(backgroundPlay)
-				audio.EnableBackgroundPlayback();
-			else
-				audio.DisableBackgroundPlayback();
-		}
-
-		// toggle `song1` playback/pause
- 		if(keyboard.GetKey(olc::Key::B).bPressed)
- 			song1.Toggle();
-
- 		// play `sample`
- 		if(keyboard.GetKey(olc::Key::S).bPressed)
- 			sample.Play();
-
-		return res;
-		
+		SoundProperties soundProperties;
+		soundManager.Update(fElapsedTime, soundProperties);
+		res = soundManager.HandleSound(fElapsedTime);
+		return res;		
 	}
 
 	/*
