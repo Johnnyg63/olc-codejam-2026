@@ -183,9 +183,9 @@ public:
             {
                 Sounds newSound {
                     .id                 = uniqueIDCounter++,
-                    .bIsBackgroundMusic = sound.bIsBackgroundMusic,
                     .bIsLoaded          = true,
                     .bIsPlaying         = false,
+                    .bIsBackgroundMusic = sound.bIsBackgroundMusic,
                     .bIsLooping         = sound.bIsLooping,
                     .strName            = sound.strName,
                     .pMiniAudioSound    = pNewSound
