@@ -94,15 +94,19 @@ public:
 
 private:
     void DrawRectangle(const Platform& platform, const olc::Pixel col, const bool isFillRec = true) {
+
+        const olc::Pixel tint = olc::Colour::WHITE;
+        const int32_t faces = 32;
+
         if(isFillRec)
         {
             //ptrPGE->GetDraw().FilledRect(platform.bounds.position, platform.bounds.size, col);
-            ptrPGE->GetDraw().FilledRoundedRect(platform.bounds.position, platform.bounds.size, platform.bounds.size.y * 0.5f, col);
+            ptrPGE->GetDraw().FilledRoundedRect(platform.bounds.position, platform.bounds.size, platform.bounds.size.y * 0.5f, col, tint, faces);
         }
         else
         {
             //ptrPGE->GetDraw().Rect(platform.bounds.position, platform.bounds.size, col);
-            ptrPGE->GetDraw().RoundedRect(platform.bounds.position, platform.bounds.size, platform.bounds.size.y * 0.5f, col);
+            ptrPGE->GetDraw().RoundedRect(platform.bounds.position, platform.bounds.size, platform.bounds.size.y * 0.5f, col, tint, faces);
         }
     }
 
