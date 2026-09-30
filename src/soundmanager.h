@@ -37,15 +37,21 @@ public:
     
     void Update(float fElapsedTime, const SoundProperties& MasterSound) {
         // TODO Update to handle master and individual sound properties
-        SoundProp = MasterSound;
-        backgroundMusic.SetVolume(MasterSound.volume * SoundProp.volume);
-        backgroundMusic.SetPan(MasterSound.pan + SoundProp.pan);
-        backgroundMusic.SetPitch(MasterSound.pitch * SoundProp.pitch);
+        //SoundProp = MasterSound;
+        //backgroundMusic.SetVolume(MasterSound.volume * SoundProp.volume);
+        //backgroundMusic.SetPan(MasterSound.pan + SoundProp.pan);
+        // backgroundMusic.SetPitch(MasterSound.pitch * SoundProp.pitch);
        
     }
 
     void Draw(float fElapsedTime) {
         // update sound for changes in drawing... maybe not required
+    }
+    
+    // Plays the required sound affect TODO: Update to handle master and individual sound properties
+    void PlaySoundAffect()
+    {
+        fxSample.Play();
     }
 
     bool LoadSounds()
@@ -75,17 +81,21 @@ public:
  		if(ptrPGE->GetKeyboard().GetKey(olc::Key::B).bPressed)
  			backgroundMusic.Toggle();
 
- 		// play `sample`
- 		if(ptrPGE->GetKeyboard().GetKey(olc::Key::S).bPressed)
- 			fxSample.Play();
+			
 
         // volume
         if(ptrPGE->GetKeyboard().GetKey(olc::Key::MINUS).bHeld)
-            SoundProp.volume -= std::clamp(1.0f * fElapsedTime, 0.0f, 1.0f);
+            SoundProp.volume -= 1.0f * fElapsedTime;
         
         if(ptrPGE->GetKeyboard().GetKey(olc::Key::EQUALS).bHeld)
-            SoundProp.volume += std::clamp(1.0f * fElapsedTime, 0.0f, 1.0f);
-
+            SoundProp.volume += 1.0f * fElapsedTime;
+    
+        // Lets keep some order to the madness
+        SoundProp.pan = std::clamp(SoundProp.pan, 0.0f, 1.0f);
+        SoundProp.pitch = std::clamp(SoundProp.pitch, 0.0f, 1.0f);
+        SoundProp.volume = std::clamp(SoundProp.volume, 0.0f, 1.0f);
+        
+        ptrPGE->GetDraw().String({10, 30}, "Volume: " + std::to_string(SoundProp.volume), olc::Colour::WHITE);
 
         // Reset pan, pitch, and volume
         if(ptrPGE->GetKeyboard().GetKey(olc::Key::R).bPressed)

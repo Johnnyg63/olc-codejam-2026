@@ -4,7 +4,7 @@
 
 class Player {
 public:
-    
+    bool isGrounded = false;
 
 private:
 
@@ -16,7 +16,7 @@ private:
     const float JUMP_FORCE = -500.0f;
     const float WIDTH = 24.0f;
     const float HEIGHT = 36.0f;
-    bool isGrounded = false;
+    
 
 public:
     void Initialize(olc::PixelGameEngine* engine) {

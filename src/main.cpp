@@ -130,7 +130,10 @@ private:
 		SoundProperties soundProperties;
 		soundManager.Update(fElapsedTime, soundProperties);
 		res = soundManager.HandleSound(fElapsedTime);
-		return res;		
+        if(keyboard.GetKey(olc::Key::SPACE).bPressed && player.isGrounded) {
+            soundManager.PlaySoundAffect(); // Play sound when player is grounded
+        }
+		return res;
 	}
 
 	/*
@@ -176,8 +179,8 @@ private:
 	{
 		bool res = true;
 		// Emscripten copyright notice
-		res = CreateImageFromFile(imgCopyright_Emscripten, "assets/emscripten_logo.png");
-		if(!res) printf("Failed to load assets/emscripten_logo.png\n");
+		res = CreateImageFromFile(imgCopyright_Emscripten, "assets/images/emscripten_logo.png");
+		if(!res) printf("Failed to load assets/images/emscripten_logo.png\n");
 		res = true; //TODO: Remove temp here keep things moving
 		
 		return res;
@@ -224,7 +227,7 @@ int main()
 	JohnnyChange demo;
 
 	PGEConfig config;
-	config.bVSync = false;
+	config.bVSync = true;
 	config.vPixelSize = { 1,1 };
 	config.vScreenSize = { 800,450 };
 	config.bFullScreen = false;
