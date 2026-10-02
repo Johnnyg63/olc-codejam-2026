@@ -1,3 +1,4 @@
+#pragma once
 
 #include <fstream>
 #include <strstream>
@@ -7,11 +8,20 @@
 
 using namespace olc;
 
+/**
+ * XMLTag_TSX represents a single XML tag in a TSX file.
+ * It contains the tag name and a map of key-value pairs for the tag's attributes.
+ */
 struct XMLTag_TSX
 {
-	std::string tag;
-	std::map<std::string, std::string> data;
+	std::string tag;							// The name of the XML tag.
+	std::map<std::string, std::string> data;	// A map of key-value pairs for the tag's attributes.
 
+	/*
+	* Formats the tag data into a human-readable string.
+	* @param tiles The map of key-value pairs to format.
+	* @return A formatted string representing the tag data.
+	*/
 	const std::string FormatTagData(std::map<std::string, std::string>tiles)
 	{
 		std::string displayStr = "";
@@ -24,6 +34,12 @@ struct XMLTag_TSX
 		return displayStr;
 	}
 
+	/**
+	 * Overloads the << operator to print the XMLTag_TSX object.
+	 * @param os The output stream.
+	 * @param rhs The XMLTag_TSX object to print.
+	 * @return The output stream.
+	 */
 	friend std::ostream& operator << (std::ostream& os, XMLTag_TSX& rhs)
 	{
 		os << rhs.tag << "\n" << rhs.FormatTagData(rhs.data) << "\n";
@@ -31,16 +47,19 @@ struct XMLTag_TSX
 		return os;
 	}
 
+	// Retrieves the integer value associated with the specified data tag.
 	int GetInteger(std::string dataTag)
 	{
 		return std::stoi(data[dataTag]);
 	}
 
+	// Retrieves the double value associated with the specified data tag.
 	double GetDouble(std::string dataTag)
 	{
 		return std::stod(data[dataTag]);
 	}
 
+	// Retrieves the boolean value associated with the specified data tag.
 	bool GetBool(std::string dataTag)
 	{
 		if (data[dataTag] == "0")
@@ -56,36 +75,54 @@ struct XMLTag_TSX
 
 };
 
-
+/**
+ * ObjectDataInfo represents the data for an object in a TSX file.
+ * It contains the XML tag for the object data and the type data.
+ */
 struct ObjectDataInfo
 {
-	XMLTag_TSX sObjectData;
-	XMLTag_TSX sTypeData;
+	XMLTag_TSX sObjectData;	// The XML tag for the object data.
+	XMLTag_TSX sTypeData;	// The XML tag for the type data.
 };
 
+
+/**
+ * Tile represents a single tile in a TSX file.
+ * It contains the tile data, any custom properties, and object group data.
+ */
 struct Tile
 {
-	XMLTag_TSX sTileData;
-	std::vector<XMLTag_TSX> vecProperties; // Stores any custom properties
-	XMLTag_TSX sObjectGroupData;
-	std::vector<ObjectDataInfo> vecObjectDataInfo; //XMLTag_TSX sObjectData;
+	XMLTag_TSX sTileData;						   // The XML tag for the tile data.
+	std::vector<XMLTag_TSX> vecProperties; 		   // Stores any custom properties
+	XMLTag_TSX sObjectGroupData;				   // The XML tag for the object group data.
+	std::vector<ObjectDataInfo> vecObjectDataInfo; // The vector storing object data information.
 
 };
 
 
-
+/**
+ * Map_TSX represents the map data in a TSX file.
+ * It contains the image data, tileset data, and a vector of tiles.
+ */
 struct Map_TSX
 {
-	XMLTag_TSX ImageData;
-	XMLTag_TSX TilesetData;
-	std::vector<Tile> vecTiles;
+	XMLTag_TSX ImageData;	    // The XML tag for the image data.
+	XMLTag_TSX TilesetData;     // The XML tag for the tileset data.
+	std::vector<Tile> vecTiles; // The vector storing all the tiles.
 
 };
 
+/*
+ * TSXParser is responsible for parsing TSX files and extracting map data.
+ */
 class TSXParser {
 
 public:
 
+	/**
+	 * Retrieves the parsed map data.
+	 * @return The Map_TSX object containing the parsed map data.
+	 */
 	Map_TSX GetData()
 	{
 		return parsedMapInfo;
@@ -105,10 +142,10 @@ public:
 
 private:
 
-	Map_TSX parsedMapInfo;
-	Tile sTile;
+	Map_TSX parsedMapInfo;		// The parsed map data.
+	Tile sTile;					// The current tile being parsed.
 
-	bool bIsFirstPass = true;
+	bool bIsFirstPass = true;	// Flag indicating if this is the first pass of parsing.
 
 #if NDEBUG
 	bool bInDebugMode = false; // Set to false to disable debug logs
@@ -116,16 +153,18 @@ private:
 	bool bInDebugMode = false; // Set to true to enable debug logs
 #endif
 	
-
+	/**
+	 * Parses an individual XML tag from the TSX file.
+	 * @param tag The XML tag as a string.
+	 */
 	void ParseTag(std::string tag)
 	{
-		XMLTag_TSX newTag;
-		int test = 0;   // TODO: Removed
+		XMLTag_TSX newTag; // The new XML tag being parsed.
 
-		//First character is a '<' so we discard it.
+		// First character is a '<' so we discard it.
 		tag.erase(0, 1);
 
-		//last characters in the tag '>'. 
+		// Last characters in the tag '>'. 
 		tag.erase(tag.length() - 1, 1);
 
 
@@ -140,18 +179,20 @@ private:
 
 
 		// Now parse by spaces.
-		std::stringstream s(tag); //Turn it into a string stream to now parse into individual whitespaces.
+		std::stringstream strStream(tag); //Turn it into a string stream to now parse into individual whitespaces.
 		std::string data;
+		std::string strTempString;        // Temporary storage for each parsed segment of the tag.		
+		strTempString.reserve(256);      // Reserve some space to avoid frequent reallocations.
 
-		while (s.good())
+		while (strStream.good())
 		{
 			data.clear();
-			s >> data;
+			strStream >> strTempString;
 
 			if (newTag.tag.length() == 0)
 			{
 				//Tag's empty, so first line is the tag.
-				newTag.tag = data;
+				newTag.tag = strTempString;
 				if (bInDebugMode)
 					std::cout << "Tag: " << newTag.tag << "\n";
 			}
@@ -159,9 +200,8 @@ private:
 			{
 				// TODO: Edge case there will be tags that are not in the format of key-->value, example:  <point/>
 				// We need to manage this
-
-				std::string key = data.substr(0, data.find("="));
-				std::string value = data.substr(data.find("=") + 1, std::string::npos);
+				std::string key = strTempString.substr(0, strTempString.find("="));
+				std::string value = strTempString.substr(strTempString.find("=") + 1, std::string::npos);
 
 				//Strip Quotation marks, if they exist. 
 				if (value.substr(0, 1) == "\"") value = value.substr(1, std::string::npos);
@@ -175,11 +215,10 @@ private:
 
 		} // END While(sd.good())
 
+		// Add the newly parsed tag to the list of all tags.
 
-		if (newTag.tag == "tileset")
-		{
+		if (newTag.tag == "tileset"){
 			parsedMapInfo.TilesetData = newTag;
-
 		}
 		else if (newTag.tag == "image")
 		{
@@ -231,16 +270,12 @@ private:
 			// The latest object data will always be the last in the list
 			auto& sObjectDataInfo = sTile.vecObjectDataInfo[sTile.vecObjectDataInfo.size() - 1];
 			sObjectDataInfo.sTypeData = newTag;
-			
-
 		}
 		else if (newTag.tag == "capsule")
 		{
 			// The latest object data will always be the last in the list
 			auto& sObjectDataInfo = sTile.vecObjectDataInfo[sTile.vecObjectDataInfo.size() - 1];
 			sObjectDataInfo.sTypeData = newTag;
-
-
 		}
 		else if (newTag.tag == "/object")
 		{
@@ -261,9 +296,9 @@ private:
 				std::cout << "Unsupported tag format! Ignoring." << "\n";
 		}
 
-
 		if (bInDebugMode)
 			std::cout << "\n" << "=============\n";
+
 	}
 
 	/*
@@ -310,13 +345,21 @@ private:
 	
 
 public:
+
+	/**
+	* Constructor for the TSXParser class.
+	* @param file The path to the TSX file to be parsed.
+	*/
 	TSXParser(std::string file)
 	{
-		/*std::cout << "Parsing TSX file: " << file << "\n";
+		/*
+		std::cout << "Parsing TSX file: " << file << "\n";
 		auto start = std::chrono::high_resolution_clock::now();*/
+
 		// Before we begin lets reset the class objects encase we are loading a new file
 		ResetMapInfo();
 
+		// Read the entire file content into a string for parsing.
 		std::ifstream f(file, std::ios::in | std::ios::binary);
 		if (!f.is_open()) {
 			if (bInDebugMode)
@@ -328,6 +371,7 @@ public:
 		std::streampos fileSize = f.tellg();
 		f.seekg(0, std::ios::beg);
 
+		// Allocate a string to hold the entire file content.
 		std::string fileContent;
 		fileContent.resize(fileSize);
 		f.read(&fileContent[0], fileSize);
@@ -335,38 +379,39 @@ public:
 
 		// Now we have the entire file in a string, we can parse it.
 		size_t currentPosition = 0;
-		std::stringstream s(fileContent);
+		std::stringstream strFileStream(fileContent);
 		std::string accumulator = "";
-		std::string data;
+		std::string strTempString;        // Temporary storage for each parsed segment of the tag.		
+		strTempString.reserve(256);      // Reserve some space to avoid frequent reallocations.
 
-		while (s.good()) 
+		while (strFileStream.good()) 
 		{
-			data.clear();
-			s >> data;
-			if (data.empty()) continue;
+			strTempString.clear();
+			strFileStream >> strTempString;
+			if (strTempString.empty()) continue;
 
 			if (accumulator.length() > 0) 
 			{
-				accumulator += " " + data;
+				accumulator += " " + strTempString;
 
 				//Check if it ends with '>'
-				if (data[data.length() - 1] == '>') 
+				if (strTempString[strTempString.length() - 1] == '>') 
 				{
 					ParseTag(accumulator);
 					accumulator.clear();
 				}
 			}
 			else
-				if (data[0] == '<') 
+				if (strTempString[0] == '<') 
 				{
 					//Beginning of XML tag.
-					accumulator = data;
+					accumulator = strTempString;
 
 					// Let check if it is an end tag </object>
-					if (data[data.length() - 1] == '>')
+					if (strTempString[strTempString.length() - 1] == '>')
 					{
 						// ok this is a possiable end tag
-						accumulator = data;
+						accumulator = strTempString;
 						ParseTag(accumulator);
 						accumulator.clear();
 					}
@@ -377,15 +422,15 @@ public:
 					//Start reading in data for this layer.
 					std::vector<int>rowData;
 
-					while (data.find(",") != std::string::npos)
+					while (strTempString.find(",") != std::string::npos)
 					{
-						std::string datapiece = data.substr(0, data.find(","));
-						data = data.substr(data.find(",") + 1, std::string::npos);
+						std::string datapiece = strTempString.substr(0, strTempString.find(","));
+						strTempString = strTempString.substr(strTempString.find(",") + 1, std::string::npos);
 						rowData.push_back(stoi(datapiece));
 					}
-					if (data.length()) 
+					if (strTempString.length()) 
 					{
-						rowData.push_back(stoi(data));
+						rowData.push_back(stoi(strTempString));
 					}
 					//parsedMapInfo.LayerData[parsedMapInfo.LayerData.size() - 1].tiles.push_back(rowData);
 				}

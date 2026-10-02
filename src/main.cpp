@@ -16,7 +16,7 @@
 #include "olcPGEX3_Miniaudio.h"
 
 #include "soundmanager.h"
-#include "levelmanager.h"
+#include "levelmanager_hold.h"
 #include "player.h"
 #include "backgroundmanager.h"
 
