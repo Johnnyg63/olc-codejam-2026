@@ -24,13 +24,10 @@ public:
 
     void Draw() {
         if(ptrPGE == nullptr) return;
-        olc::vf2d scale = { 
-            static_cast<float>(ptrPGE->ScreenSize().x) / imgBackground.Size().x,
-            static_cast<float>(ptrPGE->ScreenSize().y) / imgBackground.Size().y
-        };
+        
+        // draw.ImageRect(imgTest, { 4, 4 }, imgTest.Size() * 2);
+        ptrPGE->GetDraw().ImageRect(imgBackground, { 0.0f, 0.0f }, ptrPGE->GetScreen().Size());
 
-        scale = olc::vf2d(ptrPGE->ScreenSize() / imgBackground.Size());
-        ptrPGE->GetDraw().Image(imgBackground, {0, 0}, scale);
 
     }
 

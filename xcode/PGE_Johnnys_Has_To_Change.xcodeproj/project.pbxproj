@@ -34,7 +34,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		77FCE2B1E0544C60A3DAE8CF /* temp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52A33A25121A49458480DAD0 /* temp.cpp */; };
 		7AE17141710E4657A57DA5F1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769916C15CB740DCA972D183 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -64,10 +63,10 @@
 
 /* Begin PBXFileReference section */
 		07FE6D37A71249FE90304051 /* PGE_Johnnys_Has_To_Change */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = PGE_Johnnys_Has_To_Change; sourceTree = BUILT_PRODUCTS_DIR; };
+		468BC09D3070051F00B41436 /* backgroundmanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backgroundmanager.h; sourceTree = "<group>"; };
 		46DB486E306D2C27007A2915 /* levelmanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = levelmanager.h; sourceTree = "<group>"; };
 		46DB486F306D2C27007A2915 /* player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
 		46DB4870306D2C27007A2915 /* soundmanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundmanager.h; sourceTree = "<group>"; };
-		52A33A25121A49458480DAD0 /* temp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = temp.cpp; path = src/temp.cpp; sourceTree = SOURCE_ROOT; };
 		646AC55B9D4B49918013EF4C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		769916C15CB740DCA972D183 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		EBE1729081854CDEA82FFC2B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
@@ -125,11 +124,11 @@
 		744F23F50C064FD99826E1EE /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				468BC09D3070051F00B41436 /* backgroundmanager.h */,
 				46DB486E306D2C27007A2915 /* levelmanager.h */,
 				46DB486F306D2C27007A2915 /* player.h */,
 				46DB4870306D2C27007A2915 /* soundmanager.h */,
 				769916C15CB740DCA972D183 /* main.cpp */,
-				52A33A25121A49458480DAD0 /* temp.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
@@ -261,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE17141710E4657A57DA5F1 /* main.cpp in Sources */,
-				77FCE2B1E0544C60A3DAE8CF /* temp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

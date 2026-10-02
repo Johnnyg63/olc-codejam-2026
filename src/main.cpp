@@ -18,6 +18,7 @@
 #include "soundmanager.h"
 #include "levelmanager.h"
 #include "player.h"
+#include "backgroundmanager.h"
 
 
 // This class overrides the olc::PixelGameEngine base class
@@ -30,14 +31,14 @@ public:
 	LevelManager levelManager;
 	Player player;
 	SoundManager soundManager;
+	BackgroundManager backgroundManager;
 	
 	// Copyright notice
 	std::string strCopyrightNotice_MusicLFiles;
 	olc::Image imgCopyright_Emscripten;
 	olc::Image imgCopyright_OLC;
 	olc::Image imgCopyRight_Kenny;
-
-
+    
     // For demonstration controls, with sensible default values
     float pan    = 0.0f;
     float pitch  = 1.0f;
@@ -65,6 +66,7 @@ public:
 	bool OnUserCreate() override
 	{
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
+        if (!LoadBackground())      {throw std::runtime_error("Failed to load background");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
 		if (!LoadPlayer()) 			{throw std::runtime_error("Failed to load player");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
@@ -79,6 +81,9 @@ public:
 	{
 		// Handle screen clearing, change backgrounds etc later
 		if (!ClearScreen(fElapsedTime, olc::Colour::BLACK)) {throw std::runtime_error("Failed to clear screen");};
+        
+        // Handle background drawing and updates
+        if (!HandleBackground(fElapsedTime)) {throw std::runtime_error("Failed to handle background");};
 
 		// Handle audio playback and controls 
 		if (!HandleSound(fElapsedTime)) {throw std::runtime_error("Failed to handle sound");};
@@ -104,9 +109,7 @@ private:
 	{
 		olc_IgnoreUnused(fElapsedTime);
 		bool res = true;
-
 		draw.Clear(col);
-		
 		return res;
 	}
 
@@ -147,6 +150,28 @@ private:
 		res = soundManager.HandleSound(fElapsedTime);
 
 		return res;	
+	}
+
+	/*
+	Load and initialize the background manager
+	*/
+	bool LoadBackground()
+	{
+		bool res = true;
+		backgroundManager.Initialize(this);
+		res = backgroundManager.LoadBackground("assets/images/backgrounds/skybox-night.png");
+		return res;
+	}
+
+	/*
+	Handle the background manager
+	*/
+	bool HandleBackground(float fElapsedTime)
+	{
+		bool res = true;
+		backgroundManager.Update(fElapsedTime);
+		backgroundManager.Draw();
+		return res;
 	}
 
 	/*
