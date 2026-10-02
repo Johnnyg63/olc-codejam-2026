@@ -21,7 +21,7 @@ struct Platform {
     PhaseState matchingState;
 };
 
-class LevelManager : public olc::PixelGameEngine {
+class LevelManager_hold : public olc::PixelGameEngine {
     
 public:
     PhaseState currentPhase = PhaseState::BLUE_ACTIVE;

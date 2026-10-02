@@ -28,7 +28,7 @@ class JohnnyChange : public olc::PixelGameEngine
 {
 
 public:
-	LevelManager levelManager;
+	LevelManager_hold levelManager;
 	Player player;
 	SoundManager soundManager;
 	BackgroundManager backgroundManager;

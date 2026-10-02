@@ -36,7 +36,7 @@ public:
         nLandSoundID = ptrSound->GetSoundIDByName("footstep_concrete_001");
      }
 
-    void Update(float fElapsedTime, const LevelManager& level) {
+    void Update(float fElapsedTime, const LevelManager_hold& level) {
         // Horizontal Movement Input
         if(ptrPGE == nullptr) return;
         velocity.x = 0;
@@ -99,7 +99,7 @@ private:
         }
     }
 
-    void ResolveCollisions(const LevelManager& level, bool checkingX) {
+    void ResolveCollisions(const LevelManager_hold& level, bool checkingX) {
         Rectangle playerBox = { {position.x, position.y}, {WIDTH, HEIGHT} };
         bool bPlayerSound = false;
         for (const auto& platform : level.platforms) {
