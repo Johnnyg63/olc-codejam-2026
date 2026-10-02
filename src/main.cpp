@@ -242,7 +242,7 @@ int main()
 	PGEConfig config;
 	config.bVSync = true;
 	config.vPixelSize = { 1,1 };
-	config.vScreenSize = { 800,450 };
+	config.vScreenSize = { 1280, 720 };
 	config.bFullScreen = false;
 	
 	if (demo.Construct(config))
