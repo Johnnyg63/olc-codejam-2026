@@ -31,7 +31,7 @@ public:
         // Store the pointer to the PixelGameEngine instance for later use
         ptrPGE = engine;
         ptrSound = &sound;
-        nJumpSoundID = ptrSound->GetSoundIDByName("jump_001");
+        nJumpSoundID = ptrSound->GetSoundIDByName("jump1");
         nBongSoundID = ptrSound->GetSoundIDByName("bong_001");
         nLandSoundID = ptrSound->GetSoundIDByName("footstep_concrete_001");
      }

@@ -119,14 +119,15 @@ private:
 		bool res = 0;
 		soundManager.Initialize(this, &extMiniAudio);
 		// Temp code to load sounds without specifying files, to be updated later
+		
 		std::vector<loadSound> vecLoadSounds; // Temporary container for sounds to load
         vecLoadSounds.push_back({"Cheerful_Annoyance", "assets/sounds/background/Cheerful_Annoyance.mp3", true, true});
         vecLoadSounds.push_back({"bong_001", "assets/sounds/fx/bong_001.mp3", false, false});
-        vecLoadSounds.push_back({"Jump1", "assets/sounds/fx/jump1.mp3", false, false});
-        vecLoadSounds.push_back({"Jump2", "assets/sounds/fx/jump1.mp3", false, false});
-        vecLoadSounds.push_back({"Jump3", "assets/sounds/fx/jump1.mp3", false, false});
-        vecLoadSounds.push_back({"Jump4", "assets/sounds/fx/jump1.mp3", false, false});
-		vecLoadSounds.push_back({"Jump5", "assets/sounds/fx/jump1.mp3", false, false});
+        vecLoadSounds.push_back({"jump1", "assets/sounds/fx/jump1.mp3", false, false});
+        vecLoadSounds.push_back({"jump2", "assets/sounds/fx/jump2.mp3", false, false});
+        vecLoadSounds.push_back({"jump3", "assets/sounds/fx/jump3.mp3", false, false});
+        vecLoadSounds.push_back({"jump4", "assets/sounds/fx/jump4.mp3", false, false});
+		vecLoadSounds.push_back({"jump5", "assets/sounds/fx/jump5.mp3", false, false});
 		vecLoadSounds.push_back({"footstep_concrete_001", "assets/sounds/fx/footstep_concrete_001.mp3", false, false});
 		res = soundManager.LoadSounds(vecLoadSounds);
 
