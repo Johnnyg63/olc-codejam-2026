@@ -86,7 +86,7 @@ public:
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
         if (!LoadBackground())      {throw std::runtime_error("Failed to load background");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
-        //if (!LoadTitledLevel())     {throw std::runtime_error("Failed to load tiled level");};
+        if (!LoadTitledLevel())     {throw std::runtime_error("Failed to load tiled level");};
 		if (!LoadCameraManager()) 	{throw std::runtime_error("Failed to load camera manager");};
 		if (!LoadPlayer()) 			{throw std::runtime_error("Failed to load player");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
@@ -112,7 +112,7 @@ public:
 		if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
         
         // Draw the Tiled Level
-        //if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
+        if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
 
 		// Draw the camera manager
 		if(!HandleCameraManager(fElapsedTime)) {throw std::runtime_error("Failed to handle camera manager");};
@@ -201,7 +201,8 @@ private:
 	{
 		bool res = true;
 		tiledLevelManager.Initialize(this);
-		res = tiledLevelManager.LoadLevel("assets/images/tilesheets/level_tilesheet.png", "assets/maps/tiledprojects/Level1Output.tmx", 1);
+
+		res = tiledLevelManager.LoadLevel("assets/images/tiledsheets/level_tilesheet.png", "assets/tiledprojects/Level1Output.tmx", 1);
 		return res;
 	}
 
