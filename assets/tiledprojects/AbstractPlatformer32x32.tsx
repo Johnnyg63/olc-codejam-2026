@@ -10761,16 +10761,4 @@
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
- <wangsets>
-  <wangset name="Unnamed Set" type="mixed" tile="-1">
-   <wangcolor name="" color="#ff0000" tile="-1" probability="1"/>
-   <wangtile tileid="469" wangid="0,0,1,1,0,0,0,0"/>
-   <wangtile tileid="470" wangid="1,1,1,0,1,1,1,1"/>
-   <wangtile tileid="471" wangid="1,1,1,1,1,1,1,0"/>
-   <wangtile tileid="472" wangid="0,0,0,0,0,1,1,0"/>
-   <wangtile tileid="514" wangid="1,1,1,1,1,0,0,1"/>
-   <wangtile tileid="515" wangid="1,0,1,1,1,0,1,1"/>
-   <wangtile tileid="559" wangid="0,1,0,0,0,0,0,0"/>
-  </wangset>
- </wangsets>
 </tileset>

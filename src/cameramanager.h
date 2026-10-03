@@ -9,7 +9,7 @@ class CameraManager
 private:
 
     // Player stuff!
-    olc::vf2d velocity = { 0, 0 };
+    //olc::vf2d velocity = { 0, 0 };
     const float SPEED = 300.0f;
     const float GRAVITY = 1200.0f;
     const float JUMP_FORCE = -500.0f;
@@ -78,23 +78,21 @@ public:
     {
         // Update camera logic here
         ManageKeyboardInput(fElapsedTime);
-        
-
+    
 		// Set the world transform for the camera, so that all drawing operations
 		ptrPGE->GetDraw().SetWorldTransform(camera.GetWorldTransform());
 
-
-        // TODO This is our new collision and rendering logic for the tile map
+        // // TODO This is our new collision and rendering logic for the tile map
 		olc::vi2d vTileOffset = ptrPGE->GetDraw().ScreenToWorld({ 0,0 }).floor();
 		olc::vi2d vTileCount = ptrPGE->GetDraw().ScreenToWorld(ptrPGE->ScreenSize()).ceil() - vTileOffset;
 
-		// Clamp to ensure we stay in bounds of our world map
+		// // Clamp to ensure we stay in bounds of our world map
 		olc::vi2d vTileTL = vTileOffset.max({ 0,0 });
 		olc::vi2d vTileBR = (vTileOffset + vTileCount).min(viWorldSize);
 		olc::vi2d vTile;
 
 		// Then looping through them and drawing them
-		auto batch = ptrPGE->GetDraw().CreateFilledBatch();
+		//auto batch = ptrPGE->GetDraw().CreateFilledBatch();
 
 		for (vTile.y = vTileTL.y; vTile.y < vTileBR.y; vTile.y++)
 			for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
@@ -103,14 +101,14 @@ public:
 				int idx = vTile.y * viWorldSize.x + vTile.x;
 
 				if (vecWorldMap[idx] == 0)
-					ptrPGE->GetDraw().FilledRect(batch, vTile, { 1.0f, 1.0f }, olc::Colour::DARK_GREEN);
+					ptrPGE->GetDraw().Rect(vTile, { 1.0f, 1.0f }, olc::Colour::DARK_GREEN);
 
 				if (vecWorldMap[idx] == 1)
-					ptrPGE->GetDraw().FilledRect(batch, vTile, { 1.0f, 1.0f }, olc::Colour::TANGERINE);
+					ptrPGE->GetDraw().Rect(vTile, { 1.0f, 1.0f }, olc::Colour::TANGERINE);
 			}
 
 		// Draw the batch of tiles
-		ptrPGE->GetDraw().Batch(batch);
+		// ptrPGE->GetDraw().Batch(batch);
 
 		// Draw the "player" as a 1x1 cell
 		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
@@ -179,6 +177,7 @@ private:
 			// In play mode, we update the camera as normal, which will cause it to
 			// follow the tracked point according to the camera mode
 			bOnScreen = camera.Update(fElapsedTime);
+
     }
 
 };

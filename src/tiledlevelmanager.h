@@ -240,7 +240,7 @@ namespace olc
             struct ObjectProperites
             {
                 bool bAutoScale                = true;				// Automatically scales the background image to fit within the screen size
-                bool bShowCollisions           = false;				// Set to true to show collision lines around objects, default: false
+                bool bShowCollisions           = true;				// Set to true to show collision lines around objects, default: false
 
                 std::string strName            = "LevelX";			// Object Name. Default "LevelX"
                 uint16_t nLevelNumber          = 0;					// Object Number, Default 0 i.e. Backupground 1 , LevelManager 2 etc
@@ -929,7 +929,7 @@ namespace olc
          */
         void DisplayLevel(float fElapsedTime)
         {
-        
+            
             // Displays the level
             // tile offsets and counts
             olc::vi2d vTileOffset = ptrPGE->GetDraw().ScreenToWorld({0,0}).floor();
@@ -1091,16 +1091,17 @@ namespace olc
                         case 2:
                         case 3:
                         {
-                            // this is our drawing layer
-                            vfScreenTilePos  = ptrPGE->GetDraw().WorldToScreen(vTile);
-                            vfScreenTileSize = ptrPGE->GetDraw().ScreenToWorld(decalInfo.vfSoureSizePos);
-                            ptrPGE->GetDraw().ImageRect(imgBatch, Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                           
                             break;
                         }
                         default:
                             break;
                         }
-
+                        // this is our drawing layer
+                        vfScreenTilePos  = ptrPGE->GetDraw().WorldToScreen(vTile);
+                        vfScreenTileSize = ptrPGE->GetDraw().ScreenToWorld(decalInfo.vfSoureSizePos);
+                        ptrPGE->GetDraw().ImageRect(imgBatch, Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                        
                         nLayerCount++;
 
                     }

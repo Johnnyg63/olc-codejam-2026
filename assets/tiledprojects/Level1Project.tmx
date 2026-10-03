@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.12.2" class="clsLevel" orientation="orthogonal" renderorder="right-down" width="140" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="1">
+ <editorsettings>
+  <export target="Level1Output.tmx" format="tmx"/>
+ </editorsettings>
  <tileset firstgid="1" source="AbstractPlatformer32x32.tsx"/>
  <layer id="1" name="L1" class="clsGround" width="140" height="24" locked="1">
   <data encoding="csv">
