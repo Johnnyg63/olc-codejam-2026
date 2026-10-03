@@ -1,26 +1,41 @@
 #pragma once
 #include "olcPixelGameEngine.h"
+#include "olcUTIL3_Geometry2D.h"
 #include "TMXParser.h"
 #include "TSXParser.h"
 #include <any>
 #include <cmath>
 #include <numbers>
+#include <omp.h>
 
 namespace olc
 {
-
-    class LevelManager : public olc::PixelGameEngine
+    /*
+        TiledLevelManager is responsible for managing levels created with the Tiled map editor.
+        It handles loading TMX and TSX files, storing map and tileset information, and managing
+        collision types and custom properties for tiles.
+    */
+    class TiledLevelManager : public olc::PixelGameEngine
     {
 
         private:
             bool bisLevelLoaded = false; // Use to stop execution until a level is loaded
             olc::PixelGameEngine* ptrPGE= nullptr; // Pointer to the PixelGameEngine itself,
+            // Degrees to radians
+            constexpr float DegreesToRadians(float deg) { return deg * std::numbers::pi / 180.0f; }
+
+            // Radians to degrees
+            constexpr float RadiansToDegrees(float rad) { return rad * 180.0f / std::numbers::pi; }
+
+            // Calculates the center point of a polygon given its vertices
+            constexpr olc::vf2d PolygonCenter(std::vector<olc::vf2d>& points) { return (std::accumulate(points.begin(), points.end(), olc::vf2d{ 0.0f, 0.0f })) / float(points.size()); }
 
         public:
 
             Map_TMX map_TMX; // TMXParser Map (TMX Level file example Level1Output.tmx)
             Map_TSX map_TSX; // TSXParser Map (TSX TileSet file example AbstractPlatformer.tsx)
 
+            // Holds the general information about the tiled map
             struct MapInfo
             {
                 bool bIsInfinite      = false;  	// Is the layer infinite
@@ -42,6 +57,7 @@ namespace olc
             // Holds the tiledmap map info
             MapInfo sMapInfo;
 
+            // Holds the location of the tileset used in the map
             struct TileSetLocation
             {
                 std::string strFirstgid = "";	// ID
@@ -51,6 +67,7 @@ namespace olc
             // Holds the tiledmap TileSet info
             TileSetLocation sTileSetLocation;
 
+            // Holds the detailed information about the tileset used in the map
             struct TileSetInfo
             {
                 int32_t nRows      = 0;				    // Number of tile rows in the tile set
@@ -67,6 +84,7 @@ namespace olc
 
             TileSetInfo sTileSetInfo;
 
+            // Holds the sprite image information for the tileset
             struct TileSetSpriteImage
             {
                 std::string strSource = "";				// Source file
@@ -76,6 +94,7 @@ namespace olc
 
             TileSetSpriteImage sTileSetSpriteImage;
 
+            // Defines the types of collision shapes available for objects in the map
             enum Collision
             {
                 CAPSULE = 0,
@@ -86,6 +105,7 @@ namespace olc
                 RECT
             };
 
+            // Defines the structure for collision types, including the shape, area, and defining points
             struct CollisionType
             {
                 Collision eCollision   = Collision::RECT;	// Collision object type, Default RECT
@@ -99,10 +119,18 @@ namespace olc
                 bool value       = false;
             };
 
+            // Defines the structure for a Colour (Color) property
             struct TypeColor
             {
                 std::string name = "";
                 olc::Pixel value = olc::Colour::BLANK;
+                // TODO: we probably need to a constructor for initializing the color value to an olc::Colour
+            };
+
+            struct TypeInt
+            {
+                std::string name = "";
+                int value        = 0;
             };
 
             struct TypeFloat
@@ -111,10 +139,10 @@ namespace olc
                 float value      = 0.0f;
             };
 
-            struct TypeInt
+            struct TypeDouble
             {
                 std::string name = "";
-                int value        = 0;
+                double value      = 0.0;
             };
 
             struct TypeString
@@ -131,17 +159,20 @@ namespace olc
 
             struct TypeFile
             {
-                std::string name    = "";
+                std::string name  = "";
                 std::string value = "";
+                // TODO: Add constructor for initializing the file property std::filestream or similar
             };
 
             struct TileProperites
             {
                 std::vector<TypeBool>	vecBools;
                 std::vector<TypeColor>	vecColors;
-                std::vector<TypeFloat>	vecFloats;
-                std::vector<TypeFile>	vecFiles;
                 std::vector<TypeInt>	vecInts;
+                std::vector<TypeFloat>	vecFloats;
+                std::vector<TypeDouble>	vecDoubles;
+                std::vector<TypeFile>	vecFiles;
+
                 std::vector<TypeString> vecStrings;
                 std::vector<TypeObject> vecObjects;
             };
@@ -168,8 +199,7 @@ namespace olc
                 int32_t nObjectGroupID    = 0;			  // Object Group ID
                 std::vector<TileObject>   vecTileObjects; // Vector of TileObject
                 TileProperites Properites;				  // Stores vectors of custom properties
-                
-
+        
             };
 
             std::vector<Tile> vecTiles;
@@ -180,7 +210,7 @@ namespace olc
                 bool bIsLocked           = true;			// Is layer is locked
                 bool bHasCollision       = false;			// Has collision object 
                 int16_t nLayerID         = 0;				// Layer id number
-                int32_t nDecalID = 0;						// Holds the Tile ID to draw this decal
+                int32_t nDecalID         = 0;			    // Holds the Tile ID to draw this decal
                 int32_t nWidth           = 0;				// Layer Width
                 int32_t nHeight          = 0;				// Layer Height
                 int32_t nTiledID         = 0;				// Tiled Map Editor ID 
@@ -207,13 +237,13 @@ namespace olc
 
             struct ObjectProperites
             {
-                std::string strName            = "LevelX";			// Object Name. Default "LevelX"
-                uint16_t nLevelNumber          = 0;					// Object Number, Default 0 i.e. Backupground 1 , LevelManager 2 etc
-                
-                float fMaxSquareTolerance      = 2.0f;					// Maximum pixel difference for approximately square (width ≈ height) used for collision detection (Ellipse v Circle), default: 2.0f
                 bool bAutoScale                = true;				// Automatically scales the background image to fit within the screen size
                 bool bShowCollisions           = false;				// Set to true to show collision lines around objects, default: false
 
+                std::string strName            = "LevelX";			// Object Name. Default "LevelX"
+                uint16_t nLevelNumber          = 0;					// Object Number, Default 0 i.e. Backupground 1 , LevelManager 2 etc
+                float fMaxSquareTolerance      = 2.0f;					// Maximum pixel difference for approximately square (width ≈ height) used for collision detection (Ellipse v Circle), default: 2.0f
+                
                 olc::vf2d vfPosition           = { 0.0f,0.0f };		// Image POS {x,y} (float), Default {0.0f,0.0f}
                 olc::vi2d viWorldSize          = { 140, 24 };		// 2048 64 cells
                 olc::vi2d viTileSize           = { 32, 32 };		// Tile Size (Screen Size 35X35, World Size 1 X 1)
@@ -287,13 +317,13 @@ namespace olc
             // Get the tileset data
             for (auto& tileSetInfo : map_TSX.TilesetData.data)
             {
-                if (tileSetInfo.first == "columns")		 { sTileSetInfo.nColumns = std::stoi(tileSetInfo.second); continue; }
-                if (tileSetInfo.first == "name")		 { sTileSetInfo.strName = tileSetInfo.second; continue; }
-                if (tileSetInfo.first == "tilecount")	 { sTileSetInfo.nTileCount = std::stoi(tileSetInfo.second); continue; }
-                if (tileSetInfo.first == "tiledversion") { sTileSetInfo.strTiledVersion = tileSetInfo.second; continue; }
-                if (tileSetInfo.first == "tileheight")	 { sTileSetInfo.vfTileSize.y = std::stof(tileSetInfo.second); continue; }
-                if (tileSetInfo.first == "tilewidth")	 { sTileSetInfo.vfTileSize.x = std::stof(tileSetInfo.second); continue; }
-                if (tileSetInfo.first == "version")		 { sTileSetInfo.strVersion = tileSetInfo.second; continue; }
+                if (tileSetInfo.first == "columns")		 { sTileSetInfo.nColumns        = std::stoi(tileSetInfo.second); continue; }
+                if (tileSetInfo.first == "name")		 { sTileSetInfo.strName         = tileSetInfo.second;            continue; }
+                if (tileSetInfo.first == "tilecount")	 { sTileSetInfo.nTileCount      = std::stoi(tileSetInfo.second); continue; }
+                if (tileSetInfo.first == "tiledversion") { sTileSetInfo.strTiledVersion = tileSetInfo.second;            continue; }
+                if (tileSetInfo.first == "tileheight")	 { sTileSetInfo.vfTileSize.y    = std::stof(tileSetInfo.second); continue; }
+                if (tileSetInfo.first == "tilewidth")	 { sTileSetInfo.vfTileSize.x    = std::stof(tileSetInfo.second); continue; }
+                if (tileSetInfo.first == "version")		 { sTileSetInfo.strVersion      = tileSetInfo.second;            continue; }
 
             }
 
@@ -306,9 +336,9 @@ namespace olc
             // Get the Sprite image used for the tile set
             for (auto& imageInfo : map_TSX.ImageData.data)
             {
-                if (imageInfo.first == "source") { sTileSetSpriteImage.strSource = imageInfo.second; continue; }
-                if (imageInfo.first == "width")  { sTileSetSpriteImage.vfSize.x = std::stof(imageInfo.second); continue; }
-                if (imageInfo.first == "height") { sTileSetSpriteImage.vfSize.y = std::stof(imageInfo.second); continue; }
+                if (imageInfo.first == "source") { sTileSetSpriteImage.strSource = imageInfo.second;            continue; }
+                if (imageInfo.first == "width")  { sTileSetSpriteImage.vfSize.x  = std::stof(imageInfo.second); continue; }
+                if (imageInfo.first == "height") { sTileSetSpriteImage.vfSize.y  = std::stof(imageInfo.second); continue; }
 
             }
 
@@ -325,16 +355,16 @@ namespace olc
                     // Right need to explain this, the TMX CSV data tile ID will always be + 1 greater than 
                     // The tileID held in the TSX data. There is a lot of reasons for this, but for our code to work correctly
                     // we need to ensure our sTile.ID matchs that of which is in the TMX file. 
-                    if (tileData.first == "id")   { sTile.nTileID = (std::stoi(tileData.second) + 1); continue; }
-                    if (tileData.first == "type") { sTile.strClassType = tileData.second; continue; }
+                    if (tileData.first == "id")   { sTile.nTileID      = (std::stoi(tileData.second) + 1);  continue; }
+                    if (tileData.first == "type") { sTile.strClassType = tileData.second;                   continue; }
                 }
 
                 // Get the Object Group data
                 // <objectgroup draworder="index" id="2">
                 for (auto& objectGroupData : tileInfo.sObjectGroupData.data)
                 {
-                    if (objectGroupData.first == "draworder") { sTile.strDrawOrder = objectGroupData.second; continue; }
-                    if (objectGroupData.first == "id")        { sTile.nObjectGroupID = std::stoi(objectGroupData.second); continue; }
+                    if (objectGroupData.first == "draworder") { sTile.strDrawOrder   = objectGroupData.second;              continue; }
+                    if (objectGroupData.first == "id")        { sTile.nObjectGroupID = std::stoi(objectGroupData.second);   continue; }
                 }
 
                 /*
@@ -349,8 +379,8 @@ namespace olc
                     std::string sValue = "";
                     for (auto& data : property.data)
                     {
-                        if (data.first == "name")  { sName = data.second; continue; }
-                        if (data.first == "type")  { sType = data.second; continue; }
+                        if (data.first == "name")  { sName  = data.second; continue; }
+                        if (data.first == "type")  { sType  = data.second; continue; }
                         if (data.first == "value") { sValue = data.second; continue; }
                     }
 
@@ -367,7 +397,7 @@ namespace olc
                     {
                         TypeBool sTypeBool;
                         sTypeBool.name = sName;
-                        sTypeBool.value = (sValue == "true") ? true : false;
+                        sTypeBool.value = (sValue == "true") ? true : false; // Implicit conversion from string to bool cause I can...
                         sTile.Properites.vecBools.push_back(sTypeBool);
                         continue;
                     }
@@ -377,12 +407,11 @@ namespace olc
                         TypeColor sTypeColor;
                         sTypeColor.name = sName;
 
+                        // remove the leading # if it exist
                         char firstChar = sValue.at(0);
                         if (firstChar == '#')
-                        {
-                            // remove the leading # if it exist
                             sValue.erase(0, 1);
-                        }
+
 
                         sTypeColor.value = olc::Pixel(std::stoul(sValue, nullptr, 16));
                         sTile.Properites.vecColors.push_back(sTypeColor);
@@ -392,9 +421,18 @@ namespace olc
                     if (sType == "file")
                     {
                         TypeFile sTypeFile;
-                        sTypeFile.name = sName;
+                        sTypeFile.name  = sName;
                         sTypeFile.value = sValue;
                         sTile.Properites.vecFiles.push_back(sTypeFile);
+                        continue;
+                    }
+
+                    if (sType == "int")
+                    {
+                        TypeInt sTypeInt;
+                        sTypeInt.name = sName;
+                        sTypeInt.value = std::stoi(sValue);
+                        sTile.Properites.vecInts.push_back(sTypeInt);
                         continue;
                     }
 
@@ -407,14 +445,15 @@ namespace olc
                         continue;
                     }
 
-                    if (sType == "int")
+                    if (sType == "double")
                     {
-                        TypeInt sTypeInt;
-                        sTypeInt.name = sName;
-                        sTypeInt.value = std::stoi(sValue);
-                        sTile.Properites.vecInts.push_back(sTypeInt);
+                        TypeDouble sTypeDouble;
+                        sTypeDouble.name = sName;
+                        sTypeDouble.value = std::stod(sValue);
+                        sTile.Properites.vecDoubles.push_back(sTypeDouble);
                         continue;
                     }
+
 
                     if (sType == "object")
                     {
@@ -456,19 +495,19 @@ namespace olc
                     // <object id="1" name="Left_Triangle" type="clsLeftTriangle" x="0.176258" y="9.51793">
                     for (auto& objectData : sObjectDataInfo.sObjectData.data)
                     {
-                        if (objectData.first == "height") { sTileObject.vfSize.y = std::stof(objectData.second); continue; }
-                        if (objectData.first == "id")     { sTileObject.nTileObjectID = std::stoi(objectData.second); continue; }
-                        if (objectData.first == "name")   { sTileObject.strName = objectData.second; continue; }
+                        if (objectData.first == "height") { sTileObject.vfSize.y      = std::stof(objectData.second);   continue; }
+                        if (objectData.first == "id")     { sTileObject.nTileObjectID = std::stoi(objectData.second);   continue; }
+                        if (objectData.first == "name")   { sTileObject.strName       = objectData.second;              continue; }
 
                         if (objectData.first == "rotation")
                         {
                             sTileObject.fRotationDeg = std::stof(objectData.second);
-                            // Get our radians // TODO we need to increase PI for more accurate results 
-                            sTileObject.fRotationRad = sTileObject.fRotationDeg * 3.1415927f / 180.0f;
+                            // Get our radians 
+                            sTileObject.fRotationRad = DegreesToRadians(sTileObject.fRotationDeg);
                             continue;
                         }
-                        if (objectData.first == "type") { sTileObject.strClassType = objectData.second; continue; }
-                        if (objectData.first == "width") { sTileObject.vfSize.x = std::stof(objectData.second); continue; }
+                        if (objectData.first == "type")  { sTileObject.strClassType = objectData.second;            continue; }
+                        if (objectData.first == "width") { sTileObject.vfSize.x     = std::stof(objectData.second); continue; }
                         if (objectData.first == "x")     { sTileObject.vfPosition.x = std::stof(objectData.second); continue; }
                         if (objectData.first == "y")     { sTileObject.vfPosition.y = std::stof(objectData.second); continue; }
 
@@ -478,10 +517,8 @@ namespace olc
                     if (sObjectDataInfo.sTypeData.tag == "point")   sTileObject.sCollisionType.eCollision = Collision::POINT;
                     if (sObjectDataInfo.sTypeData.tag == "polygon") sTileObject.sCollisionType.eCollision = Collision::POLYGON;
                     if (sObjectDataInfo.sTypeData.tag == "rect")    sTileObject.sCollisionType.eCollision = Collision::RECT;
-                    if (sObjectDataInfo.sTypeData.tag == "capsule")
-                    {
-                        sTileObject.sCollisionType.eCollision = Collision::CAPSULE;
-                    }
+                    if (sObjectDataInfo.sTypeData.tag == "capsule") sTileObject.sCollisionType.eCollision = Collision::CAPSULE;
+
 
                     // <polygon points = "0,0 4.51712,-9.51793 6.69781,0.352516" / >
                     for (auto& typeData : sObjectDataInfo.sTypeData.data)
@@ -588,7 +625,6 @@ namespace olc
                         else
                         {
 
-
                             // We need to calculate the points for the capsule shape based on the position and size of the object
                             sTileObject.sCollisionType.eCollision = Collision::POLYGON;
 
@@ -596,7 +632,6 @@ namespace olc
                             sTileObject.sCollisionType.vecPoints.clear();
                             sTileObject.sCollisionType.vecPoints.reserve(4 + nSegments);
                             
-
                             // we need to check if we are x or y dominant to know which way our capsule is facing
                             bool bYDominant = sTileObject.vfSize.y > sTileObject.vfSize.x;
 
@@ -624,14 +659,13 @@ namespace olc
                             // Ensure we have at least the minimum number of points
                             if (fMaxPoints > (float)nSegments) nSegments = std::floor(fMaxPoints);
 
-
                             // get the size of the inner rectangle (size of capsule - diameter of the circles)
                             olc::vf2d vfInnerSize = olc::vf2d{ sTileObject.vfSize.x - fRadius * 2.0f, sTileObject.vfSize.y }; // : olc::vf2d{ sTileObject.vfSize.x, sTileObject.vfSize.y - fRadius * 2.0f };
 
                             // get the four corners of the inner rectangle
-                            olc::vf2d vfTopLeft = vfCenter - olc::vf2d{ vfInnerSize.x / 2.0f, vfInnerSize.y / 2.0f };
-                            olc::vf2d vfTopRight = vfTopLeft + olc::vf2d{ vfInnerSize.x, 0.0f };
-                            olc::vf2d vfBottomLeft = vfTopLeft + olc::vf2d{ 0.0f, vfInnerSize.y };
+                            olc::vf2d vfTopLeft     = vfCenter - olc::vf2d{ vfInnerSize.x / 2.0f, vfInnerSize.y / 2.0f };
+                            olc::vf2d vfTopRight    = vfTopLeft + olc::vf2d{ vfInnerSize.x, 0.0f };
+                            olc::vf2d vfBottomLeft  = vfTopLeft + olc::vf2d{ 0.0f, vfInnerSize.y };
                             olc::vf2d vfBottomRight = vfTopLeft + vfInnerSize;
 
                             // get the points for the semicircles on either end
@@ -659,7 +693,7 @@ namespace olc
                                 sTileObject.sCollisionType.vecPoints.push_back({ fpx, fpy });
                             }
 
-                            //5 a little hack to ensure the secound circle i
+                            // a little hack to ensure the secound circle i
                             fpx = vfCenter.x + fRadius * std::cos(0);;
                             fpy = vfCenter.y + fRadius * std::sin(0);
                             sTileObject.sCollisionType.vecPoints.push_back({ fpx, fpy });
@@ -699,9 +733,9 @@ namespace olc
                         {
                             // For a rect we need to convert to triangles (polgyon) as it makes out collision code easier to work with
                             // Get the 4 points of the rect
-                            olc::vf2d vfTopLeft = sTileObject.vfPosition;
-                            olc::vf2d vfTopRight = sTileObject.vfPosition + olc::vf2d{ sTileObject.vfSize.x, 0.0f };
-                            olc::vf2d vfBottomLeft = sTileObject.vfPosition + olc::vf2d{ 0.0f, sTileObject.vfSize.y };
+                            olc::vf2d vfTopLeft     = sTileObject.vfPosition;
+                            olc::vf2d vfTopRight    = sTileObject.vfPosition + olc::vf2d{ sTileObject.vfSize.x, 0.0f };
+                            olc::vf2d vfBottomLeft  = sTileObject.vfPosition + olc::vf2d{ 0.0f, sTileObject.vfSize.y };
                             olc::vf2d vfBottomRight = sTileObject.vfPosition + sTileObject.vfSize;
 
                             // Now we need to convert into Polgon
@@ -746,25 +780,27 @@ namespace olc
             // Get TMX Map information
             for (auto& mapInfo : map_TMX.MapData.data)
             {
-                if (mapInfo.first == "height")       { sMapInfo.nHeight = std::stoi(mapInfo.second); continue; }
-                if (mapInfo.first == "infinite")     { sMapInfo.bIsInfinite = (std::stoi(mapInfo.second) > 0) ? true : false; continue; }
-                if (mapInfo.first == "nextlayerid")  { sMapInfo.nNextLayerID = std::stoi(mapInfo.second); continue; }
-                if (mapInfo.first == "nextobjectid") { sMapInfo.nNextObjectID = std::stoi(mapInfo.second); continue; }
-                if (mapInfo.first == "orientation")  { sMapInfo.strOrientation = mapInfo.second; continue; }
-                if (mapInfo.first == "renderorder")  { sMapInfo.strRenderorder = mapInfo.second; continue; }
-                if (mapInfo.first == "tiledversion") { sMapInfo.strTiledVersion = mapInfo.second; continue; }
-                if (mapInfo.first == "tileheight")   { sMapInfo.nTileHeight = std::stoi(mapInfo.second); continue; }
-                if (mapInfo.first == "tilewidth")    { sMapInfo.nTileWidth = std::stoi(mapInfo.second); continue; }
-                if (mapInfo.first == "version")      { sMapInfo.strVersion = mapInfo.second; continue; }
-                if (mapInfo.first == "width")        { sMapInfo.nWidth = std::stoi(mapInfo.second);  continue;}
+                // Note Order is important as it follows the TMX map structure: height, infinite, nextlayerid, etc, therefore increase performance...
+
+                if (mapInfo.first == "height")       { sMapInfo.nHeight         = std::stoi(mapInfo.second); continue; }
+                if (mapInfo.first == "infinite")     { sMapInfo.bIsInfinite     = (std::stoi(mapInfo.second) > 0) ? true : false; continue; }
+                if (mapInfo.first == "nextlayerid")  { sMapInfo.nNextLayerID    = std::stoi(mapInfo.second);  continue; }
+                if (mapInfo.first == "nextobjectid") { sMapInfo.nNextObjectID   = std::stoi(mapInfo.second);  continue; }
+                if (mapInfo.first == "orientation")  { sMapInfo.strOrientation  = mapInfo.second;             continue; }
+                if (mapInfo.first == "renderorder")  { sMapInfo.strRenderorder  = mapInfo.second;             continue; }
+                if (mapInfo.first == "tiledversion") { sMapInfo.strTiledVersion = mapInfo.second;             continue; }
+                if (mapInfo.first == "tileheight")   { sMapInfo.nTileHeight     = std::stoi(mapInfo.second);  continue; }
+                if (mapInfo.first == "tilewidth")    { sMapInfo.nTileWidth      = std::stoi(mapInfo.second);  continue; }
+                if (mapInfo.first == "version")      { sMapInfo.strVersion       = mapInfo.second;            continue; }
+                if (mapInfo.first == "width")        { sMapInfo.nWidth           = std::stoi(mapInfo.second); continue;}
                 
             }
 
             // lets clear things up
             Properties.vecPartialDecalInfo.clear();
             int16_t nLayerCount = 0;
-            int32_t x = 0;
-            int32_t y = 0;
+            int32_t x           = 0;
+            int32_t y           = 0;
 
             // Important this is needed to ensure the DrawPartialDecal correctly finds the location with the spritesheet
             int32_t nSpriteSheetTileCount = Properties.renSpriteSheet.Size().x / sMapInfo.nTileWidth;
@@ -782,15 +818,15 @@ namespace olc
 
                 for (auto& tag : layer.tag.data)
                 {
-                    if (tag.first == "class")   { sDecalInfoLayerDefaults.strName = tag.second; continue; }
-                    if (tag.first == "height")  { sDecalInfoLayerDefaults.nHeight = std::stoi(tag.second); continue; }
-                    if (tag.first == "id")      { sDecalInfoLayerDefaults.nLayerID = std::stoi(tag.second); continue; }
-                    if (tag.first == "locked")  { sDecalInfoLayerDefaults.bIsLocked = (std::stoi(tag.second) > 0) ? true : false; continue; }
-                    if (tag.first == "name")    { sDecalInfoLayerDefaults.strName = tag.second; continue; }
+                    // Order is important
+                    if (tag.first == "class")   { sDecalInfoLayerDefaults.strName    = tag.second;            continue; }
+                    if (tag.first == "height")  { sDecalInfoLayerDefaults.nHeight    = std::stoi(tag.second); continue; }
+                    if (tag.first == "id")      { sDecalInfoLayerDefaults.nLayerID   = std::stoi(tag.second); continue; }
+                    if (tag.first == "locked")  { sDecalInfoLayerDefaults.bIsLocked  = (std::stoi(tag.second) > 0) ? true : false; continue; }
+                    if (tag.first == "name")    { sDecalInfoLayerDefaults.strName    = tag.second;            continue; }
                     if (tag.first == "visable") { sDecalInfoLayerDefaults.bIsVisable = (std::stoi(tag.second) > 0) ? true : false; continue; }
-                    if (tag.first == "width")   { sDecalInfoLayerDefaults.nWidth = std::stoi(tag.second); continue; }
+                    if (tag.first == "width")   { sDecalInfoLayerDefaults.nWidth     = std::stoi(tag.second); continue; }
                     
-
                 }
 
 
@@ -812,11 +848,11 @@ namespace olc
                         sDecalInfo.vfSoureSizePos = { (float)sMapInfo.nTileWidth, (float)sMapInfo.nTileHeight };
 
                         // Layer defaults, we can override these with the tile info if we want to
-                        sDecalInfo.strName =    sDecalInfoLayerDefaults.strName;
-                        sDecalInfo.nHeight =    sDecalInfoLayerDefaults.nHeight;
-                        sDecalInfo.nLayerID =   sDecalInfoLayerDefaults.nLayerID;
-                        sDecalInfo.bIsLocked =  sDecalInfoLayerDefaults.bIsLocked;
-                        sDecalInfo.nWidth =     sDecalInfoLayerDefaults.nWidth;
+                        sDecalInfo.strName    = sDecalInfoLayerDefaults.strName;
+                        sDecalInfo.nHeight    = sDecalInfoLayerDefaults.nHeight;
+                        sDecalInfo.nLayerID   = sDecalInfoLayerDefaults.nLayerID;
+                        sDecalInfo.bIsLocked  = sDecalInfoLayerDefaults.bIsLocked;
+                        sDecalInfo.nWidth     = sDecalInfoLayerDefaults.nWidth;
                         sDecalInfo.bIsVisable = sDecalInfoLayerDefaults.bIsVisable;
 
                         if (tileId > 0)
@@ -859,6 +895,13 @@ namespace olc
             bisLevelLoaded = true;
         }
 
+        /**
+         * Rotates a point around a center by a given angle in radians.
+         * @param vfCenterPos The center position to rotate around.
+         * @param fRadians The angle in radians to rotate.
+         * @param vfPoint The point to rotate.
+         * @return The rotated point.
+         */
         olc::vf2d RotatePoint(olc::vf2d vfCenterPos, float fRadians, olc::vf2d vfPoint)
         {
             float tempX = vfPoint.x - vfCenterPos.x;
@@ -870,17 +913,22 @@ namespace olc
 
         void ClearLevel()
         {
+            // TODO, tidy up any additional resources if necessary
             Properties.renSpriteSheet.GetPixels().clear();
 
         }
 
+        /**
+         * Displays the level on the screen.
+         * @param fElapsedTime The elapsed time since the last frame.
+         */
         void DisplayLevel(float fElapsedTime)
         {
         
             // Displays the level
             // tile offsets and counts
             olc::vi2d vTileOffset = ptrPGE->GetDraw().ScreenToWorld({0,0}).floor();
-            olc::vi2d vTileCount = ptrPGE->GetDraw().ScreenToWorld(ptrPGE->ScreenSize()).ceil() - vTileOffset;
+            olc::vi2d vTileCount  = ptrPGE->GetDraw().ScreenToWorld(ptrPGE->ScreenSize()).ceil() - vTileOffset;
 
             // Clamp to ensure we stay in bounds of our world map
             olc::vi2d vTileTL = vTileOffset.max({ 0,0 });
@@ -888,20 +936,20 @@ namespace olc
             olc::vi2d vTile;
 
             // Layer stuff
-            int32_t idx = 0;
-            DecalInfo decalInfo;
-            olc::vf2d vfDirection = { 0.0f, 0.0f };
-            int32_t nLayerCount = 0;
             using namespace olc::utils::geom2d;
-
+            int32_t idx         = 0;
+            int32_t nLayerCount = 0;
+            olc::vf2d vfDirection = { 0.0f, 0.0f };
+            DecalInfo decalInfo;
+        
 
             // Screen Tile Position
-            olc::vf2d vfScreenTilePos = { 0.0f, 0.0f };
+            olc::vf2d vfScreenTilePos  = { 0.0f, 0.0f };
             olc::vf2d vfScreenTileSize = { 0.0f, 0.0f };
 
             // Collision resizing
             olc::vf2d vfCollsionSize = { 0.0f, 0.0f };
-            olc::vf2d vfOffSet = { 0.0f, 0.0f };
+            olc::vf2d vfOffSet       = { 0.0f, 0.0f };
 
             std::vector <olc::vf2d> vfPolyPoints;
             std::vector <olc::vf2d> vfEmptyPoints;
@@ -910,113 +958,112 @@ namespace olc
             olc::ImageBatch imgBatch = ptrPGE->GetDraw().CreateImageBatch(Properties.renSpriteSheet);
             olc::LineBatch lineBatch = ptrPGE->GetDraw().CreateLineBatch();
 
-            // Then looping through them and drawing them
+            // Then looping through them and drawing them (TODO: We need to optimize this for large levels, SIMD or threading might help)
+            //#pragma omp parallel for collapse(8)
             for (vTile.y = vTileTL.y; vTile.y < vTileBR.y; vTile.y++)
                 for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
                 {
                     idx = vTile.y * Properties.viWorldSize.x + vTile.x;
-
                     nLayerCount = 0;
+
                     for (auto& layer : Properties.mapLayerInfo)
                     {
-
                         decalInfo = layer.second[idx];
-
                         if (decalInfo.nTiledID == 0) continue; // If the tile does nothing just move on
-
 
                         if (decalInfo.bHasCollision  && Properties.bShowCollisions)
                         {
                             // NOTE: We are in world space so we need to get realworld....
                             for (auto& tileObject : decalInfo.sCollisionTile.vecTileObjects)
                             {
-
                                 vfOffSet = tileObject.vfPosition / Properties.viTileSize;
                                 vfCollsionSize = tileObject.vfSize / Properties.viTileSize;
 
                                 switch (tileObject.sCollisionType.eCollision)
                                 {
                                 
-                                case Collision::CAPSULE:
-                                {
-                                    ptrPGE->GetDraw().RoundedRect(lineBatch, olc::vf2d{ vTile + vfOffSet }, vfCollsionSize, 
-                                                                    std::min(vfCollsionSize.x / 2, vfCollsionSize.y / 2), olc::Colour::CYAN);
-                                    break;
-                                }
-                                case Collision::CIRCLE:
-                                {
-                                    
-                                    olc::vf2d vfCenter = vTile + vfOffSet + vfCollsionSize / 2.0f;
-                                    if (tileObject.fRotationRad != 0.0f)
+                                    case Collision::CAPSULE:
                                     {
-                                        vfCenter = RotatePoint(vTile + vfOffSet, tileObject.fRotationRad, vfCenter);
+                                        ptrPGE->GetDraw().RoundedRect(lineBatch, olc::vf2d{ vTile + vfOffSet }, vfCollsionSize, 
+                                                                        std::min(vfCollsionSize.x / 2, vfCollsionSize.y / 2), olc::Colour::CYAN);
+                                        break;
                                     }
-                                    ptrPGE->GetDraw().Circle(lineBatch, vfCenter, vfCollsionSize.x / 2.0f, olc::Colour::YELLOW);
-                                    break;
-                                }
-                                case Collision::ELLIPSE:
-                                {
-                                    olc::vf2d vfCenter = vTile + vfOffSet + vfCollsionSize / 2.0f;
-                                    if (tileObject.fRotationRad != 0.0f)
+                                    case Collision::CIRCLE:
                                     {
-                                        vfCenter = RotatePoint(vTile + vfOffSet, tileObject.fRotationRad, vfCenter);
-                                    }
-                                    ptrPGE->GetDraw().Ellipse(lineBatch, vfCenter, vfCollsionSize.x / 2.0f, vfCollsionSize.y / 2.0f, olc::Colour::TANGERINE);
-                                    break;
-                                }
-                                case Collision::POINT:
-                                {
-                                    // this is a point collision, we can draw it as a small rect for now
-                                    ptrPGE->GetDraw().Rect(lineBatch, olc::vf2d{ vTile + vfOffSet }, { 1.0f, 1.0f }, olc::Colour::BLACK);
-                                    break;
-                                }
-                                case Collision::POLYGON:
-                                {
-
-                                    for (auto& vfPoint : tileObject.sCollisionType.vecPoints)
-                                    {
-                                        // check for any rotation and rotate the points if needed
-                                        auto vfRotatedPoint = tileObject.vfPosition;
-                                        auto vfPosition = tileObject.vfPosition;
+                                        
+                                        olc::vf2d vfCenter = vTile + vfOffSet + vfCollsionSize / 2.0f;
                                         if (tileObject.fRotationRad != 0.0f)
                                         {
-                                            vfPoint = RotatePoint(vfRotatedPoint, tileObject.fRotationRad, vfPoint);
-                                            vfPosition = { 0.0f, 0.0f };
+                                            vfCenter = RotatePoint(vTile + vfOffSet, tileObject.fRotationRad, vfCenter);
                                         }
-                                        olc::vf2d vfWorldPoint = (vfPoint + vfPosition) / Properties.viTileSize;
-                                        olc::vf2d vfPointnew = vTile + vfWorldPoint;
-                                        vfPolyPoints.push_back(vfPointnew);
-                                        // TODO: what was this colour for again?
-                                        olc::vf2d vfColour = { 0.0f, 0.0f };
-                                        vfEmptyPoints.push_back(vfColour);
+                                        ptrPGE->GetDraw().Circle(lineBatch, vfCenter, vfCollsionSize.x / 2.0f, olc::Colour::YELLOW);
+                                        break;
                                     }
-
-                                    auto vfCenter = PolygonCenter(vfPolyPoints);
-                                    
-                                    // Draw triangle fan for the polygon from center to points
-                                    for (size_t i = 0; i < vfPolyPoints.size(); i++)
+                                    case Collision::ELLIPSE:
                                     {
-                                        ptrPGE->GetDraw().Triangle(lineBatch, 
-                                                                    vfCenter, 
-                                                                    vfPolyPoints[i], 
-                                                                    vfPolyPoints[(i + 1) % vfPolyPoints.size()],
-                                                                    olc::Colour::DARK_GREEN);
+                                        olc::vf2d vfCenter = vTile + vfOffSet + vfCollsionSize / 2.0f;
+                                        if (tileObject.fRotationRad != 0.0f)
+                                        {
+                                            vfCenter = RotatePoint(vTile + vfOffSet, tileObject.fRotationRad, vfCenter);
+                                        }
+                                        ptrPGE->GetDraw().Ellipse(lineBatch, vfCenter, vfCollsionSize.x / 2.0f, vfCollsionSize.y / 2.0f, olc::Colour::TANGERINE);
+                                        break;
                                     }
+                                    case Collision::POINT:
+                                    {
+                                        // this is a point collision, we can draw it as a small rect for now
+                                        ptrPGE->GetDraw().Rect(lineBatch, olc::vf2d{ vTile + vfOffSet }, { 1.0f, 1.0f }, olc::Colour::BLACK);
+                                        break;
+                                    }
+                                    case Collision::POLYGON:
+                                    {
 
-                                    vfPolyPoints.clear();
-                                    vfEmptyPoints.clear();
+                                        for (auto& vfPoint : tileObject.sCollisionType.vecPoints)
+                                        {
+                                            // check for any rotation and rotate the points if needed
+                                            auto vfRotatedPoint = tileObject.vfPosition;
+                                            auto vfPosition = tileObject.vfPosition;
+                                            if (tileObject.fRotationRad != 0.0f)
+                                            {
+                                                vfPoint = RotatePoint(vfRotatedPoint, tileObject.fRotationRad, vfPoint);
+                                                vfPosition = { 0.0f, 0.0f };
+                                            }
+                                            olc::vf2d vfWorldPoint = (vfPoint + vfPosition) / Properties.viTileSize;
+                                            olc::vf2d vfPointnew = vTile + vfWorldPoint;
+                                            vfPolyPoints.push_back(vfPointnew);
+                                            // TODO: what was this colour for again?
+                                            olc::vf2d vfColour = { 0.0f, 0.0f };
+                                            vfEmptyPoints.push_back(vfColour);
+                                        }
 
-                                    break;
-                                }
-                                case Collision::RECT:
-                                {
-                                    ptrPGE->GetDraw().Rect(lineBatch, olc::vf2d{ vTile + vfOffSet }, vfCollsionSize, olc::Colour::RED);
-                                    break;
-                                }
-                                
+                                        auto vfCenter = PolygonCenter(vfPolyPoints);
+                                        
+                                        // Draw triangle fan for the polygon from center to points
+                                        for (size_t i = 0; i < vfPolyPoints.size(); i++)
+                                        {
+                                            ptrPGE->GetDraw().Triangle(lineBatch, 
+                                                                        vfCenter, 
+                                                                        vfPolyPoints[i], 
+                                                                        vfPolyPoints[(i + 1) % vfPolyPoints.size()],
+                                                                        olc::Colour::DARK_GREEN);
+                                        }
 
-                                default:
-                                    break;
+                                        vfPolyPoints.clear();
+                                        vfEmptyPoints.clear();
+
+                                        break;
+                                    }
+                                    case Collision::RECT:
+                                    {
+                                        ptrPGE->GetDraw().Rect(lineBatch, olc::vf2d{ vTile + vfOffSet }, vfCollsionSize, olc::Colour::RED);
+                                        break;
+                                    }
+                        
+                                    default:
+                                    { 
+                                        break;
+                                    }
+                                        
                                 }
                             }
 
@@ -1041,7 +1088,7 @@ namespace olc
                         case 3:
                         {
                             // this is our drawing layer
-                            vfScreenTilePos = ptrPGE->GetDraw().WorldToScreen(vTile);
+                            vfScreenTilePos  = ptrPGE->GetDraw().WorldToScreen(vTile);
                             vfScreenTileSize = ptrPGE->GetDraw().ScreenToWorld(decalInfo.vfSoureSizePos);
                             ptrPGE->GetDraw().ImageRect(imgBatch, Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
                             break;
@@ -1061,13 +1108,8 @@ namespace olc
             ptrPGE->GetDraw().Batch(imgBatch);
             ptrPGE->GetDraw().Batch(lineBatch);
 
-            //ptrPGE->GetDraw().WorldReset();
         }
 
-        olc::vf2d PolygonCenter(std::vector<olc::vf2d>& points)
-        {
-            return (std::accumulate(points.begin(), points.end(), olc::vf2d{ 0.0f, 0.0f })) / float(points.size());
-        }
 
     }; // End class LevelManager
 
