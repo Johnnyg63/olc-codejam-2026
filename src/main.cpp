@@ -21,6 +21,7 @@
 #include "tiledlevelmanager.h"
 #include "player.h"
 #include "backgroundmanager.h"
+#include "cameramanager.h"
 
 // This class overrides the olc::PixelGameEngine base class
 // by implementing the OnUserCreate() and OnUserUpdate()
@@ -34,6 +35,7 @@ public:
 	TiledLevelManager tiledLevelManager;
 	SoundManager soundManager;
 	BackgroundManager backgroundManager;
+	CameraManager cameraManager;
 	
 	// Copyright notice
 	std::string strCopyrightNotice_MusicLFiles;
@@ -84,7 +86,8 @@ public:
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
         if (!LoadBackground())      {throw std::runtime_error("Failed to load background");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
-        if (!LoadTitledLevel())     {throw std::runtime_error("Failed to load tiled level");};
+        //if (!LoadTitledLevel())     {throw std::runtime_error("Failed to load tiled level");};
+		if (!LoadCameraManager()) 	{throw std::runtime_error("Failed to load camera manager");};
 		if (!LoadPlayer()) 			{throw std::runtime_error("Failed to load player");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
         
@@ -109,10 +112,10 @@ public:
 		if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
         
         // Draw the Tiled Level
-        if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
+        //if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
 
-		// Draw the player
-		if(!HandlePlayer(fElapsedTime)) {throw std::runtime_error("Failed to handle player");};
+		// Draw the camera manager
+		if(!HandleCameraManager(fElapsedTime)) {throw std::runtime_error("Failed to handle camera manager");};
 				
 		// Handle copyright notices (Keep this last to ensure it overlays everything else)
 		if (!HandleCopyRightNotices(fElapsedTime)) {throw std::runtime_error("Failed to handle copyright notices");};
@@ -227,6 +230,22 @@ private:
 		return res;
 	}
 
+	bool LoadCameraManager()
+	{
+		bool res = true;
+		cameraManager.Initialize(this);
+
+		return res;
+	}
+
+
+	bool HandleCameraManager(float fElapsedTime)
+	{
+		bool res = true;
+		cameraManager.Update(fElapsedTime);
+		return res;
+	}
+
 	/*
 	Load the level data and initialize the level manager
 	*/
@@ -240,6 +259,7 @@ private:
 	bool HandlePlayer(float fElapsedTime)
 	{
 		bool res = true;
+		player.SetPlayerPosition(cameraManager.vTrackedPoint);
 		player.Update(fElapsedTime, levelManager);
 		player.Draw(levelManager.currentPhase);
 		return res;

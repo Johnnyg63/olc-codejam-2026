@@ -74,6 +74,15 @@ public:
         }
     }
 
+    void SetPlayerPosition(const olc::vf2d& newPosition) {
+        position = newPosition;
+    }
+
+    
+    olc::vf2d GetPlayerPosition() {
+        return position;
+    }
+
     void Draw(PhaseState currentPhase) {
         Rectangle body = { {position.x, position.y}, {WIDTH, HEIGHT} };
         olc::Pixel playerColor = (currentPhase == PhaseState::BLUE_ACTIVE) ? olc::Colour::DARK_BLUE : olc::Colour::DARK_RED;
