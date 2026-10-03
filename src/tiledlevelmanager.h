@@ -276,8 +276,12 @@ namespace olc
 
         bool LoadLevel(std::string strSpriteSheetPath, std::string strTiledMapTMXPath, uint16_t nLevel)
         {
+            
+            bool res = false;
             // Load the Sprite Sheet
-            ptrPGE->CreateImageFromFile(Properties.renSpriteSheet, strSpriteSheetPath);
+            res = ptrPGE->CreateImageFromFile(Properties.renSpriteSheet, strSpriteSheetPath);
+            
+            Properties.strTiledMapTMXPath = strTiledMapTMXPath; // TODO, should we get the fillpath?
 
             // Load the TMX file
             TMXParser tmxParser = TMXParser(Properties.strTiledMapTMXPath);
@@ -892,7 +896,8 @@ namespace olc
 
             }
 
-            bisLevelLoaded = true;
+            bisLevelLoaded = res; // the level is only loaded when no issues occured
+            return res;
         }
 
         /**
