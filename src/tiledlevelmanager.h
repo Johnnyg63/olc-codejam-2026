@@ -1,13 +1,15 @@
 #pragma once
-#include "olcPixelGameEngine.h"
 #include "olcUTIL3_Geometry2D.h"
+#include "olcPixelGameEngine3.h"
 #include "TMXParser.h"
 #include "TSXParser.h"
 #include <any>
 #include <cmath>
+#include <numeric>
 #include <numbers>
-#include <omp.h>
+#include <vector>
 
+// TODO: olc::utils ...
 namespace olc
 {
     /*
@@ -260,14 +262,12 @@ namespace olc
             ObjectProperites Properties;
 
     public:
-        LevelManager()
+        TiledLevelManager()
         {
             // Nothing to do here but to wait until we are ready for the level
             bisLevelLoaded = false;
         }
-
-        LevelManager::~LevelManager(){
-        }
+        ~TiledLevelManager(){}
 
         void Initialize(olc::PixelGameEngine* pge)
         {
@@ -959,7 +959,6 @@ namespace olc
             olc::LineBatch lineBatch = ptrPGE->GetDraw().CreateLineBatch();
 
             // Then looping through them and drawing them (TODO: We need to optimize this for large levels, SIMD or threading might help)
-            //#pragma omp parallel for collapse(8)
             for (vTile.y = vTileTL.y; vTile.y < vTileBR.y; vTile.y++)
                 for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
                 {
@@ -1113,6 +1112,6 @@ namespace olc
 
     }; // End class LevelManager
 
-} // End namespace olc
+}; // End namespace olc
 
 

@@ -10,6 +10,7 @@
 // Define OLC_PGE3_APPLICATION to include the implementation of 
 // the Pixel Game Engine as part of this translation unit
 #define OLC_PGE3_APPLICATION
+#include "olcUTIL3_Geometry2D.h"
 #include "olcPixelGameEngine3.h"
 
 #define OLC_PGEX3_MINIAUDIO
@@ -17,9 +18,9 @@
 
 #include "soundmanager.h"
 #include "levelmanager_hold.h"
+#include "tiledlevelmanager.h"
 #include "player.h"
 #include "backgroundmanager.h"
-
 
 // This class overrides the olc::PixelGameEngine base class
 // by implementing the OnUserCreate() and OnUserUpdate()
@@ -28,8 +29,9 @@ class JohnnyChange : public olc::PixelGameEngine
 {
 
 public:
+    Player player;
 	LevelManager_hold levelManager;
-	Player player;
+	TiledLevelManager tiledLevelManager;
 	SoundManager soundManager;
 	BackgroundManager backgroundManager;
 	
@@ -47,6 +49,20 @@ public:
     bool backgroundPlay = false;
     ma_uint64 cursorMillis = 0ull;
     float     cursorFloat  = 0.0f;
+
+
+	// Game menu enumeration and current selection
+	enum GAME_MENU
+	{
+		MAIN_MENU = 0,
+		GAME_LEVEL,
+		CREDITS,
+		DEBUG
+
+	};
+
+	GAME_MENU eGameMenu = MAIN_MENU;
+
 
 public:
 	// Extensions 
@@ -68,6 +84,7 @@ public:
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
         if (!LoadBackground())      {throw std::runtime_error("Failed to load background");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
+        if (!LoadTitledLevel())     {throw std::runtime_error("Failed to load tiled level");};
 		if (!LoadPlayer()) 			{throw std::runtime_error("Failed to load player");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
         
@@ -90,6 +107,9 @@ public:
 		
 		// Draw the level
 		if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
+        
+        // Draw the Tiled Level
+        if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
 
 		// Draw the player
 		if(!HandlePlayer(fElapsedTime)) {throw std::runtime_error("Failed to handle player");};
@@ -174,6 +194,21 @@ private:
 		return res;
 	}
 
+	bool LoadTitledLevel()
+	{
+		bool res = true;
+		tiledLevelManager.Initialize(this);
+		res = tiledLevelManager.LoadLevel("assets/images/tilesheets/level_tilesheet.png", "assets/maps/tiledprojects/Level1Output.tmx", 1);
+		return res;
+	}
+
+	bool HandleTitledLevel(float fElapsedTime)
+	{
+		bool res = true;
+		tiledLevelManager.DisplayLevel(fElapsedTime);
+		return res;
+	}
+	
 	/*
 	Load the level data and initialize the level manager
 	*/
