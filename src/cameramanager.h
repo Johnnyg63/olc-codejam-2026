@@ -519,7 +519,7 @@ private:
                             else
                             {
                                 /// draw with transparency or a different color to indicate inactive state
-                                //ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
                             }
                         }
 
@@ -533,7 +533,7 @@ private:
                             else
                             {
                                 /// draw with transparency or a different color to indicate inactive state
-                                //ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
                             }
                                 
                         }
