@@ -102,14 +102,16 @@ public:
 
     void DrawImageByID(uint32_t imageID, olc::vf2d position, olc::vf2d size = olc::vf2d(0,0))
     {
-        olc::Image* pImage = GetImageByID(imageID);
-        if(pImage && ptrPGE)
+        
+        for(auto& image : vecImages)
         {
-            // draw.ImageRect(imgTest, { 4, 4 }, imgTest.Size() * 2);
-            ptrPGE->GetDraw().ImageRect(*pImage, position, pImage->Size(), olc::Colour::WHITE);
-            //ptrPGE->GetDraw()->Image(pImage, position);
-
+            if(image.id == imageID && image.pImage && ptrPGE)
+            {
+                ptrPGE->GetDraw().ImageRect(*image.pImage, position, image.pImage->Size(), olc::Colour::WHITE);
+                break;
+            }
         }
+
     }
 
     private:

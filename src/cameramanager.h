@@ -185,10 +185,10 @@ public:
     
 		// Draw the "player" as a 1x1 cell
 		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
-        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED); // Draw the tracked point as a red circle
+        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED);
         
-        auto image = ptrIM->GetImageByID(nCurrentPlayerImageID);
-        ptrPGE->GetDraw().ImageRect(*image, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::WHITE); // Draw the tracked point as a red circle
+        // Draw the player sprite
+        ptrIM->DrawImageByID(nCurrentPlayerImageID, vTrackedPoint - olc::vf2d(0.5f, 0.5f));
 
 		// Overlay with information
 		if (bFreeRoam)
@@ -547,9 +547,6 @@ private:
 
                 }
 
-
-                // Finally we need to reset our world transform to the default
-                //ptrPGE->GetDraw().WorldReset();
         }
 
         
