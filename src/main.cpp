@@ -236,7 +236,7 @@ private:
 	bool LoadCameraManager()
 	{
 		bool res = true;
-		cameraManager.Initialize(this, &tiledLevelManager);
+		cameraManager.Initialize(this, &tiledLevelManager, &soundManager);
 
 		return res;
 	}

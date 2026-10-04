@@ -10,9 +10,10 @@ class CameraManager
 private:
 
     // Player stuff!
-    olc::vf2d vVelJumpSpeed = {0, -2}; // Current velocity of the player
+    olc::vf2d vVelJumpSpeed = {0, -2.4f}; // Current velocity of the player
     olc::vf2d vJumpCount = {0, 0}; // Keeps track of the jump duration or count
-    olc::vf2d vVelJumpMax = {0, -10};
+    olc::vf2d vVelJumpMax = {0, -24.0f};
+    float fJumpMultiplier = 16.0f;
     bool bJumping = false;
     // Sound IDs for player actions
     uint32_t nJumpSoundID = UINT32_MAX;
@@ -47,11 +48,12 @@ public:
     CameraManager() {}
     ~CameraManager() {}
 
-    bool Initialize(olc::PixelGameEngine* pge, TiledLevelManager* ptrTLM)
+    bool Initialize(olc::PixelGameEngine* pge, TiledLevelManager* ptrTLM, SoundManager* sound)
     {
         bool res = true;
         this->ptrPGE = pge;
         this->ptrTLM = ptrTLM;
+        this->ptrSound = sound;
 
         vTrackedPoint = { 20.0f, 20.0f }; // Initial position of the tracked point (player)
 		camera = olc::utils::Camera2D(ptrPGE->ScreenSize(), viTileSize, vTrackedPoint); // Create the camera with screen size, tile size, and tracked point
@@ -136,8 +138,9 @@ public:
     }
 
 private:
-    olc::PixelGameEngine* ptrPGE;
-    TiledLevelManager* ptrTLM;
+    olc::PixelGameEngine* ptrPGE = nullptr;
+    TiledLevelManager* ptrTLM    = nullptr;
+    SoundManager* ptrSound       = nullptr;
 
     void ManageKeyboardInput(float fElapsedTime)
     {
@@ -181,12 +184,13 @@ private:
             {
                 vJumpCount = {0, 0}; // Reset jump count when jump starts
                 bJumping = true;
+                PlayPlayerSound(nJumpSoundID); // Play jump sound effect
             }
 
         }
         else
         {
-            vJumpCount += vVelJumpSpeed * 16.0f * fElapsedTime;
+            vJumpCount += vVelJumpSpeed * fJumpMultiplier* fElapsedTime;
             if(vJumpCount.y < vVelJumpMax.y)
             {
                 bJumping = false;
@@ -266,50 +270,53 @@ private:
 
             // Updates the player object position based on collisions with the world tiles,
             auto updatePos = [&]()
+            {
+                bool bCollided = false;
+                if (decalInfo.sCollisionTile.bIsLadder == true)
                 {
-                    bool bCollided = false;
-                    if (decalInfo.sCollisionTile.bIsLadder == true)
-                    {
-                        // we need to turn off gravity
-                        pbEnableGravity = false;
-                        pbOnLadder = true;
-                        bCollided = true;
-                        return bCollided;
-
-                    }
-
-                    vfDistance = vfCenterPos - vfClosest;
-
-                    fDistance = std::sqrt(vfDistance.x * vfDistance.x + vfDistance.y * vfDistance.y);
-                    fOverlap = fRadius - fDistance;
-
-                    if (fDistance != 0)
-                    {
-                        // Move our player out of collision
-                        vfCenterPos += (vfDistance / fDistance) * fOverlap;
-                        vfDirection += (vfDistance / fDistance) * fOverlap;
-                        bCollided = true;
-                    }
-                    else
-                    {
-                        // Handle the case where the circle's center is exactly on the rectangle's edge
-                        if (vfDistance.x == 0) {
-                            vfCenterPos.y += (vfCenterPos.y > worldTile.pos.y + worldTile.size.y / 2) ? fOverlap : -fOverlap;
-                            vfDirection.y += (vfCenterPos.y > worldTile.pos.y + worldTile.size.y / 2) ? fOverlap : -fOverlap;
-                        }
-                        else {
-                            vfCenterPos.x += (vfCenterPos.x > worldTile.pos.x + worldTile.size.x / 2) ? fOverlap : -fOverlap;
-                            vfDirection.x += (vfCenterPos.x > worldTile.pos.x + worldTile.size.x / 2) ? fOverlap : -fOverlap;
-                        }
-                    }
-
-                    /*
-                    * Note we add *a to declare we want to update the value
-                    * Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs)
-                    */
-                    *pvfPositionPos += vfDirection * fElapsedTime;
+                    // we need to turn off gravity
+                    pbEnableGravity = false;
+                    pbOnLadder = true;
+                    bCollided = true;
                     return bCollided;
-                };
+
+                }
+
+                vfDistance = vfCenterPos - vfClosest;
+
+                fDistance = std::sqrt(vfDistance.x * vfDistance.x + vfDistance.y * vfDistance.y);
+                fOverlap = fRadius - fDistance;
+
+                if (fDistance != 0)
+                {
+                    // Move our player out of collision
+                    vfCenterPos += (vfDistance / fDistance) * fOverlap;
+                    vfDirection += (vfDistance / fDistance) * fOverlap;
+                    bCollided = true;
+                    // Play a collision sound or trigger a collision event here if needed
+                    PlayPlayerSound(nBongSoundID);
+
+                }
+                else
+                {
+                    // Handle the case where the circle's center is exactly on the rectangle's edge
+                    if (vfDistance.x == 0) {
+                        vfCenterPos.y += (vfCenterPos.y > worldTile.pos.y + worldTile.size.y / 2) ? fOverlap : -fOverlap;
+                        vfDirection.y += (vfCenterPos.y > worldTile.pos.y + worldTile.size.y / 2) ? fOverlap : -fOverlap;
+                    }
+                    else {
+                        vfCenterPos.x += (vfCenterPos.x > worldTile.pos.x + worldTile.size.x / 2) ? fOverlap : -fOverlap;
+                        vfDirection.x += (vfCenterPos.x > worldTile.pos.x + worldTile.size.x / 2) ? fOverlap : -fOverlap;
+                    }
+                }
+
+                /*
+                * Note we add *a to declare we want to update the value
+                * Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs)
+                */
+                *pvfPositionPos += vfDirection * fElapsedTime;
+                return bCollided;
+            };
 
             for (vTile.y = vTileTL.y; vTile.y < vTileBR.y; vTile.y++)
                 for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
@@ -448,7 +455,11 @@ private:
         
 
 	
-    
+    void PlayPlayerSound(uint32_t soundID) {
+    if(soundID != UINT32_MAX && ptrSound != nullptr) 
+        ptrSound->PlaySoundAffect(soundID);
+    }
+
     
     
     
