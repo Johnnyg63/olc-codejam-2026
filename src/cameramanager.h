@@ -68,6 +68,12 @@ public:
 		for (int i = 0; i < vecWorldMap.size(); i++)
 			vecWorldMap[i] = ((rand() % 20) == 1) ? 1 : 0;
 
+
+        // Update sounds:
+        nJumpSoundID = ptrSound->GetSoundIDByName("jump1");
+        nBongSoundID = ptrSound->GetSoundIDByName("bong_001");
+        nLandSoundID = ptrSound->GetSoundIDByName("footstep_concrete_001");
+
         return res;
     }
 
@@ -152,17 +158,20 @@ private:
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::W).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, -1};
+               
             }
             
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::S).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, +1};
+                
             }
         }
         else
         {
             // Manage gravity in play mode
-            vVel = vVel + olc::vf2d{0, +1}; // Apply gravity in play mode
+            if(!bJumping) // Disable Gravity when jumping, so player can move left and right while in the air
+                vVel = vVel + olc::vf2d{0, +1}; // Apply gravity in play mode
         }
         
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::A).bHeld
@@ -173,7 +182,6 @@ private:
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::D).bHeld
             || ptrPGE->GetKeyboard().GetKey(olc::Key::RIGHT).bHeld)
         {
-            if(!bJumping) // Disable Gravity when jumping, so player can move left and right while in the air
                 vVel = vVel + olc::vf2d{+1, 0};
         }
         
@@ -293,9 +301,7 @@ private:
                     vfCenterPos += (vfDistance / fDistance) * fOverlap;
                     vfDirection += (vfDistance / fDistance) * fOverlap;
                     bCollided = true;
-                    // Play a collision sound or trigger a collision event here if needed
-                    PlayPlayerSound(nBongSoundID);
-
+                 
                 }
                 else
                 {
@@ -456,8 +462,9 @@ private:
 
 	
     void PlayPlayerSound(uint32_t soundID) {
-    if(soundID != UINT32_MAX && ptrSound != nullptr) 
-        ptrSound->PlaySoundAffect(soundID);
+        
+        if(soundID != UINT32_MAX && ptrSound != nullptr)
+            ptrSound->PlaySoundAffect(soundID);
     }
 
     

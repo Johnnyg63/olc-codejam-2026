@@ -109,7 +109,7 @@ public:
 		if (!HandleSound(fElapsedTime)) {throw std::runtime_error("Failed to handle sound");};
 		
 		// Draw the level
-		if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
+		//if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
         
         // Draw the Tiled Level
         if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
