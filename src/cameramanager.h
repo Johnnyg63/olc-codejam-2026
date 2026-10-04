@@ -14,7 +14,7 @@ private:
     int32_t nLastYPos = 0;                 // Stores the last frame's velocity.y pos
     olc::vf2d vVelJumpSpeed = {0, -2.4f}; // Current velocity of the player
     olc::vf2d vJumpCount = {0, 0};        // Keeps track of the jump duration or count
-    olc::vf2d vVelJumpMax = {0, -24.0f};
+    olc::vf2d vVelJumpMax = {0, -12.0f};
     float fJumpMultiplier = 16.0f;
     bool bJumping = false;
     // Sound IDs for player actions
@@ -99,8 +99,20 @@ public:
         // TODO: I need to sort out this hack later
         olc::vf2d vfCenterPos = (vTrackedPoint * olc::vf2d(viTileSize)) - olc::vf2d(0.5f, 0.5f);
         
+        // Reset grounded state each frame (will be set to true if collision occurs)
+        isGrounded = false;
         
         UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, 16.0f);
+
+        // Detect landing: player just transitioned from not-grounded to grounded
+        if (!wasGroundedLastFrame && isGrounded)
+        {
+            // Play landing sound
+            PlayPlayerSound(nBongSoundID);
+        }
+        
+        // Update for next frame
+        wasGroundedLastFrame = isGrounded;
 
         // Update the camera, if teh tracked object remains visible, 
 		// true is returned
@@ -212,22 +224,7 @@ private:
         
         vTrackedPoint += vVel * 8.0f * fElapsedTime;
 
-        if(bFirstFrame)
-        {
-            nLastYPos = int32_t(vTrackedPoint.y * 100.0f);
-            bFirstFrame = false;
-        }
-        else
-        {
-            // we need to check if y velocity has changed significantly to detect landing
-            if(int(vTrackedPoint.y * 100.0f) == nLastYPos && bJumping)
-            {
-                PlayPlayerSound(nLandSoundID); // Play landing sound effect
-            }
-            nLastYPos = int32_t(vTrackedPoint.y * 100.0f);
-        }
-
-		// Switch between "free roam" and "play" mode with TAB key
+      	// Switch between "free roam" and "play" mode with TAB key
 		if (ptrPGE->GetKeyboard().GetKey(olc::Key::TAB).bPressed)
 		{
 			bFreeRoam = !bFreeRoam;
@@ -315,6 +312,20 @@ private:
                     // Move our player out of collision
                     vfCenterPos += (vfDistance / fDistance) * fOverlap;
                     vfDirection += (vfDistance / fDistance) * fOverlap;
+                    
+                    // Check if we're landing on top of a tile (collision from above)
+                    // If vfDistance.y < 0, hit something above the player
+                    if (vfDistance.y > 0)
+                    {
+                        bJumping = false;
+
+                    }
+                     // If vfDistance.y > 0, the player is above the collision point, so they're landing
+                    if (vfDistance.y < 0)
+                    {
+                        isGrounded = true;
+                    }
+                    
                     bCollided = true;
                  
                 }
