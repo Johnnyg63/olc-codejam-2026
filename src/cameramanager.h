@@ -2,6 +2,7 @@
 #pragma once
 #include "olcPixelGameEngine3.h"
 #include "olcUTIL3_Camera2D.h"
+#include "tiledlevelmanager.h"
 
 class CameraManager
 {
@@ -48,10 +49,11 @@ public:
     CameraManager() {}
     ~CameraManager() {}
 
-    bool Initialize(olc::PixelGameEngine* pge)
+    bool Initialize(olc::PixelGameEngine* pge, TiledLevelManager* ptrTLM)
     {
         bool res = true;
         this->ptrPGE = pge;
+        this->ptrTLM = ptrTLM;
 
         vTrackedPoint = { 20.0f, 20.0f }; // Initial position of the tracked point (player)
 		camera = olc::utils::Camera2D(ptrPGE->ScreenSize(), viTileSize, vTrackedPoint); // Create the camera with screen size, tile size, and tracked point
@@ -76,40 +78,15 @@ public:
 
     void Update(float fElapsedTime)
     {
-        // Update camera logic here
-        ManageKeyboardInput(fElapsedTime);
-    
 		// Set the world transform for the camera, so that all drawing operations
 		ptrPGE->GetDraw().SetWorldTransform(camera.GetWorldTransform());
 
-        // // TODO This is our new collision and rendering logic for the tile map
-		olc::vi2d vTileOffset = ptrPGE->GetDraw().ScreenToWorld({ 0,0 }).floor();
-		olc::vi2d vTileCount = ptrPGE->GetDraw().ScreenToWorld(ptrPGE->ScreenSize()).ceil() - vTileOffset;
+        // Update camera logic here
+        ManageKeyboardInput(fElapsedTime);
 
-		// // Clamp to ensure we stay in bounds of our world map
-		olc::vi2d vTileTL = vTileOffset.max({ 0,0 });
-		olc::vi2d vTileBR = (vTileOffset + vTileCount).min(viWorldSize);
-		olc::vi2d vTile;
-
-		// Then looping through them and drawing them
-		//auto batch = ptrPGE->GetDraw().CreateFilledBatch();
-
-		for (vTile.y = vTileTL.y; vTile.y < vTileBR.y; vTile.y++)
-			for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
-			{
-				// 2D -> 1D index conversion for our world map
-				int idx = vTile.y * viWorldSize.x + vTile.x;
-
-				if (vecWorldMap[idx] == 0)
-					ptrPGE->GetDraw().Rect(vTile, { 1.0f, 1.0f }, olc::Colour::DARK_GREEN);
-
-				if (vecWorldMap[idx] == 1)
-					ptrPGE->GetDraw().Rect(vTile, { 1.0f, 1.0f }, olc::Colour::TANGERINE);
-			}
-
-		// Draw the batch of tiles
-		// ptrPGE->GetDraw().Batch(batch);
-
+		// Manage collisions and interactions for the tracked point (player) here
+		ManageCollision(fElapsedTime);
+    
 		// Draw the "player" as a 1x1 cell
 		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
 
@@ -128,14 +105,13 @@ public:
 		else
 			ptrPGE->GetDraw().StringProp({ 2,2 }, "TAB: Play Mode", olc::Colour::YELLOW);
 
-		ptrPGE->GetDraw().StringProp({ 2,12 }, "WASD  : Move", olc::Colour::YELLOW);
-		ptrPGE->GetDraw().StringProp({ 2,22 }, "CAMERA: 1) Simple  2) EdgeMove  3) LazyFollow  4) Screens 5) Slides", olc::Colour::YELLOW);
-		ptrPGE->GetDraw().StringProp({ 2,42 }, vTileOffset.str(), olc::Colour::YELLOW);
+		
 
     }
 
 private:
     olc::PixelGameEngine* ptrPGE;
+    TiledLevelManager* ptrTLM;
 
     void ManageKeyboardInput(float fElapsedTime)
     {
@@ -179,5 +155,231 @@ private:
 			bOnScreen = camera.Update(fElapsedTime);
 
     }
+
+	olc::vf2d RotatePoint(float fRadians, olc::vf2d vfPoint)
+	{
+		float tempX = vfPoint.x - vTrackedPoint.x;
+		float tempY = vfPoint.y - vTrackedPoint.y;
+		vfPoint.x = vTrackedPoint.x + (tempX * cos(fRadians) - tempY * sin(fRadians));
+		vfPoint.y = vTrackedPoint.y + (tempX * sin(fRadians) + tempY * cos(fRadians));
+		return vfPoint;
+	}
+
+	void ManageCollision(float fElapsedTime, bool pbEnableGravity = true, bool pbOnLadder = false)
+	{
+
+		olc::vi2d vTileOffset = ptrPGE->GetDraw().ScreenToWorld({ 0,0 }).floor();
+		olc::vi2d vTileCount = ptrPGE->GetDraw().ScreenToWorld(ptrPGE->ScreenSize()).ceil() - vTileOffset;
+
+		// Clamp to ensure we stay in bounds of our world map
+		olc::vi2d vTileTL = vTileOffset.max({ 0,0 });
+		olc::vi2d vTileBR = (vTileOffset + vTileCount).min(viWorldSize);
+		olc::vi2d vTile;
+
+		// Layer stuff
+		int32_t idx = 0;
+		olc::TiledLevelManager::DecalInfo decalInfo;
+		int32_t nLayer = 0;
+		using namespace olc::utils::geom2d;
+
+		// Collision stuff
+		olc::vf2d vfDirection = { 0.0f, 0.0f };
+		olc::vf2d vfClosest = { 0.0f, 0.0f };
+		olc::vf2d vfDistance = { 0.0f, 0.0f };
+		float fDistance = 0.0f;
+		float fOverlap = 0.0f;
+
+		// TODO: Add ladders, moving platforms, and other special tiles
+		bool bEnableGravity = true;
+		bool bOnLadder = false;
+		
+		// Rect collision stuff
+		rect<float> worldTile;
+		worldTile.pos.x = 0.0f;
+		worldTile.pos.y = 0.0f;
+		worldTile.size = olc::vf2d(viTileSize);
+
+		// Polygon stuff
+		olc::vf2d vfPoints[2];
+		std::vector <olc::vf2d> vfPolyPoints;
+		olc::vf2d vfNewClosest = { 0.0f, 0.0f };
+		bool bIsFirstClosest = true;
+
+		bool bOverLaps = false; // Is set when a circle overlaps a Rect/Triangle
+
+		// Updates the player object position based on collisions with the world tiles,
+		auto updatePos = [&]()
+		{
+			bool bCollided = false;
+			// TODO Manage other types of collisions like moving platforms, spikes,  Flkags
+			if (decalInfo.sCollisionTile.bIsLadder == true)
+			{
+				// we need to turn off gravity
+			}
+
+			vfDistance = vTrackedPoint - vfClosest;
+
+			fDistance = std::sqrt(vfDistance.x * vfDistance.x + vfDistance.y * vfDistance.y);
+			fOverlap = fRadius - fDistance;
+
+			if (fDistance != 0)
+			{
+				// Move our player out of collision
+				vTrackedPoint += (vfDistance / fDistance) * fOverlap;
+				vfDirection += (vfDistance / fDistance) * fOverlap;
+				bCollided = true;
+			}
+			else
+			{
+				// Handle the case where the circle's center is exactly on the rectangle's edge
+				if (vfDistance.x == 0) {
+					vTrackedPoint.y += (vTrackedPoint.y > worldTile.pos.y + worldTile.size.y / 2) ? fOverlap : -fOverlap;
+					vfDirection.y += (vTrackedPoint.y > worldTile.pos.y + worldTile.size.y / 2) ? fOverlap : -fOverlap;
+				}
+				else {
+					vTrackedPoint.x += (vTrackedPoint.x > worldTile.pos.x + worldTile.size.x / 2) ? fOverlap : -fOverlap;
+					vfDirection.x += (vTrackedPoint.x > worldTile.pos.x + worldTile.size.x / 2) ? fOverlap : -fOverlap;
+				}
+			}
+
+			/*
+			* Note we add *a to declare we want to update the value
+			* Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs)
+			*/
+			vTrackedPoint += vfDirection * fElapsedTime;
+			return bCollided;
+		};
+
+		for (vTile.y = vTileTL.y; vTile.y < vTileBR.y; vTile.y++)
+			for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
+			{
+				idx = vTile.y * viWorldSize.x + vTile.x;
+				/*
+				* Note we add *a to declare we want to access the value
+				* Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs
+				*/
+				for (auto& layer : ptrTLM->Properties.mapLayerInfo)
+				{
+					bOverLaps = false;	// Reset our overlap
+					bIsFirstClosest = true;
+					decalInfo = layer.second[idx];	// We only care about the data (layer.data)
+
+					if (decalInfo.nTiledID == 0) continue;					  // If the tile does nothing just move on
+					
+					if (decalInfo.bHasCollision)
+					{
+						// Check for collision here
+						worldTile.pos = ptrPGE->GetDraw().WorldToScreen(vTile);
+
+						for (auto& tileObject : decalInfo.sCollisionTile.vecTileObjects)
+						{
+							switch (tileObject.sCollisionType.eCollision)
+							{
+								case TiledLevelManager::Collision::ELLIPSE:
+								case TiledLevelManager::Collision::CAPSULE:
+								{
+									break;
+								}
+								case TiledLevelManager::Collision::CIRCLE:
+								{
+									// Get the closest point on the circle and a circle
+									worldTile.pos += tileObject.vfPosition;
+									worldTile.size = tileObject.vfSize;
+
+									olc::vf2d vfCenter = worldTile.pos + worldTile.size / 2.0f;
+									float fCRadius = worldTile.size.x / 2.0f;
+
+									bOverLaps = overlaps(circle<float>{vfCenter, fCRadius}, circle<float>{vTrackedPoint, fRadius});
+									if (bOverLaps)
+									{
+										// Get the closest point between a circle and a circle
+										vfClosest = closest(circle<float>{vfCenter, fCRadius}, circle<float>{vTrackedPoint, fRadius});
+										bOverLaps = updatePos();
+									}
+
+									break;
+								}
+								case TiledLevelManager::Collision::POINT:
+								{
+									break;
+								}
+								case TiledLevelManager::Collision::POLYGON:
+								{
+									// Important we need to ensure our offset etc are applied, may need to be move to level manager
+									for (auto& vfPoint : tileObject.sCollisionType.vecPoints)
+									{
+										auto vfRotatedPoint = tileObject.vfPosition;
+										auto vfPosition = tileObject.vfPosition;
+										if (tileObject.fRotationRad != 0.0f)
+										{
+											vfPoint = RotatePoint(vfRotatedPoint, tileObject.fRotationRad, vfPoint);
+											vfPosition = { 0.0f, 0.0f };
+										}
+										olc::vf2d vfPointnew = worldTile.pos + (vfPoint + vfPosition); //vTile + vfWorldPoint;
+										vfPolyPoints.push_back(vfPointnew);
+									}
+
+									// Get the approx centre of the polygon
+									auto vfCenter = (std::accumulate(vfPolyPoints.begin(), vfPolyPoints.end(), olc::vf2d{ 0.0f, 0.0f })) / float(vfPolyPoints.size());
+
+									for (int i = 0; i < vfPolyPoints.size(); i++)
+									{
+										bOverLaps = overlaps(triangle<float>{vfCenter, vfPolyPoints[i], vfPolyPoints[(i + 1) % vfPolyPoints.size()]}, circle<float>{vTrackedPoint, fRadius});
+
+										// If we over lap lets find the closest first and move back from there
+										if (bOverLaps)
+										{
+											vfNewClosest = closest(triangle<float>{vfCenter, vfPolyPoints[i], vfPolyPoints[(i + 1) % vfPolyPoints.size()]}, circle<float>{vTrackedPoint, fRadius});
+
+											// use to ensure vfClosest is set the first overlap 
+											if (bIsFirstClosest)
+											{
+												vfClosest = vfNewClosest;
+												bIsFirstClosest = false;
+											}
+
+											// Find the closet distance
+											if (vfClosest > vfNewClosest) vfClosest = vfNewClosest;
+											bOverLaps = updatePos();
+										}
+
+									}
+
+									vfPolyPoints.clear(); // Clear our points for the next loop
+									break;
+								}
+								case TiledLevelManager::Collision::RECT:
+								{
+									worldTile.pos += tileObject.vfPosition;
+									worldTile.size = tileObject.vfSize;
+									bOverLaps = overlaps(circle<float>{vTrackedPoint, fRadius}, worldTile);
+									if (bOverLaps)
+									{
+										// Get the closest point between a circle and a rectangle
+										vfClosest = closest(worldTile, circle<float>{vTrackedPoint, fRadius});
+										bOverLaps = updatePos();
+									}
+
+									break;
+								}
+								default:
+								{
+									break;
+								}
+
+							} // switch (tileObject.sCollisionType.eCollision)
+
+						} // for (auto& layer : *Properties.ptrmapLayerInfo)
+
+					}  // if (decalInfo.bHasCollision)
+
+					nLayer++;
+
+				}
+
+			}
+
+
+	}
 
 };
