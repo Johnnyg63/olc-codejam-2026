@@ -1,12 +1,13 @@
 {
-    "activeFile": "Level1Project.tmx",
+    "activeFile": "AbstractPlatformer32x32.tsx",
     "expandedProjectPaths": [
     ],
     "exportAsImage.drawObjectLabels": true,
     "exportAsImage.drawTileGrid": true,
     "fileStates": {
         "AbstractPlatformer32x32.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "Level1Output_Broken.tmx": {
             "scale": 0.2714285714285714,
@@ -20,11 +21,11 @@
             "scaleInDock": 1
         },
         "Level1Project.tmx": {
-            "scale": 0.2714285714285714,
+            "scale": 0.75,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 2240,
-                "y": 385
+                "x": 2845.333333333333,
+                "y": 348.66666666666663
             }
         }
     },
@@ -34,11 +35,13 @@
     "map.lastUsedFormat": "tmx",
     "map.width": 140,
     "openFiles": [
-        "Level1Project.tmx"
+        "Level1Project.tmx",
+        "AbstractPlatformer32x32.tsx"
     ],
     "project": "JohnnyChnage.tiled-project",
     "recentFiles": [
-        "Level1Output_Broken.tmx",
-        "Level1Project.tmx"
+        "Level1Project.tmx",
+        "AbstractPlatformer32x32.tsx",
+        "Level1Output_Broken.tmx"
     ]
 }
