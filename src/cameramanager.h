@@ -324,10 +324,14 @@ private:
         {
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bPressed) 
             {
-                vJumpCount = {0, 0}; // Reset jump count when jump starts
-                bJumping = true;
-                PlayPlayerSound(nJumpSoundID); // Play jump sound effect
-                nCurrentPlayerImageID = nRollID; // Set jump image when jumping
+                if(bIsGrounded)
+                {
+                    vJumpCount = {0, 0}; // Reset jump count when jump starts
+                    bJumping = true;
+                    PlayPlayerSound(nJumpSoundID); // Play jump sound effect
+                    nCurrentPlayerImageID = nRollID; // Set jump image when jumping
+                }
+               
             }
 
         }
