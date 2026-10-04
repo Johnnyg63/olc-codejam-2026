@@ -88,11 +88,31 @@ public:
         ManageKeyboardInput(fElapsedTime);
 
         olc::vf2d vCameraPos = camera.GetViewPosition();
+
+         olc::vf2d vfCenterPos = vTrackedPoint  - olc::vf2d(0.5f, 0.5f);
         
         
-        UpdateCollisions(fElapsedTime, &vTrackedPoint, vCameraPos, 0.5f);
+        UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, 50.0f);
 		// Manage collisions and interactions for the tracked point (player) here
 		//ManageCollision(fElapsedTime);
+
+
+        // Update the camera, if teh tracked object remains visible, 
+		// true is returned
+		bool bOnScreen = false;
+
+		if (bFreeRoam)
+		{
+			// In free roam mode, we ignore the tracked point and instead 
+			// allow the user to pan and zoom the camera with the mouse
+			camera.HandlePanAndZoom(ptrPGE->GetMouse());
+			// Update camera, but dont actually change the world transform
+			bOnScreen = camera.Update(fElapsedTime, false);
+		}
+		else
+			// In play mode, we update the camera as normal, which will cause it to
+			// follow the tracked point according to the camera mode
+			bOnScreen = camera.Update(fElapsedTime);
     
 		// Draw the "player" as a 1x1 cell
 		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
@@ -153,7 +173,7 @@ private:
         }
         
         // Manage jumping, but only if the player is on the ground (not falling)
-        if (ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bPressed && isGrounded)
+        if (ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bHeld)
         {
             vVel = vVel + olc::vf2d{0, -1};
         }
@@ -166,22 +186,7 @@ private:
 			bFreeRoam = !bFreeRoam;
 		}
 
-		// Update the camera, if teh tracked object remains visible, 
-		// true is returned
-		bool bOnScreen = false;
-
-		if (bFreeRoam)
-		{
-			// In free roam mode, we ignore the tracked point and instead 
-			// allow the user to pan and zoom the camera with the mouse
-			camera.HandlePanAndZoom(ptrPGE->GetMouse());
-			// Update camera, but dont actually change the world transform
-			bOnScreen = camera.Update(fElapsedTime, false);
-		}
-		else
-			// In play mode, we update the camera as normal, which will cause it to
-			// follow the tracked point according to the camera mode
-			bOnScreen = camera.Update(fElapsedTime);
+		
 
     }
 
