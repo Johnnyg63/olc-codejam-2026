@@ -156,16 +156,16 @@ private:
 
     }
 
-	olc::vf2d RotatePoint(float fRadians, olc::vf2d vfPoint)
+	olc::vf2d RotatePoint(olc::vf2d vfCenterPos, float fRadians, olc::vf2d vfPoint)
 	{
-		float tempX = vfPoint.x - vTrackedPoint.x;
-		float tempY = vfPoint.y - vTrackedPoint.y;
-		vfPoint.x = vTrackedPoint.x + (tempX * cos(fRadians) - tempY * sin(fRadians));
-		vfPoint.y = vTrackedPoint.y + (tempX * sin(fRadians) + tempY * cos(fRadians));
+		float tempX = vfPoint.x - vfCenterPos.x;
+		float tempY = vfPoint.y - vfCenterPos.y;
+		vfPoint.x = vfCenterPos.x + (tempX * cos(fRadians) - tempY * sin(fRadians));
+		vfPoint.y = vfCenterPos.y + (tempX * sin(fRadians) + tempY * cos(fRadians));
 		return vfPoint;
 	}
 
-	void ManageCollision(float fElapsedTime, bool pbEnableGravity = true, bool pbOnLadder = false)
+	void ManageCollision(float fElapsedTime, float fRadius = 5.0f, bool pbEnableGravity = true, bool pbOnLadder = false)
 	{
 
 		olc::vi2d vTileOffset = ptrPGE->GetDraw().ScreenToWorld({ 0,0 }).floor();
@@ -247,6 +247,7 @@ private:
 			* Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs)
 			*/
 			vTrackedPoint += vfDirection * fElapsedTime;
+			ptrPGE->GetDraw().Circle(vTrackedPoint, fRadius, olc::Colour::GREEN, olc::Colour::GREEN, 64);
 			return bCollided;
 		};
 
