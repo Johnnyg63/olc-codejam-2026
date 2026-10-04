@@ -5,6 +5,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -16,6 +18,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -27,6 +31,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -41,6 +47,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -52,6 +60,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -63,6 +73,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -74,6 +86,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -85,6 +99,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -99,6 +115,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -113,6 +131,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -126,6 +146,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -140,6 +162,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -151,6 +175,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -162,6 +188,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -173,6 +201,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -184,6 +214,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -198,6 +230,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -212,6 +246,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -226,6 +262,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -234,6 +272,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -242,6 +282,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -250,6 +292,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -258,6 +302,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -266,6 +312,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -274,6 +322,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -282,6 +332,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -290,6 +342,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -298,6 +352,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -306,6 +362,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -314,6 +372,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -322,6 +382,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -330,6 +392,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -338,6 +402,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -346,6 +412,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -354,6 +422,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -362,6 +432,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -370,6 +442,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -378,6 +452,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -386,6 +462,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -394,6 +472,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -402,6 +482,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -410,6 +492,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -418,6 +502,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -426,6 +512,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -434,6 +522,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -445,6 +535,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -456,6 +548,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -468,6 +562,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -480,6 +576,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -492,6 +590,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -504,6 +604,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -516,6 +618,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -528,6 +632,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -540,6 +646,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -552,6 +660,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -563,6 +673,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -574,6 +686,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -585,6 +699,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -596,6 +712,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -607,6 +725,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -618,6 +738,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -629,6 +751,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -640,6 +764,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -648,6 +774,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -656,6 +784,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -664,6 +794,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -672,6 +804,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -680,6 +814,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -688,6 +824,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -696,6 +834,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -704,6 +844,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -712,6 +854,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -720,6 +864,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -728,6 +874,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -736,6 +884,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -744,6 +894,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -752,6 +904,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -760,6 +914,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -768,6 +924,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -776,6 +934,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -784,6 +944,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -792,6 +954,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -800,6 +964,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -808,6 +974,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -816,6 +984,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -824,6 +994,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -832,6 +1004,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -840,6 +1014,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -848,6 +1024,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -859,6 +1037,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -870,6 +1050,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -878,6 +1060,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -891,6 +1075,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -899,6 +1085,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -907,6 +1095,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -915,6 +1105,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -928,6 +1120,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -941,6 +1135,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -949,6 +1145,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -960,6 +1158,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -972,6 +1172,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -984,6 +1186,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -996,6 +1200,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1011,6 +1217,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1023,6 +1231,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1035,6 +1245,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1049,6 +1261,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1057,6 +1271,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1065,6 +1281,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1073,6 +1291,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1081,6 +1301,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1089,6 +1311,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1097,6 +1321,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1105,6 +1331,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1113,6 +1341,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1121,6 +1351,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1129,6 +1361,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1137,6 +1371,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1145,6 +1381,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1153,6 +1391,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1161,6 +1401,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1169,6 +1411,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1177,6 +1421,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1185,6 +1431,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1193,6 +1441,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1201,6 +1451,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1209,6 +1461,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1217,6 +1471,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1225,6 +1481,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1233,6 +1491,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1241,6 +1501,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1249,6 +1511,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1257,6 +1521,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1268,6 +1534,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1279,6 +1547,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1292,6 +1562,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1303,6 +1575,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1314,6 +1588,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1327,6 +1603,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1340,6 +1618,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1351,6 +1631,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1362,6 +1644,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1375,6 +1659,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1386,6 +1672,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1397,6 +1685,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1408,6 +1698,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1419,6 +1711,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1432,6 +1726,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1443,6 +1739,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1454,6 +1752,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1467,6 +1767,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1475,6 +1777,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1483,6 +1787,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1491,6 +1797,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1499,6 +1807,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1507,6 +1817,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1515,6 +1827,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1523,6 +1837,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1531,6 +1847,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1539,6 +1857,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1547,6 +1867,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1555,6 +1877,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1563,6 +1887,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1571,6 +1897,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1579,6 +1907,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1587,6 +1917,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1595,6 +1927,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1603,6 +1937,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1611,6 +1947,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1619,6 +1957,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1627,6 +1967,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1635,6 +1977,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1643,6 +1987,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1651,6 +1997,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1659,6 +2007,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1667,6 +2017,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1675,6 +2027,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1686,6 +2040,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1697,6 +2053,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1708,6 +2066,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1719,6 +2079,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1730,6 +2092,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1741,6 +2105,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1752,6 +2118,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1763,6 +2131,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1774,6 +2144,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1785,6 +2157,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1796,6 +2170,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1807,6 +2183,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1818,6 +2196,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1829,6 +2209,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1843,6 +2225,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1854,6 +2238,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1865,6 +2251,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1879,6 +2267,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1887,6 +2277,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1895,6 +2287,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1903,6 +2297,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1911,6 +2307,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1919,6 +2317,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1927,6 +2327,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1935,6 +2337,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1943,6 +2347,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1951,6 +2357,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1959,6 +2367,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1967,6 +2377,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1975,6 +2387,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1983,6 +2397,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1991,6 +2407,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -1999,6 +2417,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2007,6 +2427,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2015,6 +2437,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2023,6 +2447,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2031,6 +2457,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2039,6 +2467,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2047,6 +2477,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2055,6 +2487,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2063,6 +2497,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2071,6 +2507,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2079,6 +2517,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2087,6 +2527,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2098,6 +2540,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2109,6 +2553,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2120,6 +2566,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2131,6 +2579,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2142,6 +2592,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2153,6 +2605,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2164,6 +2618,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2175,6 +2631,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2186,6 +2644,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2197,6 +2657,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2208,6 +2670,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2219,6 +2683,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2230,6 +2696,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2241,6 +2709,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2254,6 +2724,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2267,6 +2739,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2280,6 +2754,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2293,6 +2769,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2301,6 +2779,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2309,6 +2789,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2317,6 +2799,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2325,6 +2809,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2333,6 +2819,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2341,6 +2829,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2349,6 +2839,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2357,6 +2849,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2365,6 +2859,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2373,6 +2869,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2381,6 +2879,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2389,6 +2889,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2397,6 +2899,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2405,6 +2909,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2413,6 +2919,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2421,6 +2929,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2429,6 +2939,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2437,6 +2949,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2445,6 +2959,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2453,6 +2969,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2461,6 +2979,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2469,6 +2989,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2477,6 +2999,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2485,6 +3009,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2493,6 +3019,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2501,6 +3029,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2512,6 +3042,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2523,6 +3055,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2537,6 +3071,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2548,6 +3084,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2559,6 +3097,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2570,6 +3110,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2581,6 +3123,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2595,6 +3139,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2609,6 +3155,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2623,6 +3171,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2637,6 +3187,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2648,6 +3200,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2659,6 +3213,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2670,6 +3226,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2681,6 +3239,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2695,6 +3255,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2709,6 +3271,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2723,6 +3287,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2731,6 +3297,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2739,6 +3307,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2747,6 +3317,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2755,6 +3327,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2763,6 +3337,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2771,6 +3347,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2779,6 +3357,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2787,6 +3367,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2795,6 +3377,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2803,6 +3387,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2811,6 +3397,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2819,6 +3407,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2827,6 +3417,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2835,6 +3427,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2843,6 +3437,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2851,6 +3447,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2859,6 +3457,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2867,6 +3467,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2875,6 +3477,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2883,6 +3487,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2891,6 +3497,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2899,6 +3507,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2907,6 +3517,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2915,6 +3527,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2923,6 +3537,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2931,6 +3547,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2942,6 +3560,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2953,6 +3573,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2964,6 +3586,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2975,6 +3599,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2986,6 +3612,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -2997,6 +3625,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3008,6 +3638,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3019,6 +3651,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3030,6 +3664,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3041,6 +3677,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3052,6 +3690,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3063,6 +3703,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3074,6 +3716,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3085,6 +3729,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3096,6 +3742,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3107,6 +3755,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3118,6 +3768,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3129,6 +3781,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3137,6 +3791,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3145,6 +3801,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3153,6 +3811,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3161,6 +3821,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3169,6 +3831,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3177,6 +3841,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3185,6 +3851,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3193,6 +3861,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3201,6 +3871,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3209,6 +3881,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3217,6 +3891,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3225,6 +3901,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3233,6 +3911,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3241,6 +3921,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3249,6 +3931,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3257,6 +3941,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3265,6 +3951,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3273,6 +3961,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3281,6 +3971,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3289,6 +3981,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3297,6 +3991,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3305,6 +4001,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3313,6 +4011,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3321,6 +4021,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3329,6 +4031,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3337,6 +4041,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3348,6 +4054,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3359,6 +4067,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3367,6 +4077,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3380,6 +4092,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3393,6 +4107,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3401,6 +4117,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3409,6 +4127,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3422,6 +4142,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3435,6 +4157,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3443,6 +4167,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3454,6 +4180,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3465,6 +4193,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3476,6 +4206,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3487,6 +4219,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3501,6 +4235,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3512,6 +4248,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3523,6 +4261,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3537,6 +4277,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3545,6 +4287,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3553,6 +4297,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3561,6 +4307,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3569,6 +4317,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3577,6 +4327,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3585,6 +4337,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3593,6 +4347,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3601,6 +4357,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3609,6 +4367,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3617,6 +4377,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3625,6 +4387,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3633,6 +4397,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3641,6 +4407,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3649,6 +4417,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3657,6 +4427,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3665,6 +4437,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3673,6 +4447,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3681,6 +4457,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3689,6 +4467,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3697,6 +4477,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3705,6 +4487,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3713,6 +4497,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3721,6 +4507,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3729,6 +4517,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3737,6 +4527,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3745,6 +4537,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3756,6 +4550,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3767,6 +4563,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3780,6 +4578,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3791,6 +4591,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3802,6 +4604,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3815,6 +4619,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3828,6 +4634,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3839,6 +4647,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3850,6 +4660,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3863,6 +4675,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3874,6 +4688,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3885,6 +4701,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3896,6 +4714,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3907,6 +4727,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3920,6 +4742,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3931,6 +4755,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3942,6 +4768,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3955,6 +4783,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3963,6 +4793,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3971,6 +4803,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3979,6 +4813,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3987,6 +4823,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -3995,6 +4833,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4003,6 +4843,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4011,6 +4853,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4019,6 +4863,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4027,6 +4873,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4035,6 +4883,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4043,6 +4893,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4051,6 +4903,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4059,6 +4913,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4067,6 +4923,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4075,6 +4933,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4083,6 +4943,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4091,6 +4953,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4099,6 +4963,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4107,6 +4973,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4115,6 +4983,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4123,6 +4993,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4131,6 +5003,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4139,6 +5013,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4147,6 +5023,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4155,6 +5033,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4163,6 +5043,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4174,6 +5056,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4185,6 +5069,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4196,6 +5082,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4207,6 +5095,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4218,6 +5108,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4229,6 +5121,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4240,6 +5134,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4251,6 +5147,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4262,6 +5160,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4273,6 +5173,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4284,6 +5186,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4295,6 +5199,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4306,6 +5212,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4317,6 +5225,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4331,6 +5241,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4342,6 +5254,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4353,6 +5267,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4367,6 +5283,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4375,6 +5293,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4383,6 +5303,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4391,6 +5313,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4399,6 +5323,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4407,6 +5333,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4415,6 +5343,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4427,6 +5357,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4438,6 +5370,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4449,6 +5383,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4460,6 +5396,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4471,6 +5409,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4482,6 +5422,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4493,6 +5435,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4504,6 +5448,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4515,6 +5461,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4526,6 +5474,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4537,6 +5487,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4548,6 +5500,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4559,6 +5513,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4570,6 +5526,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4581,6 +5539,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4592,6 +5552,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4603,6 +5565,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4614,6 +5578,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4622,6 +5588,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4633,6 +5601,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4644,6 +5614,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4655,6 +5627,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4666,6 +5640,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4677,6 +5653,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4688,6 +5666,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4699,6 +5679,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4710,6 +5692,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4721,6 +5705,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4732,6 +5718,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4743,6 +5731,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4754,6 +5744,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4765,6 +5757,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4776,6 +5770,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4787,6 +5783,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4800,6 +5798,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4813,6 +5813,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4826,6 +5828,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4839,6 +5843,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4847,6 +5853,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4855,6 +5863,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4863,6 +5873,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4871,6 +5883,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4879,6 +5893,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -4887,6 +5903,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4898,6 +5916,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4909,6 +5929,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4920,6 +5942,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4931,6 +5955,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4942,6 +5968,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4953,6 +5981,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4964,6 +5994,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4975,6 +6007,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4986,6 +6020,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="true"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="16711935"/>
   </properties>
@@ -4997,6 +6033,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5008,6 +6046,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5019,6 +6059,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5030,6 +6072,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5041,6 +6085,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5052,6 +6098,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5063,6 +6111,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5074,6 +6124,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5085,6 +6137,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5096,6 +6150,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5107,6 +6163,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5118,6 +6176,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5129,6 +6189,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5143,6 +6205,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5154,6 +6218,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5165,6 +6231,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5176,6 +6244,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5187,6 +6257,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5201,6 +6273,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5215,6 +6289,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5229,6 +6305,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5243,6 +6321,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5254,6 +6334,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5265,6 +6347,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5276,6 +6360,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5287,6 +6373,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5301,6 +6389,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5315,6 +6405,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5329,6 +6421,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5337,6 +6431,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5345,6 +6441,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5353,6 +6451,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5361,6 +6461,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5369,6 +6471,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5377,6 +6481,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5388,6 +6494,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5399,6 +6507,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5410,6 +6520,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5421,6 +6533,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5432,6 +6546,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5443,6 +6559,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5454,6 +6572,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5465,6 +6585,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5476,6 +6598,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5487,6 +6611,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5498,6 +6624,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5509,6 +6637,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5520,6 +6650,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5531,6 +6663,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5542,6 +6676,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5553,6 +6689,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5564,6 +6702,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5575,6 +6715,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5586,6 +6728,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5597,6 +6741,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5608,6 +6754,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5619,6 +6767,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5630,6 +6780,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5641,6 +6793,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5652,6 +6806,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5663,6 +6819,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5674,6 +6832,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5685,6 +6845,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5696,6 +6858,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5707,6 +6871,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5718,6 +6884,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5729,6 +6897,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5740,6 +6910,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5751,6 +6923,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5762,6 +6936,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5773,6 +6949,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5784,6 +6962,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5795,6 +6975,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5803,6 +6985,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5811,6 +6995,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5819,6 +7005,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5827,6 +7015,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5835,6 +7025,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5843,6 +7035,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5854,6 +7048,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5865,6 +7061,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5876,6 +7074,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5887,6 +7087,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5898,6 +7100,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5909,6 +7113,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5920,6 +7126,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5931,6 +7139,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5942,6 +7152,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="true"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="2147483647"/>
   </properties>
@@ -5953,6 +7165,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5964,6 +7178,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5975,6 +7191,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5986,6 +7204,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -5997,6 +7217,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6008,6 +7230,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6019,6 +7243,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6030,6 +7256,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6041,6 +7269,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6052,6 +7282,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6063,6 +7295,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6074,6 +7308,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6085,6 +7321,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6093,6 +7331,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6106,6 +7346,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6119,6 +7361,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6127,6 +7371,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6135,6 +7381,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6148,6 +7396,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6161,6 +7411,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6169,6 +7421,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6180,6 +7434,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6191,6 +7447,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6202,6 +7460,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6213,6 +7473,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6227,6 +7489,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6238,6 +7502,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6249,6 +7515,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6263,6 +7531,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6271,6 +7541,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6279,6 +7551,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6287,6 +7561,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6295,6 +7571,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6303,6 +7581,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6311,6 +7591,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6319,6 +7601,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6327,6 +7611,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6335,6 +7621,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6343,6 +7631,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6351,6 +7641,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6359,6 +7651,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6367,6 +7661,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6375,6 +7671,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6386,6 +7684,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6397,6 +7697,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6408,6 +7710,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6419,6 +7723,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6430,6 +7736,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6441,6 +7749,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6452,6 +7762,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6463,6 +7775,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6474,6 +7788,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6485,6 +7801,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6496,6 +7814,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6507,6 +7827,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6518,6 +7840,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6529,6 +7853,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6542,6 +7868,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6553,6 +7881,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6564,6 +7894,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6577,6 +7909,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6590,6 +7924,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6601,6 +7937,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6612,6 +7950,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6625,6 +7965,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6636,6 +7978,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6647,6 +7991,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6658,6 +8004,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6669,6 +8017,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6682,6 +8032,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6693,6 +8045,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6704,6 +8058,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6717,6 +8073,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6725,6 +8083,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6733,6 +8093,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6741,6 +8103,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6749,6 +8113,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6757,6 +8123,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6765,6 +8133,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6776,6 +8146,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6787,6 +8159,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6798,6 +8172,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6809,6 +8185,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6820,6 +8198,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6831,6 +8211,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6842,6 +8224,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6853,6 +8237,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6864,6 +8250,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6875,6 +8263,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6886,6 +8276,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6897,6 +8289,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6908,6 +8302,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6919,6 +8315,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6930,6 +8328,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6941,6 +8341,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6952,6 +8354,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6963,6 +8367,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6974,6 +8380,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6985,6 +8393,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -6996,6 +8406,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7007,6 +8419,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7018,6 +8432,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7029,6 +8445,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7040,6 +8458,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7051,6 +8471,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7062,6 +8484,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7073,6 +8497,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7084,6 +8510,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7095,6 +8523,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7106,6 +8536,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7117,6 +8549,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7128,6 +8562,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7139,6 +8575,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7153,6 +8591,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7164,6 +8604,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7175,6 +8617,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7189,6 +8633,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7197,6 +8643,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7205,6 +8653,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7213,6 +8663,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7221,6 +8673,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7229,14 +8683,18 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="728">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7247,8 +8705,10 @@
  </tile>
  <tile id="729">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7260,8 +8720,10 @@
  </tile>
  <tile id="730">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="false"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7273,14 +8735,18 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="732">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7291,8 +8757,10 @@
  </tile>
  <tile id="733">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7304,8 +8772,10 @@
  </tile>
  <tile id="734">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="false"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7317,6 +8787,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7325,6 +8797,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7336,6 +8810,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7347,6 +8823,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7358,6 +8836,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7369,6 +8849,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7380,6 +8862,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7391,6 +8875,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7402,6 +8888,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7413,6 +8901,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7424,6 +8914,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7435,6 +8927,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7446,6 +8940,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7457,6 +8953,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7468,6 +8966,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7479,6 +8979,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7490,6 +8992,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7501,6 +9005,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7512,6 +9018,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7523,6 +9031,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7534,6 +9044,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7545,6 +9057,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7556,6 +9070,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7567,6 +9083,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7578,6 +9096,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7589,6 +9109,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7600,6 +9122,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7611,6 +9135,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7624,6 +9150,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7637,6 +9165,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7650,6 +9180,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7663,6 +9195,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7671,6 +9205,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7679,6 +9215,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7687,6 +9225,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7695,6 +9235,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7703,14 +9245,18 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="772">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7720,16 +9266,20 @@
  </tile>
  <tile id="773">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="774">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="false"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7741,14 +9291,18 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="776">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7758,16 +9312,20 @@
  </tile>
  <tile id="777">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="778">
   <properties>
-   <property name="bHasCollision" type="bool" value="true"/>
+   <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="true"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="false"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7779,6 +9337,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7787,6 +9347,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7798,6 +9360,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7809,6 +9373,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7820,6 +9386,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7831,6 +9399,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7842,6 +9412,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7853,6 +9425,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7864,6 +9438,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7875,6 +9451,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7886,6 +9464,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7897,6 +9477,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7908,6 +9490,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7919,6 +9503,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7930,6 +9516,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7941,6 +9529,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7955,6 +9545,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7966,6 +9558,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7977,6 +9571,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7988,6 +9584,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -7999,6 +9597,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8013,6 +9613,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8027,6 +9629,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8041,6 +9645,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8055,6 +9661,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8066,6 +9674,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8077,6 +9687,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8085,6 +9697,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8093,6 +9707,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8107,6 +9723,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8121,6 +9739,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8135,6 +9755,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8143,6 +9765,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8151,6 +9775,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8159,6 +9785,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8167,6 +9795,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8175,6 +9805,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8183,6 +9815,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8191,6 +9825,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8199,6 +9835,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8207,6 +9845,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8215,6 +9855,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8223,6 +9865,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8231,6 +9875,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8239,6 +9885,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8247,6 +9895,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8258,6 +9908,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8269,6 +9921,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8280,6 +9934,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8291,6 +9947,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8302,6 +9960,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8313,6 +9973,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8324,6 +9986,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8335,6 +9999,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8346,6 +10012,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8357,6 +10025,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8368,6 +10038,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8379,6 +10051,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8390,6 +10064,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8401,6 +10077,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8412,6 +10090,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8423,6 +10103,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8434,6 +10116,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8445,6 +10129,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8456,6 +10142,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8467,6 +10155,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8478,6 +10168,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8489,6 +10181,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8500,6 +10194,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8511,6 +10207,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8522,6 +10220,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8533,6 +10233,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8544,6 +10246,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8555,6 +10259,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8566,6 +10272,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8577,6 +10285,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8585,6 +10295,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8593,6 +10305,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8601,6 +10315,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8609,6 +10325,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8617,6 +10335,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8625,6 +10345,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8644,6 +10366,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8663,6 +10387,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8682,6 +10408,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8701,6 +10429,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8712,6 +10442,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8723,6 +10455,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8734,6 +10468,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8745,6 +10481,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8756,6 +10494,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8767,6 +10507,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8778,6 +10520,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8789,6 +10533,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8800,6 +10546,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8811,6 +10559,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8822,6 +10572,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8833,6 +10585,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8844,6 +10598,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8855,6 +10611,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8866,6 +10624,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8877,6 +10637,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8888,6 +10650,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8899,6 +10663,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8907,6 +10673,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8920,6 +10688,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8933,6 +10703,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8941,6 +10713,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8949,6 +10723,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8962,6 +10738,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8975,6 +10753,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8983,6 +10763,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -8994,6 +10776,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9005,6 +10789,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9016,6 +10802,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9027,6 +10815,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9041,6 +10831,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9052,6 +10844,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9063,6 +10857,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9077,6 +10873,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9093,6 +10891,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9101,6 +10901,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9109,6 +10911,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9117,6 +10921,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9125,6 +10931,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9141,6 +10949,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9158,6 +10968,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9175,6 +10987,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9192,6 +11006,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9209,6 +11025,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9226,6 +11044,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9243,6 +11063,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9260,6 +11082,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9277,6 +11101,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9285,6 +11111,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9293,6 +11121,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9301,6 +11131,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9309,6 +11141,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9317,6 +11151,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9325,6 +11161,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9333,6 +11171,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9341,6 +11181,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9349,6 +11191,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9357,6 +11201,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9365,6 +11211,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9373,6 +11221,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9384,6 +11234,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9395,6 +11247,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9408,6 +11262,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9419,6 +11275,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9430,6 +11288,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9443,6 +11303,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9456,6 +11318,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9467,6 +11331,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9478,6 +11344,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9491,6 +11359,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9502,6 +11372,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9513,6 +11385,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9524,6 +11398,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9535,6 +11411,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9548,6 +11426,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9559,6 +11439,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9570,6 +11452,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9583,6 +11467,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9597,6 +11483,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9611,6 +11499,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9619,6 +11509,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9633,6 +11525,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9641,6 +11535,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9655,6 +11551,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9666,6 +11564,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9677,6 +11577,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9688,6 +11590,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9699,6 +11603,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9710,6 +11616,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9721,6 +11629,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9732,6 +11642,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9743,6 +11655,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9751,6 +11665,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9759,6 +11675,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9767,6 +11685,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9775,6 +11695,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9783,6 +11705,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9791,6 +11715,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9799,6 +11725,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9807,6 +11735,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9815,6 +11745,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9823,6 +11755,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9831,6 +11765,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9839,6 +11775,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9850,6 +11788,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9861,6 +11801,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9872,6 +11814,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9883,6 +11827,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9894,6 +11840,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9905,6 +11853,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9916,6 +11866,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9927,6 +11879,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9938,6 +11892,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9949,6 +11905,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9960,6 +11918,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9971,6 +11931,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9982,6 +11944,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -9993,6 +11957,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10007,6 +11973,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10018,6 +11986,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10029,6 +11999,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10043,6 +12015,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10059,6 +12033,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10067,6 +12043,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10075,6 +12053,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10083,6 +12063,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10091,6 +12073,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10107,6 +12091,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10118,6 +12104,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10129,6 +12117,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10140,6 +12130,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10151,6 +12143,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10162,6 +12156,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10173,6 +12169,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10184,6 +12182,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10195,6 +12195,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10203,6 +12205,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10211,6 +12215,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10219,6 +12225,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10227,6 +12235,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10235,6 +12245,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10243,6 +12255,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10251,6 +12265,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10259,6 +12275,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10267,6 +12285,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10275,6 +12295,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10283,6 +12305,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10291,6 +12315,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10302,6 +12328,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10313,6 +12341,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10324,6 +12354,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10335,6 +12367,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10346,6 +12380,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10357,6 +12393,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10368,6 +12406,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10379,6 +12419,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10390,6 +12432,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10401,6 +12445,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10412,6 +12458,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10423,6 +12471,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10434,6 +12484,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10445,6 +12497,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10458,6 +12512,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10471,6 +12527,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10484,6 +12542,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10497,6 +12557,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10511,6 +12573,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10525,6 +12589,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10539,6 +12605,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10553,6 +12621,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10567,6 +12637,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10581,6 +12653,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10592,6 +12666,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10603,6 +12679,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10614,6 +12692,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10625,6 +12705,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10636,6 +12718,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10647,6 +12731,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10658,6 +12744,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="true"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10669,6 +12757,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10677,6 +12767,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10685,6 +12777,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10693,6 +12787,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10701,6 +12797,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10709,6 +12807,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10717,6 +12817,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10725,6 +12827,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10733,6 +12837,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10741,6 +12847,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10749,6 +12857,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
@@ -10757,6 +12867,8 @@
   <properties>
    <property name="bHasCollision" type="bool" value="false"/>
    <property name="bIsFlag" type="bool" value="false"/>
+   <property name="bIsGreenBlock" type="bool" value="false"/>
+   <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="nColour" type="int" value="0"/>
   </properties>
