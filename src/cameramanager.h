@@ -89,13 +89,11 @@ public:
 
         olc::vf2d vCameraPos = camera.GetViewPosition();
 
-         olc::vf2d vfCenterPos = vTrackedPoint  - olc::vf2d(0.5f, 0.5f);
+        // TODO: I need to sort out this hack later
+        olc::vf2d vfCenterPos = (vTrackedPoint * olc::vf2d(viTileSize)) - olc::vf2d(0.5f, 0.5f);
         
         
-        UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, 50.0f);
-		// Manage collisions and interactions for the tracked point (player) here
-		//ManageCollision(fElapsedTime);
-
+        UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, 16.0f);
 
         // Update the camera, if teh tracked object remains visible, 
 		// true is returned
@@ -309,8 +307,8 @@ private:
                         
                         if (decalInfo.bHasCollision)
                         {
-                            // Check for collision here
-                            worldTile.pos = ptrPGE->GetDraw().WorldToScreen(vTile);
+                            // Check for collision here - keep in world space
+                            worldTile.pos = olc::vf2d(vTile.x * viTileSize.x, vTile.y * viTileSize.y);
 
                             for (auto& tileObject : decalInfo.sCollisionTile.vecTileObjects)
                             {
@@ -324,10 +322,10 @@ private:
                                     case TiledLevelManager::Collision::CIRCLE:
                                     {
                                         // Get the closest point on the circle and a circle
-                                        worldTile.pos += tileObject.vfPosition;
+                                        olc::vf2d vfTilePos = worldTile.pos + tileObject.vfPosition;
                                         worldTile.size = tileObject.vfSize;
 
-                                        olc::vf2d vfCenter = worldTile.pos + worldTile.size / 2.0f;
+                                        olc::vf2d vfCenter = vfTilePos + worldTile.size / 2.0f;
                                         float fCRadius = worldTile.size.x / 2.0f;
 
                                         bOverLaps = overlaps(circle<float>{vfCenter, fCRadius}, circle<float>{vfCenterPos, fRadius});
@@ -391,13 +389,13 @@ private:
                                     }
                                     case TiledLevelManager::Collision::RECT:
                                     {
-                                        worldTile.pos += tileObject.vfPosition;
+                                        olc::vf2d vfTilePos = worldTile.pos + tileObject.vfPosition;
                                         worldTile.size = tileObject.vfSize;
-                                        bOverLaps = overlaps(circle<float>{vfCenterPos, fRadius}, worldTile);
+                                        bOverLaps = overlaps(circle<float>{vfCenterPos, fRadius}, rect<float>{vfTilePos, worldTile.size});
                                         if (bOverLaps)
                                         {
                                             // Get the closest point between a circle and a rectangle
-                                            vfClosest = closest(worldTile, circle<float>{vfCenterPos, fRadius});
+                                            vfClosest = closest(rect<float>{vfTilePos, worldTile.size}, circle<float>{vfCenterPos, fRadius});
                                             bOverLaps = updatePos();
                                         }
 
