@@ -19198,7 +19198,7 @@ const GPUTask& olc::Draw::ImageQuad(olc::ImageRegion image, const std::vector<ol
 
 
 
-const GPUTask& olc::Draw::ImageRect(olc::ImageRegion image, const olc::vf2d& pos, const olc::vf2d& size, const olc::Pixel tint)
+¸¸
 {
 	// Ensure source image is up to date in VRAM
 	PrepareImageForHW(image.image);

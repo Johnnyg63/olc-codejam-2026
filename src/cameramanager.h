@@ -3,6 +3,8 @@
 #include "olcPixelGameEngine3.h"
 #include "olcUTIL3_Camera2D.h"
 #include "tiledlevelmanager.h"
+#include "soundmanager.h"
+#include "imagemanager.h"
 
 class CameraManager
 {
@@ -17,8 +19,32 @@ private:
     olc::vf2d vVelJumpMax = {0, -12.0f};
     float fJumpMultiplier = 16.0f;
     float fPlayerCircleRadius = 0.756f;
-
+    olc::Image imgTest;
     
+    // Some images:
+    struct ImageIDs {
+        uint32_t nDeadID = UINT32_MAX;
+        uint32_t nDuckID = UINT32_MAX;
+        uint32_t nFallID = UINT32_MAX;
+        uint32_t nRollID = UINT32_MAX;
+        uint32_t nStandID = UINT32_MAX;
+        uint32_t nSwim1ID = UINT32_MAX;
+        uint32_t nSwim2ID = UINT32_MAX;
+        uint32_t nSwitch1ID = UINT32_MAX;
+        uint32_t nSwitch2ID = UINT32_MAX;
+        uint32_t nUp1ID = UINT32_MAX;
+        uint32_t nUp2ID = UINT32_MAX;
+        uint32_t nUp3ID = UINT32_MAX;
+        uint32_t nWalk1ID = UINT32_MAX;
+        uint32_t nWalk2ID = UINT32_MAX;
+        uint32_t nWalk3ID = UINT32_MAX;
+        uint32_t nWalk4ID = UINT32_MAX;
+        uint32_t nWalk5ID = UINT32_MAX;
+    } imageIDs;
+
+    // Current image ID for the player character
+    unsigned int nCurrentPlayerImageID = imageIDs.nStandID;
+    bool bCurrentPlayerImageIsFlipped = false;
 
     bool bJumping = false;
     // Sound IDs for player actions
@@ -54,12 +80,13 @@ public:
     CameraManager() {}
     ~CameraManager() {}
 
-    bool Initialize(olc::PixelGameEngine* pge, TiledLevelManager* ptrTLM, SoundManager* sound)
+    bool Initialize(olc::PixelGameEngine* pge, TiledLevelManager* ptrTLM, SoundManager* sound, ImageManager* ptrIM)
     {
         bool res = true;
         this->ptrPGE = pge;
         this->ptrTLM = ptrTLM;
         this->ptrSound = sound;
+        this->ptrIM = ptrIM;
 
         vTrackedPoint = { 20.0f, 20.0f }; // Initial position of the tracked point (player)
 		camera = olc::utils::Camera2D(ptrPGE->ScreenSize(), viTileSize, vTrackedPoint); // Create the camera with screen size, tile size, and tracked point
@@ -80,6 +107,28 @@ public:
         nBongSoundID = ptrSound->GetSoundIDByName("bong_001");
         nLandSoundID = ptrSound->GetSoundIDByName("footstep_concrete_001");
 
+
+        // Update image IDs for the player character
+        imageIDs.nDeadID = ptrIM->GetImageIDByName("dead");
+        imageIDs.nDuckID = ptrIM->GetImageIDByName("duck");
+        imageIDs.nFallID = ptrIM->GetImageIDByName("fall");
+        imageIDs.nRollID = ptrIM->GetImageIDByName("roll");
+        imageIDs.nStandID = ptrIM->GetImageIDByName("stand");
+        imageIDs.nSwim1ID = ptrIM->GetImageIDByName("swim1");
+        imageIDs.nSwim2ID = ptrIM->GetImageIDByName("swim2");
+        imageIDs.nSwitch1ID = ptrIM->GetImageIDByName("switch1");
+        imageIDs.nSwitch2ID = ptrIM->GetImageIDByName("switch2");
+        imageIDs.nUp1ID = ptrIM->GetImageIDByName("up1");
+        imageIDs.nUp2ID = ptrIM->GetImageIDByName("up2");
+        imageIDs.nUp3ID = ptrIM->GetImageIDByName("up3");
+        imageIDs.nWalk1ID = ptrIM->GetImageIDByName("walk1");
+        imageIDs.nWalk2ID = ptrIM->GetImageIDByName("walk2");
+        imageIDs.nWalk3ID = ptrIM->GetImageIDByName("walk3");
+        imageIDs.nWalk4ID = ptrIM->GetImageIDByName("walk4");
+        imageIDs.nWalk5ID = ptrIM->GetImageIDByName("walk5");
+   
+        ptrPGE->CreateImageFromFile(imgTest, "assets/images/playerblue/playerBlue_stand.png");
+        
         return res;
     }
 
@@ -135,8 +184,11 @@ public:
 			bOnScreen = camera.Update(fElapsedTime);
     
 		// Draw the "player" as a 1x1 cell
-		//ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
-        //ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED); // Draw the tracked point as a red circle
+		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
+        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED); // Draw the tracked point as a red circle
+        
+        auto image = ptrIM->GetImageByID(nCurrentPlayerImageID);
+        ptrPGE->GetDraw().ImageRect(*image, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::WHITE); // Draw the tracked point as a red circle
 
 		// Overlay with information
 		if (bFreeRoam)
@@ -144,7 +196,7 @@ public:
 			ptrPGE->GetDraw().FilledRect(camera.GetViewPosition(), camera.GetViewSize(), olc::PixelF(1.0f, 0.0f, 0.0f, 0.5f));			
 		}
 
-        DrawPLayer();
+        //DrawPLayer(nCurrentPlayerImageID, vTrackedPoint);
 		// Reset world transform to draw info in screen space
 		ptrPGE->GetDraw().WorldReset();
 	
@@ -155,40 +207,60 @@ private:
     olc::PixelGameEngine* ptrPGE = nullptr;
     TiledLevelManager* ptrTLM    = nullptr;
     SoundManager* ptrSound       = nullptr;
+    ImageManager* ptrIM          = nullptr;
 
     void ManageKeyboardInput(float fElapsedTime)
     {
         // Handle player "physics" in response to key presses
         olc::vf2d vVel = { 0.0f, 0.0f };
 
+        nCurrentPlayerImageID = imageIDs.nStandID; // reset to standing image at the start of each frame
+
         if(bFreeRoam)
         {
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::W).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, -1};
+                nCurrentPlayerImageID = imageIDs.nSwim1ID;
             }
             
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::S).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, +1};
+                nCurrentPlayerImageID = imageIDs.nSwim2ID;
             }
         }
         else
         {
             // Manage gravity in play mode
-            if(!bJumping) // Disable Gravity when jumping, so player can move left and right while in the air
+            if(!bJumping)
+            {
+                // Disable Gravity when jumping, so player can move left and right while in the air
                 vVel = vVel + olc::vf2d{0, +1}; // Apply gravity in play mode
+                if(isGrounded)
+                {
+                    nCurrentPlayerImageID = imageIDs.nStandID;
+                }
+            } 
         }
         
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::A).bHeld
             || ptrPGE->GetKeyboard().GetKey(olc::Key::LEFT).bHeld)
         {
             vVel = vVel + olc::vf2d{-1, 0};
+            if(!bJumping)
+            {
+                nCurrentPlayerImageID = imageIDs.nWalk1ID;
+            }
         }
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::D).bHeld
             || ptrPGE->GetKeyboard().GetKey(olc::Key::RIGHT).bHeld)
         {
                 vVel = vVel + olc::vf2d{+1, 0};
+            if(!bJumping)
+            {
+                nCurrentPlayerImageID = imageIDs.nWalk1ID;
+            }
         }
         
         // Manage jumping, but only if the player is on the ground (not falling)
@@ -199,6 +271,7 @@ private:
                 vJumpCount = {0, 0}; // Reset jump count when jump starts
                 bJumping = true;
                 PlayPlayerSound(nJumpSoundID); // Play jump sound effect
+                nCurrentPlayerImageID = imageIDs.nRollID; // Set jump image when jumping
             }
 
         }
@@ -209,6 +282,7 @@ private:
             {
                 bJumping = false;
                 vJumpCount = {0, 0};
+                nCurrentPlayerImageID = imageIDs.nFallID; // Reset to standing image when jump ends
             }
             else {
                 vVel = vVel + vVelJumpSpeed;
@@ -487,10 +561,10 @@ private:
             ptrSound->PlaySoundAffect(soundID);
     }
 
-    void DrawPLayer()
+    void DrawPLayer(uint32_t imageID, const olc::vf2d& position)
     {
-        // Draw the player character at the current tracked position
-        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 1.0f, olc::Colour::WHITE);
+        if(imageID != UINT32_MAX)
+            ptrIM->DrawImageByID(imageID, position, olc::vf2d{1.0f, 1.0f});
     }
     
     

@@ -51,8 +51,8 @@ public:
         
         for(const auto& image : vecLoadImages)
         {
-            olc::Image* pNewImage = new olc::Image();
-            bool bLoaded = pNewImage->LoadFromFile(image.strPath);
+            olc::Image pNewImage;
+            bool bLoaded = ptrPGE->CreateImageFromFile(pNewImage, image.strPath);
             
             if(bLoaded)
             {
@@ -60,16 +60,13 @@ public:
                     .id        = uniqueIDCounter++,
                     .bIsLoaded = true,
                     .strName   = image.strName,
-                    .pImage    = pNewImage
+                    .pImage    = &pNewImage
                 };
         
                 this->vecImages.push_back(newImage);
                 res++;
             }
-            else
-            {
-                delete pNewImage;
-            }
+          
         }
 
         return res;
@@ -103,12 +100,22 @@ public:
         return nullptr;  // Return nullptr if not found
     }
 
+    void DrawImageByID(uint32_t imageID, olc::vf2d position, olc::vf2d size = olc::vf2d(0,0))
+    {
+        olc::Image* pImage = GetImageByID(imageID);
+        if(pImage && ptrPGE)
+        {
+            // draw.ImageRect(imgTest, { 4, 4 }, imgTest.Size() * 2);
+            ptrPGE->GetDraw().ImageRect(*pImage, position, pImage->Size(), olc::Colour::WHITE);
+            //ptrPGE->GetDraw()->Image(pImage, position);
+
+        }
+    }
+
     private:
         olc::PixelGameEngine* ptrPGE = nullptr;
 
 
 };
 
-
-// Removed extraneous closing braces
 
