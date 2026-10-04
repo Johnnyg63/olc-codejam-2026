@@ -63,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		07FE6D37A71249FE90304051 /* PGE_Johnnys_Has_To_Change */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = PGE_Johnnys_Has_To_Change; sourceTree = BUILT_PRODUCTS_DIR; };
+		4631B2EF3072B917002D2630 /* imagemanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imagemanager.h; path = src/imagemanager.h; sourceTree = "<group>"; };
 		468BC0A73071453100B41436 /* olcUTIL3_Geometry2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = olcUTIL3_Geometry2D.h; path = src/olcUTIL3_Geometry2D.h; sourceTree = "<group>"; };
 		46CC0539307263A2009C74AB /* backgroundmanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = backgroundmanager.h; path = src/backgroundmanager.h; sourceTree = "<group>"; };
 		46CC053A307263A2009C74AB /* cameramanager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cameramanager.h; path = src/cameramanager.h; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 		744F23F50C064FD99826E1EE /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				4631B2EF3072B917002D2630 /* imagemanager.h */,
 				46CC0539307263A2009C74AB /* backgroundmanager.h */,
 				46CC053A307263A2009C74AB /* cameramanager.h */,
 				46CC053B307263A2009C74AB /* levelmanager_hold.h */,

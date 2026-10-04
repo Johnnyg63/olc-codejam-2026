@@ -100,14 +100,15 @@ public:
         return nullptr;  // Return nullptr if not found
     }
 
-    void DrawImageByID(uint32_t imageID, olc::vf2d position, olc::vf2d size = olc::vf2d(0,0))
+    void DrawImageByID(uint32_t imageID, olc::vf2d position, olc::vf2d size)
     {
         
         for(auto& image : vecImages)
         {
-            if(image.id == imageID && image.pImage && ptrPGE)
+            if(image.id == imageID)
             {
-                ptrPGE->GetDraw().ImageRect(*image.pImage, position, image.pImage->Size(), olc::Colour::WHITE);
+                // draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
+                ptrPGE->GetDraw().Image(*image.pImage, position, size, olc::Colour::WHITE);
                 break;
             }
         }

@@ -19,7 +19,12 @@ private:
     olc::vf2d vVelJumpMax = {0, -12.0f};
     float fJumpMultiplier = 16.0f;
     float fPlayerCircleRadius = 0.756f;
-    olc::Image imgTest;
+    olc::Image imgStand;
+    olc::Image imgRoll;
+    olc::Image imgFall;
+    olc::Image imgWalk1;
+    olc::Image imgWalk2;
+    olc::Image imgWalk3;
     
     // Some images:
     struct ImageIDs {
@@ -42,8 +47,17 @@ private:
         uint32_t nWalk5ID = UINT32_MAX;
     } imageIDs;
 
+    
+    // Molre hacks
+    uint32_t nFallID  = 1;
+    uint32_t nRollID  = 2;
+    uint32_t nStandID = 3;
+    uint32_t nWalk1ID = 4;
+    uint32_t nWalk2ID = 5;
+    uint32_t nWalk3ID = 6;
+    
     // Current image ID for the player character
-    unsigned int nCurrentPlayerImageID = imageIDs.nStandID;
+    unsigned int nCurrentPlayerImageID = nStandID;
     bool bCurrentPlayerImageIsFlipped = false;
 
     bool bJumping = false;
@@ -109,25 +123,32 @@ public:
 
 
         // Update image IDs for the player character
-        imageIDs.nDeadID = ptrIM->GetImageIDByName("dead");
-        imageIDs.nDuckID = ptrIM->GetImageIDByName("duck");
-        imageIDs.nFallID = ptrIM->GetImageIDByName("fall");
-        imageIDs.nRollID = ptrIM->GetImageIDByName("roll");
-        imageIDs.nStandID = ptrIM->GetImageIDByName("stand");
-        imageIDs.nSwim1ID = ptrIM->GetImageIDByName("swim1");
-        imageIDs.nSwim2ID = ptrIM->GetImageIDByName("swim2");
-        imageIDs.nSwitch1ID = ptrIM->GetImageIDByName("switch1");
-        imageIDs.nSwitch2ID = ptrIM->GetImageIDByName("switch2");
-        imageIDs.nUp1ID = ptrIM->GetImageIDByName("up1");
-        imageIDs.nUp2ID = ptrIM->GetImageIDByName("up2");
-        imageIDs.nUp3ID = ptrIM->GetImageIDByName("up3");
-        imageIDs.nWalk1ID = ptrIM->GetImageIDByName("walk1");
-        imageIDs.nWalk2ID = ptrIM->GetImageIDByName("walk2");
-        imageIDs.nWalk3ID = ptrIM->GetImageIDByName("walk3");
-        imageIDs.nWalk4ID = ptrIM->GetImageIDByName("walk4");
-        imageIDs.nWalk5ID = ptrIM->GetImageIDByName("walk5");
+        //imageIDs.nDeadID = ptrIM->GetImageIDByName("dead");
+        //imageIDs.nDuckID = ptrIM->GetImageIDByName("duck");
+        //imageIDs.nFallID = ptrIM->GetImageIDByName("fall");
+        //imageIDs.nRollID = ptrIM->GetImageIDByName("roll");
+        //imageIDs.nStandID = ptrIM->GetImageIDByName("stand");
+        //imageIDs.nSwim1ID = ptrIM->GetImageIDByName("swim1");
+        //imageIDs.nSwim2ID = ptrIM->GetImageIDByName("swim2");
+        //imageIDs.nSwitch1ID = ptrIM->GetImageIDByName("switch1");
+        //imageIDs.nSwitch2ID = ptrIM->GetImageIDByName("switch2");
+        //imageIDs.nUp1ID = ptrIM->GetImageIDByName("up1");
+        //imageIDs.nUp2ID = ptrIM->GetImageIDByName("up2");
+        //imageIDs.nUp3ID = ptrIM->GetImageIDByName("up3");
+        //imageIDs.nWalk1ID = ptrIM->GetImageIDByName("walk1");
+        //imageIDs.nWalk2ID = ptrIM->GetImageIDByName("walk2");
+        //imageIDs.nWalk3ID = ptrIM->GetImageIDByName("walk3");
+        //imageIDs.nWalk4ID = ptrIM->GetImageIDByName("walk4");
+        //imageIDs.nWalk5ID = ptrIM->GetImageIDByName("walk5");
    
-        ptrPGE->CreateImageFromFile(imgTest, "assets/images/playerblue/playerBlue_stand.png");
+    
+        // more hacks
+        res = ptrPGE->CreateImageFromFile(imgStand, "assets/images/playerblue/playerBlue_stand.png");
+        res = ptrPGE->CreateImageFromFile(imgRoll, "assets/images/playerblue/playerBlue_roll.png");
+        res = ptrPGE->CreateImageFromFile(imgFall, "assets/images/playerblue/playerBlue_fall.png");
+        res = ptrPGE->CreateImageFromFile(imgWalk1, "assets/images/playerblue/playerBlue_walk1.png");
+        res = ptrPGE->CreateImageFromFile(imgWalk2, "assets/images/playerblue/playerBlue_walk2.png");
+        res = ptrPGE->CreateImageFromFile(imgWalk3, "assets/images/playerblue/playerBlue_walk3.png");
         
         return res;
     }
@@ -139,14 +160,14 @@ public:
 
     void Update(float fElapsedTime)
     {
-		// Set the world transform for the camera, so that all drawing operations
+        // Set the world transform for the camera, so that all drawing operations
         
         ptrPGE->GetDraw().StringProp({ 10,100 }, "Before Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
-		ptrPGE->GetDraw().SetWorldTransform(camera.GetWorldTransform());
-
+        ptrPGE->GetDraw().SetWorldTransform(camera.GetWorldTransform());
+        
         // Update camera logic here
         ManageKeyboardInput(fElapsedTime);
-
+        
         // TODO: I need to sort out this hack later
         olc::vf2d vfCenterPos = (vTrackedPoint * olc::vf2d(viTileSize)) - olc::vf2d(0.5f, 0.5f);
         
@@ -155,7 +176,7 @@ public:
         
         // Update collisions and determine if the player is grounded this frame
         UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, float(fPlayerCircleRadius * viTileSize.x));
-
+        
         // Detect landing: player just transitioned from not-grounded to grounded
         if (!wasGroundedLastFrame && isGrounded)
         {
@@ -165,38 +186,54 @@ public:
         
         // Update for next frame
         wasGroundedLastFrame = isGrounded;
-
-        // Update the camera, if teh tracked object remains visible, 
-		// true is returned
-		bool bOnScreen = false;
-
-		if (bFreeRoam)
-		{
-			// In free roam mode, we ignore the tracked point and instead 
-			// allow the user to pan and zoom the camera with the mouse
-			camera.HandlePanAndZoom(ptrPGE->GetMouse());
-			// Update camera, but dont actually change the world transform
-			bOnScreen = camera.Update(fElapsedTime, false);
-		}
-		else
-			// In play mode, we update the camera as normal, which will cause it to
-			// follow the tracked point according to the camera mode
-			bOnScreen = camera.Update(fElapsedTime);
-    
-		// Draw the "player" as a 1x1 cell
-		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
-        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED);
+        
+        // Update the camera, if teh tracked object remains visible,
+        // true is returned
+        bool bOnScreen = false;
+        
+        if (bFreeRoam)
+        {
+            // In free roam mode, we ignore the tracked point and instead
+            // allow the user to pan and zoom the camera with the mouse
+            camera.HandlePanAndZoom(ptrPGE->GetMouse());
+            // Update camera, but dont actually change the world transform
+            bOnScreen = camera.Update(fElapsedTime, false);
+        }
+        else
+            // In play mode, we update the camera as normal, which will cause it to
+            // follow the tracked point according to the camera mode
+            bOnScreen = camera.Update(fElapsedTime);
+        
+        // Draw the "player" as a 1x1 cell
+        //ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
+        //ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED);
         
         // Draw the player sprite
-        ptrIM->DrawImageByID(nCurrentPlayerImageID, vTrackedPoint - olc::vf2d(0.5f, 0.5f));
-
-		// Overlay with information
-		if (bFreeRoam)
-		{
-			ptrPGE->GetDraw().FilledRect(camera.GetViewPosition(), camera.GetViewSize(), olc::PixelF(1.0f, 0.0f, 0.0f, 0.5f));			
-		}
-
-        //DrawPLayer(nCurrentPlayerImageID, vTrackedPoint);
+        //ptrIM->DrawImageByID(nCurrentPlayerImageID, vTrackedPoint - olc::vf2d(0.5f, 0.5f), {0.25f,0.25f});
+        
+        // Overlay with information
+        if (bFreeRoam)
+        {
+            ptrPGE->GetDraw().FilledRect(camera.GetViewPosition(), camera.GetViewSize(), olc::PixelF(1.0f, 0.0f, 0.0f, 0.5f));
+        }
+        
+        if(nCurrentPlayerImageID == nFallID)
+        {
+            ptrPGE->GetDraw().ImageRect(imgFall, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
+        }else if(nCurrentPlayerImageID == nRollID)
+        {
+            ptrPGE->GetDraw().ImageRect(imgRoll, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
+        } else if(nCurrentPlayerImageID == nStandID)
+        {
+            ptrPGE->GetDraw().ImageRect(imgStand, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
+        } else if(nCurrentPlayerImageID == nWalk1ID)
+        {
+            ptrPGE->GetDraw().ImageRect(imgWalk1, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
+        }else
+        {
+            ptrPGE->GetDraw().ImageRect(imgStand, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
+        }
+    
 		// Reset world transform to draw info in screen space
 		ptrPGE->GetDraw().WorldReset();
 	
@@ -214,20 +251,20 @@ private:
         // Handle player "physics" in response to key presses
         olc::vf2d vVel = { 0.0f, 0.0f };
 
-        nCurrentPlayerImageID = imageIDs.nStandID; // reset to standing image at the start of each frame
+        nCurrentPlayerImageID = nStandID; // reset to standing image at the start of each frame
 
         if(bFreeRoam)
         {
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::W).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, -1};
-                nCurrentPlayerImageID = imageIDs.nSwim1ID;
+                
             }
             
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::S).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, +1};
-                nCurrentPlayerImageID = imageIDs.nSwim2ID;
+                
             }
         }
         else
@@ -239,7 +276,7 @@ private:
                 vVel = vVel + olc::vf2d{0, +1}; // Apply gravity in play mode
                 if(isGrounded)
                 {
-                    nCurrentPlayerImageID = imageIDs.nStandID;
+                    nCurrentPlayerImageID = nStandID;
                 }
             } 
         }
@@ -250,7 +287,7 @@ private:
             vVel = vVel + olc::vf2d{-1, 0};
             if(!bJumping)
             {
-                nCurrentPlayerImageID = imageIDs.nWalk1ID;
+                nCurrentPlayerImageID = nWalk1ID;
             }
         }
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::D).bHeld
@@ -259,7 +296,7 @@ private:
                 vVel = vVel + olc::vf2d{+1, 0};
             if(!bJumping)
             {
-                nCurrentPlayerImageID = imageIDs.nWalk1ID;
+                nCurrentPlayerImageID = nWalk1ID;
             }
         }
         
@@ -271,7 +308,7 @@ private:
                 vJumpCount = {0, 0}; // Reset jump count when jump starts
                 bJumping = true;
                 PlayPlayerSound(nJumpSoundID); // Play jump sound effect
-                nCurrentPlayerImageID = imageIDs.nRollID; // Set jump image when jumping
+                nCurrentPlayerImageID = nRollID; // Set jump image when jumping
             }
 
         }
@@ -282,7 +319,7 @@ private:
             {
                 bJumping = false;
                 vJumpCount = {0, 0};
-                nCurrentPlayerImageID = imageIDs.nFallID; // Reset to standing image when jump ends
+                nCurrentPlayerImageID = nFallID; // Reset to standing image when jump ends
             }
             else {
                 vVel = vVel + vVelJumpSpeed;
@@ -558,11 +595,5 @@ private:
             ptrSound->PlaySoundAffect(soundID);
     }
 
-    void DrawPLayer(uint32_t imageID, const olc::vf2d& position)
-    {
-        if(imageID != UINT32_MAX)
-            ptrIM->DrawImageByID(imageID, position, olc::vf2d{1.0f, 1.0f});
-    }
-    
     
 };

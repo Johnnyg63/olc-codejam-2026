@@ -84,7 +84,7 @@ public:
 	// Called once at the start, so create things here
 	bool OnUserCreate() override
 	{
-		if (!LoadImages()) 			{throw std::runtime_error("Failed to load images");};
+		//if (!LoadImages()) 			{throw std::runtime_error("Failed to load images");};
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
         if (!LoadBackground())      {throw std::runtime_error("Failed to load background");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
