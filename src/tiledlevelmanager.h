@@ -240,7 +240,7 @@ namespace olc
             struct ObjectProperites
             {
                 bool bAutoScale                = true;				// Automatically scales the background image to fit within the screen size
-                bool bShowCollisions           = false;				// Set to true to show collision lines around objects, default: false
+                bool bShowCollisions           = true;				// Set to true to show collision lines around objects, default: false
 
                 std::string strName            = "LevelX";			// Object Name. Default "LevelX"
                 uint16_t nLevelNumber          = 0;					// Object Number, Default 0 i.e. Backupground 1 , LevelManager 2 etc
