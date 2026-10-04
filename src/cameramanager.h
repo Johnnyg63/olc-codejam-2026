@@ -16,6 +16,10 @@ private:
     olc::vf2d vJumpCount = {0, 0};        // Keeps track of the jump duration or count
     olc::vf2d vVelJumpMax = {0, -12.0f};
     float fJumpMultiplier = 16.0f;
+    float fPlayerCircleRadius = 0.756f;
+
+    
+
     bool bJumping = false;
     // Sound IDs for player actions
     uint32_t nJumpSoundID = UINT32_MAX;
@@ -94,15 +98,14 @@ public:
         // Update camera logic here
         ManageKeyboardInput(fElapsedTime);
 
-        olc::vf2d vCameraPos = camera.GetViewPosition();
-
         // TODO: I need to sort out this hack later
         olc::vf2d vfCenterPos = (vTrackedPoint * olc::vf2d(viTileSize)) - olc::vf2d(0.5f, 0.5f);
         
         // Reset grounded state each frame (will be set to true if collision occurs)
         isGrounded = false;
         
-        UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, 16.0f);
+        // Update collisions and determine if the player is grounded this frame
+        UpdateCollisions(fElapsedTime, &vTrackedPoint, vfCenterPos, float(fPlayerCircleRadius * viTileSize.x));
 
         // Detect landing: player just transitioned from not-grounded to grounded
         if (!wasGroundedLastFrame && isGrounded)
@@ -132,8 +135,8 @@ public:
 			bOnScreen = camera.Update(fElapsedTime);
     
 		// Draw the "player" as a 1x1 cell
-		ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
-        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED); // Draw the tracked point as a red circle
+		//ptrPGE->GetDraw().FilledRect(vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.0f, 1.0f }, olc::Colour::BLUE);
+        //ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 0.5f, olc::Colour::RED); // Draw the tracked point as a red circle
 
 		// Overlay with information
 		if (bFreeRoam)
@@ -141,19 +144,10 @@ public:
 			ptrPGE->GetDraw().FilledRect(camera.GetViewPosition(), camera.GetViewSize(), olc::PixelF(1.0f, 0.0f, 0.0f, 0.5f));			
 		}
 
-        		
+        DrawPLayer();
 		// Reset world transform to draw info in screen space
 		ptrPGE->GetDraw().WorldReset();
-        
-        ptrPGE->GetDraw().StringProp({ 10,120 }, "After Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
-
-
-		if (bFreeRoam)
-			ptrPGE->GetDraw().StringProp({ 2, 2 }, "TAB: Free Mode, M-Btn to Pan & Zoom", olc::Colour::YELLOW);
-		else
-			ptrPGE->GetDraw().StringProp({ 2,2 }, "TAB: Play Mode", olc::Colour::YELLOW);
-
-		
+	
 
     }
 
@@ -493,7 +487,11 @@ private:
             ptrSound->PlaySoundAffect(soundID);
     }
 
-    
+    void DrawPLayer()
+    {
+        // Draw the player character at the current tracked position
+        ptrPGE->GetDraw().FilledCircle(vTrackedPoint, 1.0f, olc::Colour::WHITE);
+    }
     
     
 };

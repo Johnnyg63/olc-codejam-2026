@@ -22,6 +22,7 @@
 #include "player.h"
 #include "backgroundmanager.h"
 #include "cameramanager.h"
+#include "imagemanager.h"
 
 // This class overrides the olc::PixelGameEngine base class
 // by implementing the OnUserCreate() and OnUserUpdate()
@@ -36,7 +37,7 @@ public:
 	SoundManager soundManager;
 	BackgroundManager backgroundManager;
 	CameraManager cameraManager;
-	
+	ImageManager imageManager;
 	// Copyright notice
 	std::string strCopyrightNotice_MusicLFiles;
 	olc::Image imgCopyright_Emscripten;
@@ -83,6 +84,7 @@ public:
 	// Called once at the start, so create things here
 	bool OnUserCreate() override
 	{
+		if (!LoadImages()) 			{throw std::runtime_error("Failed to load images");};
 		if (!LoadSounds()) 			{throw std::runtime_error("Failed to load sounds");};
         if (!LoadBackground())      {throw std::runtime_error("Failed to load background");};
 		if (!LoadLevel()) 			{throw std::runtime_error("Failed to load level");};
@@ -174,6 +176,35 @@ private:
 
 		return res;	
 	}
+
+	bool LoadImages()
+	{
+		bool res = true;
+		imageManager.Initialize(this);
+		std::vector<loadImage> vecLoadImages;
+		// /Users/mickymacm4/Documents/olc-codejam-2026/assets/images/playerblue
+		vecLoadImages.push_back({"dead", "assets/images/playerblue/playerBlue_dead.png"});
+		vecLoadImages.push_back({"duck", "assets/images/playerblue/playerBlue_duck.png"});
+		vecLoadImages.push_back({"fall", "assets/images/playerblue/playerBlue_fall.png"});
+		vecLoadImages.push_back({"hit", "assets/images/playerblue/playerBlue_hit.png"});
+		vecLoadImages.push_back({"roll", "assets/images/playerblue/playerBlue_roll.png"});
+		vecLoadImages.push_back({"stand", "assets/images/playerblue/playerBlue_stand.png"});
+		vecLoadImages.push_back({"swim1", "assets/images/playerblue/playerBlue_swim1.png"});
+		vecLoadImages.push_back({"swim2", "assets/images/playerblue/playerBlue_swim2.png"});
+		vecLoadImages.push_back({"switch1", "assets/images/playerblue/playerBlue_switch1.png"});
+		vecLoadImages.push_back({"switch2", "assets/images/playerblue/playerBlue_switch2.png"});
+		vecLoadImages.push_back({"up1", "assets/images/playerblue/playerBlue_up1.png"});
+		vecLoadImages.push_back({"up2", "assets/images/playerblue/playerBlue_up2.png"});
+		vecLoadImages.push_back({"up3", "assets/images/playerblue/playerBlue_up3.png"});
+		vecLoadImages.push_back({"walk1", "assets/images/playerblue/playerBlue_walk1.png"});
+		vecLoadImages.push_back({"walk2", "assets/images/playerblue/playerBlue_walk2.png"});	
+		vecLoadImages.push_back({"walk3", "assets/images/playerblue/playerBlue_walk3.png"});
+		vecLoadImages.push_back({"walk4", "assets/images/playerblue/playerBlue_walk4.png"});
+		vecLoadImages.push_back({"walk5", "assets/images/playerblue/playerBlue_walk5.png"});
+		res = imageManager.LoadImages(vecLoadImages);
+		return res;
+	}
+
 
 	/*
 	Load and initialize the background manager
