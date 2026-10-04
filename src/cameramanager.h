@@ -10,13 +10,10 @@ class CameraManager
 private:
 
     // Player stuff!
-    //olc::vf2d velocity = { 0, 0 };
-    const float SPEED = 300.0f;
-    const float GRAVITY = 1200.0f;
-    const float JUMP_FORCE = -500.0f;
-    const float WIDTH = 24.0f;
-    const float HEIGHT = 36.0f;
-
+    olc::vf2d vVelJumpSpeed = {0, -2}; // Current velocity of the player
+    olc::vf2d vJumpCount = {0, 0}; // Keeps track of the jump duration or count
+    olc::vf2d vVelJumpMax = {0, -10};
+    bool bJumping = false;
     // Sound IDs for player actions
     uint32_t nJumpSoundID = UINT32_MAX;
     uint32_t nLandSoundID = UINT32_MAX;
@@ -146,6 +143,7 @@ private:
     {
         // Handle player "physics" in response to key presses
         olc::vf2d vVel = { 0.0f, 0.0f };
+
         if(bFreeRoam)
         {
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::W).bHeld)
@@ -158,6 +156,11 @@ private:
                 vVel = vVel + olc::vf2d{0, +1};
             }
         }
+        else
+        {
+            // Manage gravity in play mode
+            vVel = vVel + olc::vf2d{0, +1}; // Apply gravity in play mode
+        }
         
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::A).bHeld
             || ptrPGE->GetKeyboard().GetKey(olc::Key::LEFT).bHeld)
@@ -167,14 +170,33 @@ private:
         if (ptrPGE->GetKeyboard().GetKey(olc::Key::D).bHeld
             || ptrPGE->GetKeyboard().GetKey(olc::Key::RIGHT).bHeld)
         {
-            vVel = vVel + olc::vf2d{+1, 0};
+            if(!bJumping) // Disable Gravity when jumping, so player can move left and right while in the air
+                vVel = vVel + olc::vf2d{+1, 0};
         }
         
         // Manage jumping, but only if the player is on the ground (not falling)
-        if (ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bHeld)
+        if(!bJumping)
         {
-            vVel = vVel + olc::vf2d{0, -1};
+            if (ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bPressed) 
+            {
+                vJumpCount = {0, 0}; // Reset jump count when jump starts
+                bJumping = true;
+            }
+
         }
+        else
+        {
+            vJumpCount += vVelJumpSpeed * 16.0f * fElapsedTime;
+            if(vJumpCount.y < vVelJumpMax.y)
+            {
+                bJumping = false;
+                vJumpCount = {0, 0};
+            }
+            else {
+                vVel = vVel + vVelJumpSpeed;
+            }
+        }
+        
         
         vTrackedPoint += vVel * 8.0f * fElapsedTime;
 
