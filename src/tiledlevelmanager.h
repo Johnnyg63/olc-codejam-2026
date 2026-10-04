@@ -192,9 +192,16 @@ namespace olc
 
             };
 
+
+
             struct Tile
             {
-                bool bIsLadder            = false;		  // Set if ladder decal
+                bool bHasCollision        = false;		  // Set if tile has collision
+                bool bIsFlag              = false;		  // Set if flag decal
+                bool bIsGreenBlock        = false;		  // Set if green block decal
+                bool bIsRedBlock          = false;		  // Set if red block decal
+                bool bVisiable            = true;		  // Set if tile is visible
+                int32_t nColour           = 0;			  // Tile colour
                 int32_t nTileID           = 0;			  // Tile ID
                 std::string strClassType  = "NOT_SET";	  // Class type if passed, default: "NOT_SET"
                 std::string strDrawOrder  = "NOT_SET";	  // Draw Order if passed, default: "NOT_SET"
@@ -388,12 +395,33 @@ namespace olc
                         if (data.first == "value") { sValue = data.second; continue; }
                     }
 
-                    // For my game I want to know if the tile is a ladder or not
-                    // Therefore I just set a bool in the Tile Struct to manage it
-                    // You do not have to do the same, I just needed access to IsLadder
-                    if ((sType == "bool") && (sName == "IsLadder"))
+                    if ((sType == "bool") && (sName == "bHasCollision"))
                     {
-                        sTile.bIsLadder = (sValue == "true") ? true : false;
+                        sTile.bHasCollision = (sValue == "true") ? true : false;
+                    }
+                    if ((sType == "bool") && (sName == "bIsFlag"))
+                    {
+                        sTile.bIsFlag = (sValue == "true") ? true : false;
+                    }
+
+                    if ((sType == "bool") && (sName == "bIsGreenBlock"))
+                    {
+                        sTile.bIsGreenBlock = (sValue == "true") ? true : false;
+                    }
+
+                    if ((sType == "bool") && (sName == "bIsRedBlock"))
+                    {
+                        sTile.bIsRedBlock = (sValue == "true") ? true : false;
+                    }
+
+                    if ((sType == "bool") && (sName == "bVisiable"))
+                    {
+                        sTile.bVisiable = (sValue == "true") ? true : false;
+                    }
+
+                    if ((sType == "int") && (sName == "nColour"))
+                    {
+                        sTile.nColour = std::stoi(sValue);
                     }
 
                     // Ok Create the Property
@@ -1073,18 +1101,6 @@ namespace olc
 
                         }
 
-                        // The ladder is a speical case and we need to manage it differently
-                        if (decalInfo.sCollisionTile.bIsLadder == true)
-                        {
-                            // if it is a ladder we need to set all preivous layer tiles to ladder too
-                            for (size_t i = 0; i <= nLayerCount; i++)
-                            {
-                                auto& oldLayer = Properties.mapLayerInfo[(int)i][idx];
-                                oldLayer.sCollisionTile.bIsLadder = true;
-                            }
-                            
-                        }
-
                         // TODO we need to update this 
                         switch (decalInfo.nLayerID)
                         {
@@ -1100,7 +1116,10 @@ namespace olc
                         // this is our drawing layer
                         vfScreenTilePos  = ptrPGE->GetDraw().WorldToScreen(vTile);
                         vfScreenTileSize = ptrPGE->GetDraw().ScreenToWorld(decalInfo.vfSoureSizePos);
-                        ptrPGE->GetDraw().ImageRect(imgBatch, Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                        if(decalInfo.sCollisionTile.bIsGreenBlock == false && decalInfo.sCollisionTile.bIsRedBlock == false)
+                        {
+                            ptrPGE->GetDraw().ImageRect(imgBatch, Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                        }
                         
                         nLayerCount++;
 

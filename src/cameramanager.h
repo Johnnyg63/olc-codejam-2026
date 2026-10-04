@@ -16,7 +16,7 @@ private:
     int32_t nLastYPos = 0;                 // Stores the last frame's velocity.y pos
     olc::vf2d vVelJumpSpeed = {0, -2.4f}; // Current velocity of the player
     olc::vf2d vJumpCount = {0, 0};        // Keeps track of the jump duration or count
-    olc::vf2d vVelJumpMax = {0, -12.0f};
+    olc::vf2d vVelJumpMax = {0, -18.0f};
     float fJumpMultiplier = 16.0f;
     float fPlayerCircleRadius = 0.756f;
     olc::Image imgStand;
@@ -67,6 +67,14 @@ private:
     uint32_t nBongSoundID = UINT32_MAX;
     bool isGrounded = false;
     bool wasGroundedLastFrame = false;
+
+
+    // Game logic
+    PhaseState currentPhase = PhaseState::GREEN_ACTIVE;
+    float phaseTimer = 0.0f;
+    const float PHASE_DURATION = 4.0f; // Switch states every 4 seconds
+    bool bIsRedActive   = false;
+    bool bIsGreenActive = true;
 
 public:
 // World Map Properties
@@ -160,6 +168,24 @@ public:
 
     void Update(float fElapsedTime)
     {
+        // More hacking
+        phaseTimer += fElapsedTime;
+        if (phaseTimer >= PHASE_DURATION) {
+            phaseTimer = 0.0f;
+            currentPhase = (currentPhase == PhaseState::GREEN_ACTIVE) ? PhaseState::RED_ACTIVE : PhaseState::GREEN_ACTIVE;
+            if(currentPhase == PhaseState::GREEN_ACTIVE)
+            {
+                bIsGreenActive = false;
+                bIsRedActive = true;
+            } else
+            {
+                bIsGreenActive = true;
+                bIsRedActive = false;
+            }
+            
+           
+            
+        }
         // Set the world transform for the camera, so that all drawing operations
         
         ptrPGE->GetDraw().StringProp({ 10,100 }, "Before Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
@@ -237,6 +263,10 @@ public:
 		// Reset world transform to draw info in screen space
 		ptrPGE->GetDraw().WorldReset();
 	
+        // Game logic progress bar
+        float progressWidth = ptrPGE->GetScreen().Size().x * (1.0f - (phaseTimer / PHASE_DURATION));
+        olc::Pixel barColor = (currentPhase == PhaseState::GREEN_ACTIVE) ? olc::Colour::GREEN : olc::Colour::RED;
+        ptrPGE->GetDraw().FilledRoundedRect({10.0f,10.0f}, {progressWidth, 10.0f}, 5.0f, barColor);
 
     }
 
@@ -397,14 +427,21 @@ private:
             auto updatePos = [&]()
             {
                 bool bCollided = false;
-                if (decalInfo.sCollisionTile.bIsLadder == true)
-                {
-                    // we need to turn off gravity
-                    pbEnableGravity = false;
-                    pbOnLadder = true;
-                    bCollided = true;
-                    return bCollided;
 
+                // Check if the current tile has collision
+                if (decalInfo.sCollisionTile.bHasCollision == false)
+                {
+                    return false;
+                }
+
+                if(decalInfo.sCollisionTile.bIsFlag)
+                {
+                    // Handle flag collision logic here
+                }
+
+                if(decalInfo.sCollisionTile.bVisiable)
+                {
+                    // Handle visible tile logic here
                 }
 
                 vfDistance = vfCenterPos - vfClosest;
@@ -459,6 +496,37 @@ private:
                 for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
                 {
                     idx = vTile.y * viWorldSize.x + vTile.x;
+                   
+                    if(decalInfo.sCollisionTile.bIsGreenBlock)
+                    {
+                        //decalInfo.bHasCollision = bIsGreenActive;
+                        if(bIsGreenActive)
+                        {
+                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                        }
+                        else
+                        {
+                            /// draw with transparency or a different color to indicate inactive state
+                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
+                        }
+                    }
+
+                    if(decalInfo.sCollisionTile.bIsRedBlock)
+                    {
+                        //decalInfo.bHasCollision = bIsRedActive;
+                        if(bIsRedActive)
+                        {   
+                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                        }
+                        else
+                        {
+                            /// draw with transparency or a different color to indicate inactive state
+                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
+                        }
+                            
+                    }
+
+
                     /*
                     * Note we add *a to declare we want to access the value
                     * Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs

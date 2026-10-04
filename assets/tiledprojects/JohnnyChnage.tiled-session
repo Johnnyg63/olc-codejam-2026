@@ -1,5 +1,5 @@
 {
-    "activeFile": "Level1Project.tmx",
+    "activeFile": "AbstractPlatformer32x32.tsx",
     "expandedProjectPaths": [
     ],
     "exportAsImage.drawObjectLabels": true,
@@ -41,8 +41,8 @@
     "project": "JohnnyChnage.tiled-project",
     "property.type": "bool",
     "recentFiles": [
-        "AbstractPlatformer32x32.tsx",
         "Level1Project.tmx",
+        "AbstractPlatformer32x32.tsx",
         "Level1Output_Broken.tmx"
     ]
 }

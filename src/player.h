@@ -85,8 +85,8 @@ public:
 
     void Draw(PhaseState currentPhase) {
         Rectangle body = { {position.x, position.y}, {WIDTH, HEIGHT} };
-        olc::Pixel playerColor = (currentPhase == PhaseState::BLUE_ACTIVE) ? olc::Colour::DARK_BLUE : olc::Colour::DARK_RED;
-        olc::Pixel outlineColor = (currentPhase == PhaseState::BLUE_ACTIVE) ? olc::Colour::BLUE : olc::Colour::RED;
+        olc::Pixel playerColor = (currentPhase == PhaseState::GREEN_ACTIVE) ? olc::Colour::DARK_BLUE : olc::Colour::DARK_RED;
+        olc::Pixel outlineColor = (currentPhase == PhaseState::GREEN_ACTIVE) ? olc::Colour::GREEN : olc::Colour::RED;
         
         DrawRectangle(body, playerColor, true);
         DrawRectangle(body, outlineColor, false);

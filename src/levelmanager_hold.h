@@ -3,10 +3,8 @@
 #include <vector>
 
 enum class PhaseState { 
-    BLUE_ACTIVE, 
-    RED_ACTIVE,
-    GREEN_ACTIVE,
-    BLANK_ACTIVE 
+    GREEN_ACTIVE, 
+    RED_ACTIVE
 };
 
 struct Rectangle {
@@ -24,7 +22,7 @@ struct Platform {
 class LevelManager_hold : public olc::PixelGameEngine {
     
 public:
-    PhaseState currentPhase = PhaseState::BLUE_ACTIVE;
+    PhaseState currentPhase = PhaseState::GREEN_ACTIVE;
     float phaseTimer = 0.0f;
     const float PHASE_DURATION = 4.0f; // Switch states every 4 seconds
     std::vector<Platform> platforms;
@@ -37,13 +35,13 @@ public:
         platforms.clear(); // Clear any existing platforms before initializing new ones
         // temp code to get us up and running quickly
 
-        platforms.push_back({ { { 0.0f, (float)ptrPGE->GetScreen().Size().y - 30.0f }, { (float)ptrPGE->GetScreen().Size().x, 30.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
+        platforms.push_back({ { { 0.0f, (float)ptrPGE->GetScreen().Size().y - 30.0f }, { (float)ptrPGE->GetScreen().Size().x, 30.0f }, olc::Colour::GREEN }, PhaseState::GREEN_ACTIVE });
         platforms.push_back({ { { 0.0f, (float)ptrPGE->GetScreen().Size().y - 30.0f }, { (float)ptrPGE->GetScreen().Size().x, 30.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
         
         // Alternating level layout platforms
-        platforms.push_back({ { { 150.0f, 300.0f }, { 120.0f, 20.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
+        platforms.push_back({ { { 150.0f, 300.0f }, { 120.0f, 20.0f }, olc::Colour::GREEN }, PhaseState::GREEN_ACTIVE });
         platforms.push_back({ { { 320.0f, 230.0f }, { 120.0f, 20.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
-        platforms.push_back({ { { 500.0f, 160.0f }, { 120.0f, 20.0f }, olc::Colour::BLUE }, PhaseState::BLUE_ACTIVE });
+        platforms.push_back({ { { 500.0f, 160.0f }, { 120.0f, 20.0f }, olc::Colour::GREEN }, PhaseState::GREEN_ACTIVE });
         
         // Hazard platform (can only pass through safely when it matches phase)
         platforms.push_back({ { { 320.0f, 330.0f }, { 120.0f, 20.0f }, olc::Colour::RED }, PhaseState::RED_ACTIVE });
@@ -54,42 +52,42 @@ public:
         if (phaseTimer >= PHASE_DURATION) {
             phaseTimer = 0.0f;
             // Alternate the state
-            currentPhase = (currentPhase == PhaseState::BLUE_ACTIVE) 
+            currentPhase = (currentPhase == PhaseState::GREEN_ACTIVE) 
                            ? PhaseState::RED_ACTIVE 
-                           : PhaseState::BLUE_ACTIVE;
+                           : PhaseState::GREEN_ACTIVE;
         }
     }
 
     void Draw() {
         if (!ptrPGE) return;
-        for (const auto& platform : platforms) {
-            bool isActive = (platform.matchingState == currentPhase);
+        // for (const auto& platform : platforms) {
+        //     bool isActive = (platform.matchingState == currentPhase);
             
-            if (platform.matchingState == PhaseState::BLUE_ACTIVE) {
-                if (isActive) {
-                    DrawRectangle(platform, olc::Colour::DARK_BLUE, true);
-                    DrawRectangle(platform, olc::Colour::BLUE, false);
+        //     if (platform.matchingState == PhaseState::GREEN_ACTIVE) {
+        //         if (isActive) {
+        //             DrawRectangle(platform, olc::Colour::DARK_GREEN, true);
+        //             DrawRectangle(platform, olc::Colour::GREEN, false);
             
-                } else {
-                    // Phantom state (transparent ghost)
-                    DrawRectangle(platform, olc::Colour::BLUE, false);
-                }
-            } else {
-                if (isActive) {
-                    DrawRectangle(platform, olc::Colour::DARK_RED, true);
-                    DrawRectangle(platform, olc::Colour::RED, false);
+        //         } else {
+        //             // Phantom state (transparent ghost)
+        //             DrawRectangle(platform, olc::Colour::BLUE, false);
+        //         }
+        //     } else {
+        //         if (isActive) {
+        //             DrawRectangle(platform, olc::Colour::DARK_RED, true);
+        //             DrawRectangle(platform, olc::Colour::RED, false);
             
-                } else {
-                    // Phantom state (transparent ghost)
-                    DrawRectangle(platform, olc::Colour::RED, false);
-                }
-            }
-        }
+        //         } else {
+        //             // Phantom state (transparent ghost)
+        //             DrawRectangle(platform, olc::Colour::RED, false);
+        //         }
+        //     }
+        // }
 
-        // Draw Timer Bar UI at the top
-        float progressWidth = ptrPGE->GetScreen().Size().x * (1.0f - (phaseTimer / PHASE_DURATION));
-        olc::Pixel barColor = (currentPhase == PhaseState::BLUE_ACTIVE) ? olc::Colour::BLUE : olc::Colour::RED;
-        ptrPGE->GetDraw().FilledRoundedRect({10.0f,10.0f}, {progressWidth, 10.0f}, 5.0f, barColor);
+        // // Draw Timer Bar UI at the top
+        // float progressWidth = ptrPGE->GetScreen().Size().x * (1.0f - (phaseTimer / PHASE_DURATION));
+        // olc::Pixel barColor = (currentPhase == PhaseState::GREEN_ACTIVE) ? olc::Colour::GREEN : olc::Colour::RED;
+        // ptrPGE->GetDraw().FilledRoundedRect({10.0f,10.0f}, {progressWidth, 10.0f}, 5.0f, barColor);
     }
 
 private:
