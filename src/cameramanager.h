@@ -73,7 +73,6 @@ private:
     PhaseState currentPhase = PhaseState::GREEN_ACTIVE;
     float phaseTimer = 0.0f;
     const float PHASE_DURATION = 4.0f; // Switch states every 4 seconds
-    bool bIsRedActive   = false;
     bool bIsGreenActive = true;
 
 public:
@@ -173,18 +172,8 @@ public:
         if (phaseTimer >= PHASE_DURATION) {
             phaseTimer = 0.0f;
             currentPhase = (currentPhase == PhaseState::GREEN_ACTIVE) ? PhaseState::RED_ACTIVE : PhaseState::GREEN_ACTIVE;
-            if(currentPhase == PhaseState::GREEN_ACTIVE)
-            {
-                bIsGreenActive = false;
-                bIsRedActive = true;
-            } else
-            {
-                bIsGreenActive = true;
-                bIsRedActive = false;
-            }
-            
+            bIsGreenActive = !bIsGreenActive;          
            
-            
         }
         // Set the world transform for the camera, so that all drawing operations
         
@@ -431,6 +420,17 @@ private:
                 // Check if the current tile has collision
                 if (decalInfo.sCollisionTile.bHasCollision == false)
                 {
+                    //return false;
+                }
+                // If we have a green tile and it is not active, we skip the collision check for this tile
+                if(decalInfo.sCollisionTile.bIsGreenBlock && !bIsGreenActive)
+                {
+                    return false;
+                }
+
+                // If we have a red tile and the green phase is active, we skip the collision check for this tile
+                if(decalInfo.sCollisionTile.bIsRedBlock && bIsGreenActive)
+                {
                     return false;
                 }
 
@@ -497,35 +497,7 @@ private:
                 {
                     idx = vTile.y * viWorldSize.x + vTile.x;
                    
-                    if(decalInfo.sCollisionTile.bIsGreenBlock)
-                    {
-                        //decalInfo.bHasCollision = bIsGreenActive;
-                        if(bIsGreenActive)
-                        {
-                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
-                        }
-                        else
-                        {
-                            /// draw with transparency or a different color to indicate inactive state
-                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
-                        }
-                    }
-
-                    if(decalInfo.sCollisionTile.bIsRedBlock)
-                    {
-                        //decalInfo.bHasCollision = bIsRedActive;
-                        if(bIsRedActive)
-                        {   
-                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
-                        }
-                        else
-                        {
-                            /// draw with transparency or a different color to indicate inactive state
-                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
-                        }
-                            
-                    }
-
+                  
 
                     /*
                     * Note we add *a to declare we want to access the value
@@ -536,6 +508,36 @@ private:
                         bOverLaps = false;    // Reset our overlap
                         bIsFirstClosest = true;
                         decalInfo = layer.second[idx];    // We only care about the data (layer.data)
+
+                         if(decalInfo.sCollisionTile.bIsGreenBlock)
+                        {
+                            //decalInfo.bHasCollision = bIsGreenActive;
+                            if(bIsGreenActive)
+                            {
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                            }
+                            else
+                            {
+                                /// draw with transparency or a different color to indicate inactive state
+                                //ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
+                            }
+                        }
+
+                        if(decalInfo.sCollisionTile.bIsRedBlock)
+                        {
+                            //decalInfo.bHasCollision = bIsRedActive;
+                            if(!bIsGreenActive)
+                            {   
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                            }
+                            else
+                            {
+                                /// draw with transparency or a different color to indicate inactive state
+                                //ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 100.0f));
+                            }
+                                
+                        }
+
 
                         if (decalInfo.nTiledID == 0) continue;                      // If the tile does nothing just move on
                         
