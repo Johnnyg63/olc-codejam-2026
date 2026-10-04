@@ -10,8 +10,10 @@ class CameraManager
 private:
 
     // Player stuff!
+    bool bFirstFrame = true;              // Indicates if this is the first frame of the game loop
+    int32_t nLastYPos = 0;                 // Stores the last frame's velocity.y pos
     olc::vf2d vVelJumpSpeed = {0, -2.4f}; // Current velocity of the player
-    olc::vf2d vJumpCount = {0, 0}; // Keeps track of the jump duration or count
+    olc::vf2d vJumpCount = {0, 0};        // Keeps track of the jump duration or count
     olc::vf2d vVelJumpMax = {0, -24.0f};
     float fJumpMultiplier = 16.0f;
     bool bJumping = false;
@@ -86,7 +88,7 @@ public:
     {
 		// Set the world transform for the camera, so that all drawing operations
         
-        ptrPGE->GetDraw().StringProp({ 10,100 }, "Before Collisions: " + std::to_string(vTrackedPoint.x) + ", " + std::to_string(vTrackedPoint.y), olc::Colour::YELLOW);
+        ptrPGE->GetDraw().StringProp({ 10,100 }, "Before Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
 		ptrPGE->GetDraw().SetWorldTransform(camera.GetWorldTransform());
 
         // Update camera logic here
@@ -131,7 +133,7 @@ public:
 		// Reset world transform to draw info in screen space
 		ptrPGE->GetDraw().WorldReset();
         
-        ptrPGE->GetDraw().StringProp({ 10,120 }, "After Collisions: " + std::to_string(vTrackedPoint.x) + ", " + std::to_string(vTrackedPoint.y), olc::Colour::YELLOW);
+        ptrPGE->GetDraw().StringProp({ 10,120 }, "After Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
 
 
 		if (bFreeRoam)
@@ -158,13 +160,11 @@ private:
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::W).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, -1};
-               
             }
             
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::S).bHeld)
             {
                 vVel = vVel + olc::vf2d{0, +1};
-                
             }
         }
         else
@@ -211,6 +211,21 @@ private:
         
         
         vTrackedPoint += vVel * 8.0f * fElapsedTime;
+
+        if(bFirstFrame)
+        {
+            nLastYPos = int32_t(vTrackedPoint.y * 100.0f);
+            bFirstFrame = false;
+        }
+        else
+        {
+            // we need to check if y velocity has changed significantly to detect landing
+            if(int(vTrackedPoint.y * 100.0f) == nLastYPos && bJumping)
+            {
+                PlayPlayerSound(nLandSoundID); // Play landing sound effect
+            }
+            nLastYPos = int32_t(vTrackedPoint.y * 100.0f);
+        }
 
 		// Switch between "free roam" and "play" mode with TAB key
 		if (ptrPGE->GetKeyboard().GetKey(olc::Key::TAB).bPressed)
