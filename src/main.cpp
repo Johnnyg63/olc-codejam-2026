@@ -43,6 +43,7 @@ public:
 	olc::Image imgCopyright_Emscripten;
 	olc::Image imgCopyright_OLC;
 	olc::Image imgCopyRight_Kenny;
+	olc::Image imgCopyRight_Tiled;
     
     // For demonstration controls, with sensible default values
     float pan    = 0.0f;
@@ -307,6 +308,17 @@ private:
 		bool res = true;
 		// Emscripten copyright notice
 		res = CreateImageFromFile(imgCopyright_Emscripten, "assets/images/emscripten_logo.png");
+		res = CreateImageFromFile(imgCopyright_OLC, "assets/images/olc_logo.png");
+		res = CreateImageFromFile(imgCopyRight_Kenny, "assets/images/kenny_logo.png");
+		res = CreateImageFromFile(imgCopyRight_Tiled, "assets/images/tiled_logo.png");
+
+		/*
+		olc::Image imgCopyright_Emscripten;
+	olc::Image imgCopyright_OLC;
+	olc::Image imgCopyRight_Kenny;
+		*/
+
+
 		if(!res) printf("Failed to load assets/images/emscripten_logo.png\n");
 		res = true; //TODO: Remove temp here keep things moving
 		
@@ -324,9 +336,24 @@ private:
 		float fCopyrightNoticeX = 10.0f;
 		float fCopyrightNoticeY = 320.0f;
 
+		/*
+			olc::Image imgCopyRight_Kenny;
+			olc::Image imgCopyright_Emscripten;
+			olc::Image imgCopyright_OLC;
+			olc::Image imgCopyRight_Tiled;
+		*/
+
 		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_Emscripten.Size().y * 0.25f);
 		draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 
+		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_OLC.Size().y * 0.25f);
+		draw.Image(imgCopyright_OLC, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
+
+		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyRight_Kenny.Size().y * 0.25f);
+		draw.Image(imgCopyRight_Kenny, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
+
+		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyRight_Tiled.Size().y * 0.25f);
+		draw.Image(imgCopyRight_Tiled, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 		return res;
 		
 	}
@@ -356,7 +383,7 @@ int main()
 	PGEConfig config;
 	config.bVSync = true;
 	config.vPixelSize = { 1,1 };
-	config.vScreenSize = { 1280, 720 };
+	config.vScreenSize = { 1280, 768 };
 	config.bFullScreen = false;
 	
 	if (demo.Construct(config))

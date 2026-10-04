@@ -177,7 +177,7 @@ public:
         }
         // Set the world transform for the camera, so that all drawing operations
         
-        ptrPGE->GetDraw().StringProp({ 10,100 }, "Before Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
+        // ptrPGE->GetDraw().StringProp({ 10,100 }, "Before Collisions: " + std::to_string(int(vTrackedPoint.x * 100)) + ", " + std::to_string(int(vTrackedPoint.y * 100)), olc::Colour::YELLOW);
         ptrPGE->GetDraw().SetWorldTransform(camera.GetWorldTransform());
         
         // Update camera logic here

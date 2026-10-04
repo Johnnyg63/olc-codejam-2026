@@ -32,6 +32,7 @@ private:
     SoundProperties DefaultProperties;  // Default Sound Properties
     uint32_t uniqueIDCounter = 0;       // Counter to generate unique IDs for sounds
     bool bTottleBackGoundMusic = false; // Toggle for background music playback
+    bool bFirstFrame = true; // Indicates if it is the first frame of the sound manager
 
 
     struct Sounds{
@@ -254,6 +255,15 @@ public:
 				extMiniAudio->DisableBackgroundPlayback();
 		}
 
+        if(bFirstFrame)
+        {
+            auto id = GetSoundIDByName("Cheerful_Annoyance");
+            if(id != UINT32_MAX)
+            {
+                PlaySoundAffect(id, false, true);
+            }
+            bFirstFrame = false;
+        }
 		// toggle `song1` playback/pause
  		if(ptrPGE->GetKeyboard().GetKey(olc::Key::B).bPressed)
         {
@@ -280,9 +290,10 @@ public:
 
         // TODO remove this debug output
         // Master sound properties are applied to all sounds as a base multiplier
-        ptrPGE->GetDraw().String({10, 30}, "Master Volume: " + std::to_string(spMasterSound.volume), olc::Colour::WHITE);
-        ptrPGE->GetDraw().String({10, 50}, "Background Volume: " + std::to_string(spBackground.volume) + " Output Volume: " + std::to_string(spBackground.volume * spMasterSound.volume), olc::Colour::WHITE);
-        ptrPGE->GetDraw().String({10, 70}, "FX Volume: " + std::to_string(spFxSound.volume) + " Output Volume: " + std::to_string(spFxSound.volume * spMasterSound.volume), olc::Colour::WHITE);
+        ptrPGE->GetDraw().String({10, 30}, "Master Volume +/-: " + std::to_string(spMasterSound.volume), olc::Colour::WHITE);
+        ptrPGE->GetDraw().String({10, 50}, "Keys: W/A/S/D, LEFT/RIGHT SPACE to jump, B to toggle background music", olc::Colour::WHITE);
+        ptrPGE->GetDraw().String({10, 70}, "Copyright Notices: Emscripten, OLC Pixel Game Engine, Kenny, Tiled", olc::Colour::WHITE);
+        ptrPGE->GetDraw().String({10, 90}, "No AI, all by man hands, PGE 3", olc::Colour::WHITE);
 
         for(auto& sound : vecSounds)
         {
