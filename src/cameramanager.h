@@ -324,7 +324,7 @@ private:
         {
             if (ptrPGE->GetKeyboard().GetKey(olc::Key::SPACE).bPressed) 
             {
-                if(bIsGrounded)
+                if(isGrounded)
                 {
                     vJumpCount = {0, 0}; // Reset jump count when jump starts
                     bJumping = true;
