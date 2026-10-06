@@ -336,22 +336,19 @@ private:
 		float fCopyrightNoticeX = 10.0f;
 		float fCopyrightNoticeY = 320.0f;
 
-		/*
-			olc::Image imgCopyRight_Kenny;
-			olc::Image imgCopyright_Emscripten;
-			olc::Image imgCopyright_OLC;
-			olc::Image imgCopyRight_Tiled;
-		*/
-
 		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_Emscripten.Size().y * 0.25f);
 		draw.Image(imgCopyright_Emscripten, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 
 		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyright_OLC.Size().y * 0.25f);
+		fCopyrightNoticeX += imgCopyright_Emscripten.Size().x + 10.0f;
 		draw.Image(imgCopyright_OLC, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 
+		fCopyrightNoticeX += imgCopyright_OLC.Size().x + 10.0f;
 		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyRight_Kenny.Size().y * 0.25f);
 		draw.Image(imgCopyRight_Kenny, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 
+		fCopyrightNoticeX += imgCopyRight_Kenny.Size().x + 10.0f;
+		fCopyrightNoticeX += imgCopyRight_Tiled.Size().x + 10.0f;
 		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyRight_Tiled.Size().y * 0.25f);
 		draw.Image(imgCopyRight_Tiled, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 		return res;
