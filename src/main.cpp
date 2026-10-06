@@ -307,10 +307,10 @@ private:
 	{
 		bool res = true;
 		// Emscripten copyright notice
-		res = CreateImageFromFile(imgCopyright_Emscripten, "assets/images/emscripten_logo.png");
-		res = CreateImageFromFile(imgCopyright_OLC, "assets/images/olc_logo.png");
-		res = CreateImageFromFile(imgCopyRight_Kenny, "assets/images/kenny_logo.png");
-		res = CreateImageFromFile(imgCopyRight_Tiled, "assets/images/tiled_logo.png");
+		res = CreateImageFromFile(imgCopyright_Emscripten,  "assets/images/emscripten_logo.png");
+		res = CreateImageFromFile(imgCopyright_OLC, 		"assets/images/olc_logo.png");
+		res = CreateImageFromFile(imgCopyRight_Kenny, 		"assets/images/kenny_logo.png");
+		res = CreateImageFromFile(imgCopyRight_Tiled, 		"assets/images/tiled_logo.png");
 
 		/*
 		olc::Image imgCopyright_Emscripten;
@@ -348,7 +348,6 @@ private:
 		draw.Image(imgCopyRight_Kenny, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 
 		fCopyrightNoticeX += imgCopyRight_Kenny.Size().x + 10.0f;
-		fCopyrightNoticeX += imgCopyRight_Tiled.Size().x + 10.0f;
 		fCopyrightNoticeY = GetScreen().Size().y - (imgCopyRight_Tiled.Size().y * 0.25f);
 		draw.Image(imgCopyRight_Tiled, {fCopyrightNoticeX, fCopyrightNoticeY}, {0.25f,0.25f}); 
 		return res;
