@@ -446,6 +446,11 @@ private:
                 if(decalInfo.sCollisionTile.bIsFlag)
                 {
                     // Handle flag collision logic here
+                    if(decalInfo.sCollisionTile.bVisiable)
+                    {
+                        decalInfo.sCollisionTile.bVisiable = false;
+                    }
+                    return false;
                 }
 
                 if(decalInfo.sCollisionTile.bVisiable)
@@ -539,6 +544,11 @@ private:
                                 ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
                             }
                                 
+                        }
+
+                        if(decalInfo.sCollisionTile.bIsFlag && decalInfo.sCollisionTile.bVisiable)
+                        {
+                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
                         }
 
 

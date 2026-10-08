@@ -1116,7 +1116,9 @@ namespace olc
                         // this is our drawing layer
                         vfScreenTilePos  = ptrPGE->GetDraw().WorldToScreen(vTile);
                         vfScreenTileSize = ptrPGE->GetDraw().ScreenToWorld(decalInfo.vfSoureSizePos);
-                        if(decalInfo.sCollisionTile.bIsGreenBlock == false && decalInfo.sCollisionTile.bIsRedBlock == false)
+                        if(decalInfo.sCollisionTile.bIsGreenBlock == false 
+                            && decalInfo.sCollisionTile.bIsRedBlock == false
+                            && decalInfo.sCollisionTile.bIsFlag == false)
                         {
                             ptrPGE->GetDraw().ImageRect(imgBatch, Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
                         }
