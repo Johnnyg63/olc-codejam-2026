@@ -74,6 +74,11 @@ private:
     float phaseTimer = 0.0f;
     const float PHASE_DURATION = 4.0f; // Switch states every 4 seconds
     bool bIsGreenActive = true;
+  
+public:
+    // Game Stats suchs as flags collected
+    uint16_t nMaxFlags = 4;     // Max flags this level has
+    uint16_t nCurrentFlags = 0; // Total number of flags collected
 
 public:
 // World Map Properties
@@ -394,7 +399,7 @@ private:
 
             // Layer stuff
             int32_t idx = 0;
-            olc::TiledLevelManager::DecalInfo decalInfo;
+            olc::TiledLevelManager::DecalInfo* decalInfo;
             int32_t nLayer = 0;
             using namespace olc::utils::geom2d;
 
@@ -427,33 +432,39 @@ private:
                 bool bCollided = false;
 
                 // Check if the current tile has collision
-                if (decalInfo.sCollisionTile.bHasCollision == false)
+                if (decalInfo->sCollisionTile.bHasCollision == false)
                 {
                     //return false;
                 }
                 // If we have a green tile and it is not active, we skip the collision check for this tile
-                if(decalInfo.sCollisionTile.bIsGreenBlock && !bIsGreenActive)
+                if(decalInfo->sCollisionTile.bIsGreenBlock && !bIsGreenActive)
                 {
                     return false;
                 }
 
                 // If we have a red tile and the green phase is active, we skip the collision check for this tile
-                if(decalInfo.sCollisionTile.bIsRedBlock && bIsGreenActive)
+                if(decalInfo->sCollisionTile.bIsRedBlock && bIsGreenActive)
                 {
                     return false;
                 }
 
-                if(decalInfo.sCollisionTile.bIsFlag)
+                if(decalInfo->sCollisionTile.bIsFlag)
                 {
                     // Handle flag collision logic here
-                    if(decalInfo.sCollisionTile.bVisiable)
+                    if(decalInfo->sCollisionTile.bVisiable)
                     {
-                        decalInfo.sCollisionTile.bVisiable = false;
+                        decalInfo->sCollisionTile.bVisiable = false;
+                        if( decalInfo->sCollisionTile.nColour == 1)
+                        {
+                            nCurrentFlags++;
+                            nCurrentFlags = std::min(nCurrentFlags, nMaxFlags);
+                        }
+
                     }
                     return false;
                 }
 
-                if(decalInfo.sCollisionTile.bVisiable)
+                if(decalInfo->sCollisionTile.bVisiable)
                 {
                     // Handle visible tile logic here
                 }
@@ -515,51 +526,51 @@ private:
                     {
                         bOverLaps = false;    // Reset our overlap
                         bIsFirstClosest = true;
-                        decalInfo = layer.second[idx];    // We only care about the data (layer.data)
+                        decalInfo = &layer.second[idx];    // We only care about the data (layer.data)
 
-                         if(decalInfo.sCollisionTile.bIsGreenBlock)
+                         if(decalInfo->sCollisionTile.bIsGreenBlock)
                         {
-                            //decalInfo.bHasCollision = bIsGreenActive;
+                            //decalInfo->bHasCollision = bIsGreenActive;
                             if(bIsGreenActive)
                             {
-                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo->vfSourcePos, decalInfo->vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
                             }
                             else
                             {
                                 /// draw with transparency or a different color to indicate inactive state
-                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo->vfSourcePos, decalInfo->vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f },  olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
                             }
                         }
 
-                        if(decalInfo.sCollisionTile.bIsRedBlock)
+                        if(decalInfo->sCollisionTile.bIsRedBlock)
                         {
-                            //decalInfo.bHasCollision = bIsRedActive;
+                            //decalInfo->bHasCollision = bIsRedActive;
                             if(!bIsGreenActive)
                             {   
-                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo->vfSourcePos, decalInfo->vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
                             }
                             else
                             {
                                 /// draw with transparency or a different color to indicate inactive state
-                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
+                                ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo->vfSourcePos, decalInfo->vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::PixelF(255.0f, 255.0f, 255.0f, 0.25f));
                             }
                                 
                         }
 
-                        if(decalInfo.sCollisionTile.bIsFlag && decalInfo.sCollisionTile.bVisiable)
+                        if(decalInfo->sCollisionTile.bIsFlag && decalInfo->sCollisionTile.bVisiable)
                         {
-                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo.vfSourcePos, decalInfo.vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
+                            ptrPGE->GetDraw().ImageRect(ptrTLM->Properties.renSpriteSheet.region(decalInfo->vfSourcePos, decalInfo->vfSoureSizePos), olc::vf2d(vTile), { 1.0f, 1.0f }, olc::Colour::WHITE);
                         }
 
 
-                        if (decalInfo.nTiledID == 0) continue;                      // If the tile does nothing just move on
+                        if (decalInfo->nTiledID == 0) continue;                      // If the tile does nothing just move on
                         
-                        if (decalInfo.bHasCollision)
+                        if (decalInfo->bHasCollision && decalInfo->sCollisionTile.bHasCollision)
                         {
                             // Check for collision here - keep in world space
                             worldTile.pos = olc::vf2d(vTile.x * viTileSize.x, vTile.y * viTileSize.y);
 
-                            for (auto& tileObject : decalInfo.sCollisionTile.vecTileObjects)
+                            for (auto& tileObject : decalInfo->sCollisionTile.vecTileObjects)
                             {
                                 switch (tileObject.sCollisionType.eCollision)
                                 {

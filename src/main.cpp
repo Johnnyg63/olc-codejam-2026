@@ -92,6 +92,7 @@ public:
         if (!LoadTitledLevel())     {throw std::runtime_error("Failed to load tiled level");};
 		if (!LoadCameraManager()) 	{throw std::runtime_error("Failed to load camera manager");};
 		if (!LoadPlayer()) 			{throw std::runtime_error("Failed to load player");};
+		if (!LoadScore()) 			{throw std::runtime_error("Failed to load score");};
 		if (!LoadCopyRightNotice()) {throw std::runtime_error("Failed to load copyright notice");};
         
 		return true;
@@ -112,7 +113,7 @@ public:
 		if (!HandleSound(fElapsedTime)) {throw std::runtime_error("Failed to handle sound");};
 		
 		// Draw the level
-		//if(!HandleLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle level");};
+        if(!HandleScore(fElapsedTime)) {throw std::runtime_error("Failed to handle score");};
         
         // Draw the Tiled Level
         if(!HandleTitledLevel(fElapsedTime)) {throw std::runtime_error("Failed to handle tiled level");};
@@ -297,6 +298,47 @@ private:
 		player.SetPlayerPosition(cameraManager.vTrackedPoint);
 		player.Update(fElapsedTime, levelManager);
 		player.Draw(levelManager.currentPhase);
+		return res;
+	}
+
+	bool LoadScore()
+	{
+		bool res = true;
+		// Initialize the score manager or load score-related assets here
+		return res;
+	}
+
+	bool HandleScore(float fElapsedTime)
+	{
+		olc_IgnoreUnused(fElapsedTime);
+		bool res = true;
+		draw.String({10, 120}, "Collected flags: " + std::to_string(cameraManager.nCurrentFlags) + " of " + std::to_string(cameraManager.nMaxFlags), olc::Colour::WHITE);
+
+		if(cameraManager.nCurrentFlags >= cameraManager.nMaxFlags)
+		{
+			draw.String({10, 140}, "All flags collected! Press Space G to Go again", olc::Colour::WHITE);
+		}
+
+		if(keyboard.GetKey(olc::Key::G).bPressed)
+		{
+			// Restart the game by resetting the flags
+			cameraManager.nCurrentFlags = 0;
+
+			cameraManager.vTrackedPoint = {20.0f, 20.0f};
+
+			for(auto& layer : tiledLevelManager.Properties.mapLayerInfo)
+			{
+				for(auto& decalInfo : layer.second)
+				{
+					if(decalInfo.sCollisionTile.bIsFlag)
+					{
+						decalInfo.sCollisionTile.bVisiable = true;
+					}
+				}
+			}
+
+		}
+		
 		return res;
 	}
 

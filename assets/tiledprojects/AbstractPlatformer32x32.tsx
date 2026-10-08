@@ -10031,7 +10031,7 @@
    <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="bisFlagUp" type="bool" value="false"/>
-   <property name="nColour" type="int" value="0"/>
+   <property name="nColour" type="int" value="1"/>
   </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="3" y="-1" width="6.625" height="32"/>
@@ -10081,7 +10081,7 @@
    <property name="bIsRedBlock" type="bool" value="false"/>
    <property name="bVisiable" type="bool" value="true"/>
    <property name="bisFlagUp" type="bool" value="false"/>
-   <property name="nColour" type="int" value="0"/>
+   <property name="nColour" type="int" value="1"/>
   </properties>
   <objectgroup draworder="index" id="2">
    <object id="1" x="3" y="0" width="6.875" height="32"/>
