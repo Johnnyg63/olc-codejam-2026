@@ -243,8 +243,13 @@ public:
             ptrPGE->GetDraw().ImageRect(imgStand, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
         } else if(nCurrentPlayerImageID == nWalk1ID)
         {
+            ptrPGE->GetDraw().ImageRect(imgWalk1.flipH(), vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
+        }
+        else if(nCurrentPlayerImageID == nWalk2ID)
+        {
             ptrPGE->GetDraw().ImageRect(imgWalk1, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
-        }else
+        }
+        else
         {
             ptrPGE->GetDraw().ImageRect(imgStand, vTrackedPoint - olc::vf2d(0.5f, 0.5f), { 1.25f, 1.25f}, olc::Colour::WHITE);
         }
@@ -315,7 +320,7 @@ private:
                 vVel = vVel + olc::vf2d{+1, 0};
             if(!bJumping)
             {
-                nCurrentPlayerImageID = nWalk1ID;
+                nCurrentPlayerImageID = nWalk2ID;
             }
         }
         
@@ -500,13 +505,7 @@ private:
                 for (vTile.x = vTileTL.x; vTile.x < vTileBR.x; vTile.x++)
                 {
                     idx = vTile.y * viWorldSize.x + vTile.x;
-                   
-                  
 
-                    /*
-                    * Note we add *a to declare we want to access the value
-                    * Javidx9 has a great video explaining pointers here : https://www.youtube.com/watch?v=iChalAKXffs
-                    */
                     for (auto& layer : ptrTLM->Properties.mapLayerInfo)
                     {
                         bOverLaps = false;    // Reset our overlap
